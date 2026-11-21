@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16283f">
+<title>Kit de Modelos — Sites para empresas de Jequié</title>
+<meta name="description" content="Sete modelos de site, um por nicho, prontos para apresentação comercial em Jequié.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2316283f'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>K</text></svg>">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+  body{--accent:#16283f;--accent-soft:#e8edf3;--soft:#f5f6f8}
+  .kits{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .kit{
+    display:block;background:#fff;border:1px solid var(--line);border-radius:18px;
+    padding:0;overflow:hidden;transition:transform .18s,box-shadow .18s,border-color .18s;
+  }
+  .kit:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(17,24,32,.10);border-color:#cfd6dc}
+  .kit .swatch{height:86px;position:relative}
+  .kit .swatch::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(120% 140% at 88% 0%,rgba(255,255,255,.38),transparent 55%)}
+  .kit .body{padding:20px 22px 24px}
+  .kit .sector{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+    font-weight:700;color:var(--muted);margin-bottom:6px}
+  .kit h3{font-size:18px;letter-spacing:-.015em;margin:0 0 6px}
+  .kit p{font-size:13.8px;color:var(--muted);margin:0 0 14px}
+  .kit .more{font-size:13px;font-weight:700;color:var(--accent);display:flex;
+    align-items:center;gap:6px}
+  .meta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;font-size:11.5px;color:var(--muted)}
+  .meta-row span{background:var(--soft);border:1px solid var(--line);padding:3px 9px;border-radius:999px}
+  .steps-mini{display:grid;gap:14px;max-width:760px;list-style:none;margin:0;padding:0}
+  .steps-mini li{display:flex;gap:14px;font-size:14.5px;color:var(--ink)}
+  .steps-mini .n{width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;
+    display:grid;place-items:center;font-size:12.5px;font-weight:700;flex:none}
+  .steps-mini b{display:block;font-size:14.5px;margin-bottom:1px}
+  .steps-mini p{margin:0;font-size:13.5px;color:var(--muted)}
+  .note-box{border-left:3px solid var(--accent);background:#f7f8fa;padding:16px 20px;
+    border-radius:0 10px 10px 0;font-size:14px;margin:24px 0}
+  @media (max-width:760px){ .kits{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">K</span>
+      <span>Kit de Modelos<small>Jequié · BA</small></span>
+    </a>
+    <input type="checkbox" id="navt" class="nav-toggle">
+    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
+    <nav class="nav">
+      <a href="#modelos">Modelos</a>
+      <a href="#personalizar">Personalizar</a>
+      <a href="#publicar">Publicar</a>
+    </nav>
+    <a class="btn btn--primary header-cta" href="#modelos">Ver modelos</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Material de prospecção</p>
+          <h1 class="h1">Sete modelos.<br>Dez empresas.<br><em>Uma conversa.</em></h1>
+          <p class="lead">Cada modelo foi desenhado para um nicho específico do comércio de Jequié. Abra no celular, mostre ao dono e diga: “fiz um teste para você ver como ficaria”.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="#modelos">Escolher modelo</a>
+            <a class="btn btn--ghost btn--lg" href="#publicar">Como publicar</a>
+          </div>
+          <div class="hero-note">
+            <span><i class="dot"></i> 100% responsivo</span>
+            <span><i class="dot"></i> Sem dependência externa</span>
+            <span><i class="dot"></i> Pronto para Cloudflare Pages</span>
+          </div>
+        </div>
+        <div class="visual">
+          <img src="assets/img/kit.jpg" alt="Quatro modelos de site: clinica odontologica, imobiliaria, hotel e barbearia" loading="eager" decoding="async">
+          <div class="hero-card"><b>7</b><span>nichos cobertos por um único kit</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="modelos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Os modelos</p>
+        <h2 class="h2">Escolha o que combina com o próximo cliente</h2>
+        <p class="lead">Todos usam a mesma base técnica e visual. Muda a cor, a tipografia de destaque e a organização das seções.</p>
+      </div>
+
+      <div class="kits">
+
+        <a class="kit" href="odonto.html">
+          <div class="swatch" style="background:linear-gradient(135deg,#0f766e,#14b8a6)"></div>
+          <div class="body">
+            <div class="sector">Odontologia</div>
+            <h3>Clínica Sorriso Novo</h3>
+            <p>Tratamentos, equipe, prova social e agendamento direto no WhatsApp.</p>
+            <div class="more">Abrir modelo →</div>
+            <div class="meta-row"><span>Cobre 3 empresas</span><span>Ticket R$ 1.500–2.500</span></div>
+          </div>
+        </a>
+
+        <a class="kit" href="imobiliaria.html">
+          <div class="swatch" style="background:linear-gradient(135deg,#1e3a34,#3f6b58)"></div>
+          <div class="body">
+            <div class="sector">Imobiliária</div>
+            <h3>Horizonte Imóveis</h3>
+            <p>Busca de imóveis, vitrine de destaques e captação de proprietários.</p>
+            <div class="more">Abrir modelo →</div>
+            <div class="meta-row"><span>Cobre 2 empresas</span><span>Ticket R$ 2.000–3.500</span></div>
+          </div>
+        </a>
+
+        <a class="kit" href="advocacia.html">
+          <div class="swatch" style="background:linear-gradient(135deg,#1b2430,#3d4d63)"></div>
+          <div class="body">
+            <div class="sector">Advocacia</div>
+            <h3>Martins &amp; Prado</h3>
+            <p>Áreas de atuação, sócios, artigos e contato com discrição e autoridade.</p>
+            <div class="more">Abrir modelo →</div>
+            <div class="meta-row"><span>Cobre 1 empresa</span><span>Ticket R$ 2.500–3.500</span></div>
+          </div>
+        </a>
+
+        <a class="kit" href="clinica.html">
+          <div class="swatch" style="background:linear-gradient(135deg,#1d4ed8,#60a5fa)"></div>
+          <div class="body">
+            <div class="sector">Clínica médica</div>
+            <h3>Clínica Vida Plena</h3>
+            <p>Especialidades, exames, corpo clínico e agendamento por WhatsApp.</p>
+            <div class="more">Abrir modelo →</div>
+            <div class="meta-row"><span>Cobre 1 empresa</span><span>Ticket R$ 2.000–3.000</span></div>
+          </div>
+        </a>
+
+        <a class="kit" href="contabilidade.html">
+          <div class="swatch" style="background:linear-gradient(135deg,#3730a3,#6366f1)"></div>
+          <div class="body">
+            <div class="sector">Contabilidade</div>
+            <h3>Nova Contabilidade</h3>
+            <p>Serviços, planos mensais, abertura de empresa e perguntas frequentes.</p>
+            <div class="more">Abrir modelo →</div>
+            <div class="meta-row"><span>Cobre 1 empresa</span><span>Ticket R$ 1.500–2.500</span></div>
+          </div>
+        </a>
+
+        <a class="kit" href="hotel.html">
+          <div class="swatch" style="background:linear-gradient(135deg,#7c2d12,#c2703f)"></div>
+          <div class="body">
+            <div class="sector">Hotelaria</div>
+            <h3>Hotel Serra Azul</h3>
+            <p>Acomodações, reserva direta e argumento contra a comissão do Booking.</p>
+            <div class="more">Abrir modelo →</div>
+            <div class="meta-row"><span>Cobre 1 empresa</span><span>Ticket R$ 2.500–4.000</span></div>
+          </div>
+        </a>
+
+        <a class="kit" href="barbearia.html">
+          <div class="swatch" style="background:linear-gradient(135deg,#111111,#b45309)"></div>
+          <div class="body">
+            <div class="sector">Barbearia</div>
+            <h3>Barbearia Navalha</h3>
+            <p>Serviços com preço, time de barbeiros e agendamento em um toque.</p>
+            <div class="more">Abrir modelo →</div>
+            <div class="meta-row"><span>Cobre 1 empresa</span><span>Ticket R$ 700–1.500</span></div>
+          </div>
+        </a>
+
+        <a class="kit" href="#personalizar" style="background:#f9fafb">
+          <div class="swatch" style="background:repeating-linear-gradient(135deg,#e5e8eb,#e5e8eb 8px,#f2f4f6 8px,#f2f4f6 16px)"></div>
+          <div class="body">
+            <div class="sector">Próximo nicho</div>
+            <h3>Seu oitavo modelo</h3>
+            <p>Quando aparecer um cliente fora desses setores, a base já está pronta: copie um arquivo e troque a cor.</p>
+            <div class="more">Ver como personalizar →</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="personalizar">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Personalização</p>
+        <h2 class="h2">O que trocar antes de mostrar ao cliente</h2>
+        <p class="lead">Leva menos de dez minutos. São cinco coisas, sempre as mesmas.</p>
+      </div>
+
+      <ol class="steps-mini">
+        <li><span class="n">1</span><div><b>Nome e marca</b><p>No topo e no rodapé. Troque o texto e a inicial do quadradinho colorido.</p></div></li>
+        <li><span class="n">2</span><div><b>Cor de destaque</b><p>No <code>&lt;style&gt;</code> do topo do arquivo: <code>--accent</code> e <code>--accent-soft</code>. Uma linha muda o site inteiro.</p></div></li>
+        <li><span class="n">3</span><div><b>WhatsApp</b><p>Busque por <code>wa.me</code> e troque o número. Aparece no botão flutuante, no topo e no rodapé.</p></div></li>
+        <li><span class="n">4</span><div><b>Endereço e horário</b><p>Na seção de contato e no rodapé. Confirme no Google Maps antes.</p></div></li>
+        <li><span class="n">5</span><div><b>Fotos</b><p>Os blocos coloridos são espaços reservados. Troque por fotos reais do cliente quando fechar.</p></div></li>
+      </ol>
+
+      <div class="note-box">
+        <strong>Regra prática:</strong> mostre o modelo <em>com o nome do cliente</em>. “Fiz um teste para a sua clínica” converte muito mais que “tenho um modelo genérico”. Antes de sair, troque só o nome e a cor — dois minutos por empresa.
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="publicar">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Publicação</p>
+        <h2 class="h2">Do arquivo local ao link que você manda no WhatsApp</h2>
+      </div>
+
+      <ol class="steps-mini">
+        <li><span class="n">1</span><div><b>Teste local</b><p>Abra o <code>index.html</code> no navegador e confira no celular pela rede local, ou use o modo dispositivo do navegador.</p></div></li>
+        <li><span class="n">2</span><div><b>Suba no GitHub</b><p>Um repositório por kit. Isso é backup e histórico.</p></div></li>
+        <li><span class="n">3</span><div><b>Cloudflare Pages</b><p>Conecte o repositório, escolha “nenhum framework”, diretório raiz <code>/</code> e publique. É grátis e permite uso comercial.</p></div></li>
+        <li><span class="n">4</span><div><b>Link de demonstração</b><p>Você recebe algo como <code>kit-demos.pages.dev</code>. Mande <code>/odonto.html</code> para o cliente certo.</p></div></li>
+        <li><span class="n">5</span><div><b>Domínio depois</b><p>Só compre o domínio quando o cliente disser sim. Até lá, o link gratuito resolve.</p></div></li>
+      </ol>
+
+      <div class="note-box">
+        <strong>Dica de venda:</strong> mande o link antes da visita. “Vou passar aí quinta às 15h, mas já te adianto: fiz um teste de site para a sua empresa, está aqui.” O dono abre, olha, e você entra na conversa com o assunto já começado.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:14px">
+          <span class="mark">K</span>
+          <span>Kit de Modelos<small>Jequié · BA</small></span>
+        </a>
+        <p style="max-width:34ch;font-size:13.5px">Material de prospecção para apresentação comercial. Todos os nomes, valores e dados são fictícios.</p>
+      </div>
+      <div>
+        <h3>Modelos</h3>
+        <ul>
+          <li><a href="odonto.html">Odontologia</a></li>
+          <li><a href="imobiliaria.html">Imobiliária</a></li>
+          <li><a href="advocacia.html">Advocacia</a></li>
+          <li><a href="clinica.html">Clínica médica</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">&nbsp;</p>
+        <ul>
+          <li><a href="contabilidade.html">Contabilidade</a></li>
+          <li><a href="hotel.html">Hotelaria</a></li>
+          <li><a href="barbearia.html">Barbearia</a></li>
+          <li><a href="#publicar">Como publicar</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>Kit de Modelos · 2026</span>
+      <span>Feito para uso local e publicação estática</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
+document.querySelectorAll(".nav a").forEach(function (a) {
+  a.addEventListener("click", function () {
+    var t = document.getElementById("navt");
+    if (t) t.checked = false;
+  });
+});
+</script>
+</body>
+</html>

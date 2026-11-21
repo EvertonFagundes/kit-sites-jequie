@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4338ca">
+<title>Contabilidade em Jequié | Nova Contabilidade</title>
+<meta name="description" content="Abertura de empresa, contabilidade mensal e planejamento tributário em Jequié. Atendimento para MEI, Simples Nacional e pequenas empresas.">
+<meta property="og:title" content="Nova Contabilidade — Jequié">
+<meta property="og:description" content="Contabilidade para MEI, Simples Nacional e pequenas empresas.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234338ca'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>N</text></svg>">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+  body{--accent:#4338ca;--accent-soft:#ecebfb;--soft:#f6f5fe}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+  .plan--hi .badge-hi{position:absolute;top:-11px;left:50%;transform:translateX(-50%);
+    background:var(--accent);color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;
+    text-transform:uppercase;padding:4px 12px;border-radius:999px;white-space:nowrap}
+  .who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .who-card{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff}
+  .who-card .k{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+    color:var(--accent);margin-bottom:8px}
+  .who-card h3{font-size:16px;margin:0 0 8px}
+  .who-card p{font-size:13.5px;color:var(--muted);margin:0}
+  .checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin-top:22px}
+  .checklist li{display:flex;gap:10px;font-size:14px;align-items:flex-start}
+  .checklist .tick{width:19px;height:19px;border-radius:50%;background:var(--accent-soft);
+    color:var(--accent);display:grid;place-items:center;flex:none;font-size:10.5px;
+    font-weight:800;margin-top:1px}
+  @media (max-width:900px){
+    .split{grid-template-columns:1fr;gap:30px}
+    .plans,.who-grid{grid-template-columns:1fr}
+    .checklist{grid-template-columns:1fr}
+  }
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AccountingService","name":"Nova Contabilidade",
+"description":"Escritório de contabilidade em Jequié. Abertura de empresa, contabilidade mensal e planejamento tributário.",
+"telephone":"+55-73-90000-0000","priceRange":"$$",
+"address":{"@type":"PostalAddress","streetAddress":"Av. Franz Gedeon, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45200-130","addressCountry":"BR"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="contabilidade.html">
+      <span class="mark">N</span>
+      <span>Nova Contabilidade<small>Jequié · BA</small></span>
+    </a>
+    <input type="checkbox" id="navt" class="nav-toggle">
+    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
+    <nav class="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#planos">Planos</a>
+      <a href="#quem">Para quem</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20contabilidade.">Falar agora</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Contabilidade em Jequié</p>
+          <h1 class="h1">Sua empresa em dia,<br>sem <em>susto no fim do mês</em></h1>
+          <p class="lead">Abertura de empresa, contabilidade mensal e planejamento tributário. Você cuida do negócio, a gente cuida do prazo que não pode passar.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20abrir%20minha%20empresa.">Abrir minha empresa</a>
+            <a class="btn btn--ghost btn--lg" href="#planos">Ver planos</a>
+          </div>
+          <div class="hero-note">
+            <span><i class="dot"></i> Resposta em até 1 dia útil</span>
+            <span><i class="dot"></i> Atendimento remoto</span>
+            <span><i class="dot"></i> Nota fiscal sem dor de cabeça</span>
+          </div>
+        </div>
+        <div class="visual">
+          <img src="assets/img/cont-hero.jpg" alt="Pessoa digitando em notebook sobre mesa de marmore" loading="eager" decoding="async">
+          <div class="hero-card"><b>+300</b><span>empresas atendidas na região</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Serviços</p>
+        <h2 class="h2">O que sai da sua mesa</h2>
+        <p class="lead">Tudo o que envolve imposto, folha e obrigação acessória fica com a gente — e você recebe um resumo em linguagem que dá para entender.</p>
+      </div>
+      <div class="grid grid--2">
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12M8 20v-6h8v6M4 20h16"/></svg></div>
+          <h3 class="h3">Abertura de empresa</h3>
+          <p>CNPJ, alvará, enquadramento e inscrição estadual. Você sai com a empresa pronta para emitir nota.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/></svg></div>
+          <h3 class="h3">Contabilidade mensal</h3>
+          <p>Escrituração, folha de pagamento, impostos e obrigações acessórias entregues no prazo.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 18V6M4 18h16M8 14l3-4 3 2 4-6"/></svg></div>
+          <h3 class="h3">Planejamento tributário</h3>
+          <p>Análise do regime ideal e revisão de impostos pagos. Muitas empresas pagam mais do que deveriam.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3 class="h3">Departamento pessoal</h3>
+          <p>Admissão, demissão, férias, 13º e eSocial. Sem multa por atraso e sem cliente sem resposta.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="planos">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Planos</p>
+        <h2 class="h2">Preço fixo, sem surpresa</h2>
+        <p class="lead">Você sabe quanto paga todo mês. Sem cobrança extra por dúvida.</p>
+      </div>
+
+      <div class="plans">
+        <div class="plan">
+          <div class="tag">MEI</div>
+          <h3 style="font-size:17px;margin:0">Essencial</h3>
+          <div class="price">R$ 149<span> /mês</span></div>
+          <p style="font-size:13px;color:var(--muted);margin:6px 0 0">Para quem está começando e quer ficar em dia.</p>
+          <ul>
+            <li>DAS-MEI em dia</li>
+            <li>Declaração anual</li>
+            <li>Emissão de nota fiscal</li>
+            <li>Suporte por WhatsApp</li>
+          </ul>
+          <a class="btn btn--ghost" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20plano%20Essencial.">Começar</a>
+        </div>
+
+        <div class="plan plan--hi">
+          <span class="badge-hi">Mais escolhido</span>
+          <div class="tag">Simples Nacional</div>
+          <h3 style="font-size:17px;margin:0">Crescimento</h3>
+          <div class="price">R$ 299<span> /mês</span></div>
+          <p style="font-size:13px;color:var(--muted);margin:6px 0 0">Para a empresa que já tem funcionário e quer crescer.</p>
+          <ul>
+            <li>Tudo do Essencial</li>
+            <li>Folha de pagamento</li>
+            <li>eSocial e FGTS</li>
+            <li>Relatório mensal de resultados</li>
+          </ul>
+          <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20plano%20Crescimento.">Escolher plano</a>
+        </div>
+
+        <div class="plan">
+          <div class="tag">Lucro Presumido</div>
+          <h3 style="font-size:17px;margin:0">Completo</h3>
+          <div class="price">R$ 549<span> /mês</span></div>
+          <p style="font-size:13px;color:var(--muted);margin:6px 0 0">Para quem fatura mais e precisa de planejamento.</p>
+          <ul>
+            <li>Tudo do Crescimento</li>
+            <li>Planejamento tributário anual</li>
+            <li>Reunião trimestral</li>
+            <li>Suporte prioritário</li>
+          </ul>
+          <a class="btn btn--ghost" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20plano%20Completo.">Falar com contador</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="quem">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Para quem</p>
+        <h2 class="h2">Cada negócio tem uma regra diferente</h2>
+      </div>
+      <div class="who-grid">
+        <div class="who-card">
+          <div class="k">Pessoa física</div>
+          <h3>Quero formalizar</h3>
+          <p>Abra o MEI em poucos dias, com enquadramento correto desde o início e sem pagar imposto a mais.</p>
+        </div>
+        <div class="who-card">
+          <div class="k">Pequena empresa</div>
+          <h3>Já tenho CNPJ</h3>
+          <p>Troca de contador sem dor: a gente busca a documentação e assume as obrigações do mês corrente.</p>
+        </div>
+        <div class="who-card">
+          <div class="k">Prestador de serviço</div>
+          <h3>Emito nota todo dia</h3>
+          <p>Emissão de nota, controle de recebimento e apuração de ISS sem atraso e sem multa.</p>
+        </div>
+      </div>
+
+      <div class="split" style="margin-top:52px">
+        <div class="photo"><img src="assets/img/cont-photo.jpg" alt="Notebook em escritorio com luz natural" loading="lazy"></div>
+        <div>
+          <h2 class="h2" style="font-size:26px">O que você recebe todo mês</h2>
+          <ul class="checklist">
+            <li><span class="tick">✓</span> Guias de imposto com antecedência</li>
+            <li><span class="tick">✓</span> Resumo de faturamento e despesas</li>
+            <li><span class="tick">✓</span> Aviso de vencimento no WhatsApp</li>
+            <li><span class="tick">✓</span> Cópia de tudo arquivada na nuvem</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:26px">
+            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20trocar%20de%20contador.">Quero trocar de contador</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Dúvidas</p>
+        <h2 class="h2">Perguntas frequentes</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Quanto custa para abrir uma empresa?</summary><p>A abertura é gratuita nos planos mensais. Você paga apenas as taxas oficiais do estado e do município, que informamos antes.</p></details>
+        <details><summary>Posso trocar de contador no meio do ano?</summary><p>Sim, e é mais simples do que parece. Cuidamos da transição e da busca da documentação com o escritório anterior.</p></details>
+        <details><summary>Vocês atendem empresa de outra cidade?</summary><p>Sim. O atendimento é remoto para todo o Brasil, com documentos digitais e assinatura eletrônica.</p></details>
+        <details><summary>Emito nota fiscal pelo celular?</summary><p>Sim. Configuramos o emissor e orientamos o uso. Em caso de dúvida, o suporte responde no mesmo dia útil.</p></details>
+      </div>
+
+      <div style="margin-top:44px">
+        <div class="cta-band">
+          <div>
+            <h2>Vamos colocar sua empresa em dia?</h2>
+            <p>Mande uma mensagem contando em que situação você está. Respondemos com o próximo passo, sem compromisso.</p>
+          </div>
+          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20contabilidade.">Chamar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="contabilidade.html" style="margin-bottom:14px">
+          <span class="mark">N</span>
+          <span>Nova Contabilidade<small>Jequié · BA</small></span>
+        </a>
+        <p style="max-width:34ch;font-size:13.5px">Abertura de empresa, contabilidade mensal e planejamento tributário.</p>
+      </div>
+      <div>
+        <h3>Serviços</h3>
+        <ul>
+          <li>Abertura de empresa</li>
+          <li>Contabilidade mensal</li>
+          <li>Departamento pessoal</li>
+          <li>Planejamento tributário</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li>(73) 90000-0000</li>
+          <li>Av. Franz Gedeon, 000 — Centro</li>
+          <li>Seg a sex, 8h às 18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Nova Contabilidade</span>
+      <span>CRC-BA 00000</span>
+    </div>
+    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
+document.querySelectorAll(".nav a").forEach(function (a) {
+  a.addEventListener("click", function () {
+    var t = document.getElementById("navt");
+    if (t) t.checked = false;
+  });
+});
+</script>
+</body>
+</html>
+
+  .photo{aspect-ratio:4/3;border-radius:20px;overflow:hidden;background:var(--soft);box-shadow:0 34px 60px -36px rgba(67,56,202,.45)}

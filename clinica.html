@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1e40af">
+<title>Clínica médica em Jequié | Clínica Vida Plena</title>
+<meta name="description" content="Consultas e exames em Jequié: cardiologia, neurologia, ginecologia, ortopedia e mais. Agende pelo WhatsApp.">
+<meta property="og:title" content="Clínica Vida Plena — Jequié">
+<meta property="og:description" content="Consultas e exames no mesmo lugar, com hora marcada.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231e40af'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>V</text></svg>">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+  body{--accent:#1e40af;--accent-soft:#e8edfb;--soft:#f5f7fd}
+  .specialties{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .spec{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;
+    display:flex;align-items:center;gap:12px;font-size:14.5px;font-weight:600;
+    transition:border-color .18s,color .18s}
+  .spec:hover{border-color:var(--accent);color:var(--accent)}
+  .spec i{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+  .exams{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
+  .exam{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);
+    font-size:14.5px}
+  .exam span:last-child{color:var(--muted);font-size:13px;text-align:right}
+  .doc{border:1px solid var(--line);border-radius:16px;padding:22px;background:#fff}
+  .doc .av{width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
+    display:grid;place-items:center;font-weight:700;margin-bottom:14px}
+  .doc h3{font-size:16px;margin:0 0 2px}
+  .doc .crm{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:8px}
+  .doc p{font-size:13.5px;color:var(--muted);margin:0}
+  @media (max-width:900px){
+    .specialties{grid-template-columns:1fr 1fr}
+    .split{grid-template-columns:1fr;gap:30px}
+    .exams{grid-template-columns:1fr}
+  }
+  @media (max-width:520px){.specialties{grid-template-columns:1fr}}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalClinic","name":"Clínica Vida Plena",
+"description":"Clínica médica em Jequié com consultas e exames de diversas especialidades.",
+"telephone":"+55-73-90000-0000","medicalSpecialty":["Cardiovascular","Neurologic","Gynecologic"],
+"address":{"@type":"PostalAddress","streetAddress":"R. Nestor Ribeiro, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45203-230","addressCountry":"BR"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="clinica.html">
+      <span class="mark">V</span>
+      <span>Vida Plena<small>Clínica médica · Jequié</small></span>
+    </a>
+    <input type="checkbox" id="navt" class="nav-toggle">
+    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
+    <nav class="nav">
+      <a href="#especialidades">Especialidades</a>
+      <a href="#exames">Exames</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta.">Agendar</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Consultas e exames em Jequié</p>
+          <h1 class="h1">Cuidar da saúde<br>sem <em>perder o dia</em></h1>
+          <p class="lead">Consultas e exames no mesmo lugar, com hora marcada de verdade. Você chega, é atendido e volta para a sua vida.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta.">Agendar consulta</a>
+            <a class="btn btn--ghost btn--lg" href="#exames">Ver exames</a>
+          </div>
+          <div class="hero-note">
+            <span><i class="dot"></i> 18 especialidades</span>
+            <span><i class="dot"></i> Particular e reembolso</span>
+            <span><i class="dot"></i> Acesso para cadeira de rodas</span>
+          </div>
+        </div>
+        <div class="visual">
+          <img src="assets/img/cli-hero.jpg" alt="Estetoscopio e notebook sobre mesa clara em consultorio" loading="eager" decoding="async">
+          <div class="hero-card"><b>+30 mil</b><span>atendimentos realizados</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="especialidades">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Especialidades</p>
+        <h2 class="h2">O médico certo, sem rodar a cidade</h2>
+        <p class="lead">Diversas especialidades no mesmo endereço. Se você não sabe por onde começar, a recepção orienta qual profissional procurar.</p>
+      </div>
+      <div class="specialties">
+        <div class="spec"><i></i>Cardiologia</div>
+        <div class="spec"><i></i>Neurologia</div>
+        <div class="spec"><i></i>Ginecologia</div>
+        <div class="spec"><i></i>Ortopedia</div>
+        <div class="spec"><i></i>Endocrinologia</div>
+        <div class="spec"><i></i>Psiquiatria</div>
+        <div class="spec"><i></i>Pediatria</div>
+        <div class="spec"><i></i>Dermatologia</div>
+        <div class="spec"><i></i>Nutrição</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="exames">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Exames</p>
+          <h2 class="h2">Resultado rápido, com laudo assinado</h2>
+          <p class="lead">Os exames mais pedidos são feitos aqui. O prazo do laudo é informado antes de você agendar — sem surpresa.</p>
+          <div class="exams" style="margin-top:26px">
+            <div class="exam"><span>Eletrocardiograma</span><span>laudo em 24h</span></div>
+            <div class="exam"><span>Ecocardiograma</span><span>laudo em 24h</span></div>
+            <div class="exam"><span>Ultrassonografia</span><span>laudo em 24h</span></div>
+            <div class="exam"><span>Eletroencefalograma</span><span>laudo em 48h</span></div>
+            <div class="exam"><span>Holter 24h</span><span>laudo em 3 dias</span></div>
+            <div class="exam"><span>MAPA 24h</span><span>laudo em 3 dias</span></div>
+          </div>
+          <div class="hero-actions" style="margin-top:26px">
+            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20tenho%20um%20pedido%20de%20exame.">Tenho pedido de exame</a>
+          </div>
+        </div>
+        <div class="photo"><img src="assets/img/cli-exames.jpg" alt="Medica conversando com paciente durante consulta" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="equipe">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Corpo clínico</p>
+        <h2 class="h2">Quem atende</h2>
+      </div>
+      <div class="grid grid--3">
+        <div class="doc">
+          <div class="av">C</div>
+          <h3>Dra. Camila Andrade</h3>
+          <div class="crm">CRM-BA 00.000</div>
+          <p>Cardiologia e medicina do sono. Ecocardiograma e teste ergométrico.</p>
+        </div>
+        <div class="doc">
+          <div class="av">A</div>
+          <h3>Dr. Anselmo Brito</h3>
+          <div class="crm">CRM-BA 00.000</div>
+          <p>Neurologia. Laudos de eletroencefalograma e avaliação de cefaleia.</p>
+        </div>
+        <div class="doc">
+          <div class="av">S</div>
+          <h3>Dra. Sheila Ferreira</h3>
+          <div class="crm">CRM-BA 00.000</div>
+          <p>Pediatria e neuropediatria. Desenvolvimento, fala e comportamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Agendamento</p>
+        <h2 class="h2">Como marcar</h2>
+        <p class="lead">O agendamento é feito pelo WhatsApp, com hora marcada. A recepção informa valores e datas na conversa — e confirma na véspera.</p>
+      </div>
+
+      <div class="info-grid" style="margin-bottom:34px">
+        <div class="info"><div class="lbl">Endereço</div><strong>R. Nestor Ribeiro, 000 — Centro<br>Jequié · BA</strong></div>
+        <div class="info"><div class="lbl">Horário</div><strong>Segunda a sexta, 8h às 18h<br>Com hora marcada</strong></div>
+        <div class="info"><div class="lbl">Contato</div><strong>(73) 90000-0000<br>contato@vidaplena.com.br</strong></div>
+      </div>
+
+      <div class="faq">
+        <details><summary>Atendem convênio?</summary><p>O atendimento é particular. Emitimos recibo e nota para solicitação de reembolso junto ao seu plano.</p></details>
+        <details><summary>Preciso de pedido médico para fazer exame?</summary><p>Alguns exames sim, outros não. Mande uma mensagem informando o exame e orientamos antes de agendar.</p></details>
+        <details><summary>Quanto tempo demora o laudo?</summary><p>Eletrocardiograma e ecocardiograma ficam prontos em 24 horas. Holter e MAPA em até 3 dias úteis. O prazo é confirmado no agendamento.</p></details>
+        <details><summary>Vocês atendem urgência?</summary><p>Não atendemos urgência e emergência. Em caso de dor no peito, falta de ar ou convulsão, procure o pronto-socorro.</p></details>
+      </div>
+
+      <div style="margin-top:44px">
+        <div class="cta-band">
+          <div>
+            <h2>Agende pelo WhatsApp</h2>
+            <p>Informe a especialidade ou o exame. Respondemos em horário comercial com as datas disponíveis.</p>
+          </div>
+          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar.">Chamar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="clinica.html" style="margin-bottom:14px">
+          <span class="mark">V</span>
+          <span>Vida Plena<small>Clínica médica · Jequié</small></span>
+        </a>
+        <p style="max-width:34ch;font-size:13.5px">Consultas e exames no centro de Jequié, com hora marcada.</p>
+      </div>
+      <div>
+        <h3>Serviços</h3>
+        <ul>
+          <li>Consultas</li>
+          <li>Exames cardiológicos</li>
+          <li>Ultrassonografia</li>
+          <li>Check-up</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li>(73) 90000-0000</li>
+          <li>R. Nestor Ribeiro, 000</li>
+          <li>Seg a sex, 8h às 18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Clínica Vida Plena</span>
+      <span>Responsável técnico: CRM-BA 00.000</span>
+    </div>
+    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
+document.querySelectorAll(".nav a").forEach(function (a) {
+  a.addEventListener("click", function () {
+    var t = document.getElementById("navt");
+    if (t) t.checked = false;
+  });
+});
+</script>
+</body>
+</html>
+
+  .photo{aspect-ratio:4/3;border-radius:20px;overflow:hidden;background:var(--soft);box-shadow:0 34px 60px -36px rgba(30,64,175,.45)}

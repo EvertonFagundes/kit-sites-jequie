@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#9a3412">
+<title>Hotel em Jequié | Hotel Serra Azul</title>
+<meta name="description" content="Hotel no centro de Jequié com café da manhã regional incluso, estacionamento e reserva direta com melhor tarifa.">
+<meta property="og:title" content="Hotel Serra Azul — Jequié, BA">
+<meta property="og:description" content="Hospedagem no centro de Jequié com café regional incluso e reserva direta.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%239a3412'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>S</text></svg>">
+<link rel="stylesheet" href="assets/base.css">
+<style>
+  body{--accent:#9a3412;--accent-soft:#f9ece6;--soft:#faf6f3}
+  .book{
+    background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;
+    display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;margin-top:-34px;position:relative;
+    z-index:5;box-shadow:0 18px 44px rgba(17,24,32,.12);max-width:900px;
+  }
+  .field{padding:10px 14px;border:1px solid var(--line);border-radius:10px}
+  .field label{display:block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--muted);font-weight:700;margin-bottom:2px}
+  .field span{font-size:14px;font-weight:600}
+  .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .room{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;
+    display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+  .room:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(17,24,32,.10)}
+  .room .ph{aspect-ratio:4/3;position:relative}
+  .room .b{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}
+  .room h3{font-size:16.5px;margin:0 0 4px}
+  .room p{font-size:13.5px;color:var(--muted);margin:0 0 14px}
+  .room .from{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
+  .room .val{font-family:var(--font-display);font-size:23px;color:var(--accent);margin:2px 0 14px}
+  .room .val span{font-family:var(--font-sans);font-size:12px;color:var(--muted);font-weight:500}
+  .room .btn{margin-top:auto;width:100%}
+  .photo{aspect-ratio:5/4;border-radius:18px;background:linear-gradient(155deg,#f2e5d9,#cdb097);
+    position:relative;overflow:hidden}
+  .photo .tag{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);
+    padding:6px 11px;border-radius:8px;font-size:11px;font-weight:700;letter-spacing:.08em;
+    text-transform:uppercase;color:#6b3a1d}
+  .benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+  .benefit{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff}
+  .benefit b{display:block;font-size:14px;margin-bottom:2px}
+  .benefit span{font-size:13px;color:var(--muted)}
+  @media (max-width:900px){
+    .book{grid-template-columns:1fr 1fr;margin-top:24px}
+    .rooms{grid-template-columns:1fr}
+    .benefits{grid-template-columns:1fr}
+  }
+  @media (max-width:520px){.book{grid-template-columns:1fr}}
+  .room .ph{aspect-ratio:4/3;overflow:hidden;background:var(--soft)}
+  .estadia{max-width:760px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Hotel","name":"Hotel Serra Azul",
+"description":"Hotel no centro de Jequié com café da manhã regional incluso.",
+"telephone":"+55-73-90000-0000","priceRange":"R$ 260 - R$ 480","starRating":{"@type":"Rating","ratingValue":"4"},
+"address":{"@type":"PostalAddress","streetAddress":"Av. Rio Branco, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45200-000","addressCountry":"BR"},
+"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true},{"@type":"LocationFeatureSpecification","name":"Estacionamento","value":true},{"@type":"LocationFeatureSpecification","name":"Café da manhã","value":true}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Ir para o conteúdo</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="hotel.html">
+      <span class="mark">S</span>
+      <span>Serra Azul<small>Hotel · Jequié</small></span>
+    </a>
+    <input type="checkbox" id="navt" class="nav-toggle">
+    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
+    <nav class="nav">
+      <a href="#acomodacoes">Acomodações</a>
+      <a href="#experiencias">Experiências</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20consultar%20disponibilidade.">Reservar</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Centro de Jequié · Bahia</p>
+          <h1 class="h1">Chegar e<br>se sentir <em>em casa</em></h1>
+          <p class="lead">Quartos confortáveis no coração da cidade, café da manhã regional incluso e uma equipe que atende 24 horas. Para quem vem a trabalho ou de passagem.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20consultar%20disponibilidade.">Consultar disponibilidade</a>
+            <a class="btn btn--ghost btn--lg" href="#acomodacoes">Ver acomodações</a>
+          </div>
+          <div class="hero-note">
+            <span><i class="dot"></i> Café regional incluso</span>
+            <span><i class="dot"></i> Estacionamento</span>
+            <span><i class="dot"></i> Pet friendly</span>
+          </div>
+        </div>
+        <div class="visual">
+          <img src="assets/img/hotel-hero.jpg" alt="Quarto de hotel com parede verde, cama de linho e luz quente" loading="eager" decoding="async">
+          <div class="hero-card"><b>24h</b><span>recepção e atendimento</span></div>
+        </div>
+      </div>
+
+      <div class="book">
+        <div class="field"><label>Check-in</label><span>20 nov 2026</span></div>
+        <div class="field"><label>Check-out</label><span>21 nov 2026</span></div>
+        <div class="field"><label>Hóspedes</label><span>2 adultos</span></div>
+        <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20ver%20disponibilidade%20para%202%20h%C3%B3spedes.">Ver tarifas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="acomodacoes">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Acomodações</p>
+        <h2 class="h2">Escolha o quarto e reserve direto</h2>
+        <p class="lead">Reservando pelo site, você garante a melhor tarifa e o café da manhã já incluso. Sem taxa de plataforma.</p>
+      </div>
+
+      <div class="rooms">
+        <article class="room">
+          <div class="ph"><img src="assets/img/hotel-1.jpg" alt="Quarto standard com cama de casal e luz suave" loading="lazy"></div>
+          <div class="b">
+            <h3>Standard Casal</h3>
+            <p>Ar-condicionado, TV, Wi-Fi e banheiro privativo. Ideal para uma noite de passagem.</p>
+            <div class="from">A partir de</div>
+            <div class="val">R$ 260 <span>/ noite</span></div>
+            <a class="btn btn--ghost" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20quarto%20Standard.">Consultar</a>
+          </div>
+        </article>
+        <article class="room">
+          <div class="ph"><img src="assets/img/hotel-2.jpg" alt="Quarto superior com cama e janela ampla" loading="lazy"></div>
+          <div class="b">
+            <h3>Superior Duplo</h3>
+            <p>Mais espaço, cama queen e vista para a cidade. Boa escolha para quem fica mais de uma noite.</p>
+            <div class="from">A partir de</div>
+            <div class="val">R$ 350 <span>/ noite</span></div>
+            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20quarto%20Superior.">Reservar</a>
+          </div>
+        </article>
+        <article class="room">
+          <div class="ph"><img src="assets/img/hotel-3.jpg" alt="Suite com sala de estar e iluminacao indireta" loading="lazy"></div>
+          <div class="b">
+            <h3>Master</h3>
+            <p>Suíte ampla com hidromassagem, para ocasiões especiais ou estadias mais longas.</p>
+            <div class="from">A partir de</div>
+            <div class="val">R$ 480 <span>/ noite</span></div>
+            <a class="btn btn--ghost" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20a%20su%C3%ADte%20Master.">Consultar</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="experiencias">
+    <div class="wrap">
+      <div class="estadia">
+        <div>
+          <p class="eyebrow">A estadia</p>
+          <h2 class="h2">Pequenos detalhes que fazem diferença</h2>
+          <p class="lead">Café da manhã com bolo de fubá, tapioca e frutas da região. Wi-Fi que funciona no quarto. E uma recepção que resolve, não que transfere.</p>
+          <div class="benefits">
+            <div class="benefit"><b>Café regional</b><span>Servido das 6h às 10h, incluso na diária.</span></div>
+            <div class="benefit"><b>Estacionamento</b><span>Vagas no local, sem cobrança extra.</span></div>
+            <div class="benefit"><b>Pet friendly</b><span>Traga seu animal de pequeno porte.</span></div>
+            <div class="benefit"><b>Localização central</b><span>A poucos minutos do comércio e da rodoviária.</span></div>
+          </div>
+          <div class="hero-actions" style="margin-top:26px">
+            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20estadia.">Falar com a recepção</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="localizacao">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Localização</p>
+        <h2 class="h2">No centro, perto de tudo</h2>
+        <p class="lead">A poucos minutos do comércio, dos consultórios e da rodoviária. Fácil de chegar e fácil de sair.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info"><div class="lbl">Endereço</div><strong>Av. Rio Branco, 000 — Centro<br>Jequié · BA · 45200-000</strong></div>
+        <div class="info"><div class="lbl">Recepção</div><strong>24 horas, todos os dias<br>Check-in a partir das 14h</strong></div>
+        <div class="info"><div class="lbl">Contato</div><strong>(73) 90000-0000<br>reservas@serraazul.com.br</strong></div>
+      </div>
+
+      <div class="grid grid--3" style="margin-top:34px">
+        <div class="quote"><div class="stars">★★★★★</div><p>“Quarto limpo, café excelente e a recepção resolveu tudo na hora. Voltarei.”</p><div class="who"><span class="avatar">R</span> Ricardo M. · Salvador</div></div>
+        <div class="quote"><div class="stars">★★★★★</div><p>“Fiquei a trabalho três noites. Wi-Fi bom, silêncio e localização perfeita.”</p><div class="who"><span class="avatar">L</span> Luciana F. · Vitória da Conquista</div></div>
+        <div class="quote"><div class="stars">★★★★★</div><p>“Reservei direto pelo WhatsApp e saiu mais barato que no app.”</p><div class="who"><span class="avatar">P</span> Paulo A. · Feira de Santana</div></div>
+      </div>
+
+      <div style="margin-top:44px">
+        <div class="cta-band">
+          <div>
+            <h2>Reserve direto e pague menos</h2>
+            <p>Café da manhã incluso, melhor tarifa garantida e cancelamento flexível. Fale com a recepção agora.</p>
+          </div>
+          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20reservar%20direto.">Reservar pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="hotel.html" style="margin-bottom:14px">
+          <span class="mark">S</span>
+          <span>Serra Azul<small>Hotel · Jequié</small></span>
+        </a>
+        <p style="max-width:34ch;font-size:13.5px">Hotel no centro de Jequié, com café da manhã regional incluso.</p>
+      </div>
+      <div>
+        <h3>Hotel</h3>
+        <ul>
+          <li><a href="#acomodacoes">Acomodações</a></li>
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li>(73) 90000-0000</li>
+          <li>Av. Rio Branco, 000 — Centro</li>
+          <li>Recepção 24h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Hotel Serra Azul</span>
+      <span>Jequié · Bahia</span>
+    </div>
+    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
+document.querySelectorAll(".nav a").forEach(function (a) {
+  a.addEventListener("click", function () {
+    var t = document.getElementById("navt");
+    if (t) t.checked = false;
+  });
+});
+</script>
+</body>
+</html>
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
