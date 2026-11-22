@@ -18,7 +18,7 @@ Tudo é HTML, CSS e JavaScript escritos à mão — sem framework, sem build e s
 | 06 | Serra Azul | Hotelaria | Hero imersivo, quartos e reserva com validação de datas | [hotel.html](hotel.html) |
 | 07 | Navalha | Barbearia | Tema escuro, tabela de preços, equipe e agendamento | [barbearia.html](barbearia.html) |
 
-O `index.html` é o portfólio público. Ele não mostra preço, ticket ou condições comerciais.
+O `index.html` é o portfólio público. Ele não mostra preço nem condições comerciais.
 
 ## O que é demonstrativo
 
@@ -165,25 +165,6 @@ a pasta inteira. O `LEIA-ME.txt` dentro da pasta repete essas instruções.
 4. As URLs canônicas e de OG usam a base
    `https://evertonfagundes.github.io/kit-sites-jequie/`. Se o repositório ou o domínio mudar,
    troque essa base em todos os HTML, nas OG e no JSON-LD.
-
-## Notas comerciais (internas, não publicadas)
-
-Levantamento inicial feito para a prospecção em Jequié. As faixas são **estimativas de conversa**,
-não uma tabela pública e não uma promessa de preço. Ajuste por escopo, prazo e pelo que o cliente
-já tem (fotos, textos, domínio).
-
-| Modelo | Empresas mapeadas no levantamento | Faixa de referência |
-|---|---|---|
-| Odontologia | 3 | R$ 1.500–2.500 |
-| Imobiliária | 2 | R$ 2.000–3.500 |
-| Advocacia | 1 | R$ 2.500–3.500 |
-| Clínica médica | 1 | R$ 2.000–3.000 |
-| Contabilidade | 1 | R$ 1.500–2.500 |
-| Hotelaria | 1 | R$ 2.500–4.000 |
-| Barbearia | 1 | R$ 700–1.500 |
-
-O portfólio público não exibe esses números. Ele vende o que é verificável: os sete sites
-navegáveis, o processo, a qualidade técnica e o contato direto.
 
 ## Autoria
 
