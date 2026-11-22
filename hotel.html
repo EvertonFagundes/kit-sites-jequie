@@ -3,209 +3,524 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#9a3412">
-<title>Hotel em Jequié | Hotel Serra Azul</title>
-<meta name="description" content="Hotel no centro de Jequié com café da manhã regional incluso, estacionamento e reserva direta com melhor tarifa.">
-<meta property="og:title" content="Hotel Serra Azul — Jequié, BA">
-<meta property="og:description" content="Hospedagem no centro de Jequié com café regional incluso e reserva direta.">
+<meta name="theme-color" content="#1c2f2b">
+<title>Hotel no centro de Jequié | Serra Azul</title>
+<meta name="description" content="Hotel no centro de Jequié com café da manhã, ar-condicionado e recepção 24 horas. Quartos para casal, casal superior e família. Reserve direto com a recepção.">
+<link rel="canonical" href="https://evertonfagundes.github.io/kit-sites-jequie/hotel.html">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%239a3412'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>S</text></svg>">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Hotel Serra Azul">
+<meta property="og:title" content="Hotel Serra Azul — Centro de Jequié">
+<meta property="og:description" content="Chegar e ficar bem. Quartos com café da manhã no centro de Jequié.">
+<meta property="og:url" content="https://evertonfagundes.github.io/kit-sites-jequie/hotel.html">
+<meta property="og:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/hotel.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quarto do Hotel Serra Azul em Jequié, Bahia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hotel Serra Azul — Centro de Jequié">
+<meta name="twitter:description" content="Chegar e ficar bem. Reserve direto com a recepção.">
+<meta name="twitter:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/hotel.jpg">
+<link rel="icon" href="assets/favicon-hotel.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-hotel.png">
+<link rel="preload" href="assets/fonts/cormorant-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/karla-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/w/hotel-hero-900.webp"
+      imagesrcset="assets/img/w/hotel-hero-480.webp 480w, assets/img/w/hotel-hero-900.webp 900w, assets/img/w/hotel-hero-1400.webp 1400w"
+      imagesizes="100vw">
 <link rel="stylesheet" href="assets/base.css">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-  body{--accent:#9a3412;--accent-soft:#f9ece6;--soft:#faf6f3}
-  .book{
-    background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;
-    display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;margin-top:-34px;position:relative;
-    z-index:5;box-shadow:0 18px 44px rgba(17,24,32,.12);max-width:900px;
+  :root{
+    --bg:#f8f2e7;
+    --bg-2:#f0e7d7;
+    --surface:#fffaf1;
+    --surface-2:#f2eadb;
+    --ink:#211b16;
+    --ink-2:#3a3028;
+    --muted:#6b6055;
+    --line:#e3d7c5;
+    --line-2:#cbbca5;
+    --accent:#2f4f4a;
+    --accent-ink:#26413d;
+    --accent-soft:#e3ebe5;
+    --accent-on:#fffaf1;
+    --brass:#b98a52;
+    --sand:#e8c9a0;
+    --selection:#e8dcc8;
+    --font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+    --font-text:'Karla',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    --footer-bg:#13211f;
   }
-  .field{padding:10px 14px;border:1px solid var(--line);border-radius:10px}
-  .field label{display:block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;
-    color:var(--muted);font-weight:700;margin-bottom:2px}
-  .field span{font-size:14px;font-weight:600}
-  .rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .room{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;
-    display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
-  .room:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(17,24,32,.10)}
-  .room .ph{aspect-ratio:4/3;position:relative}
-  .room .b{padding:18px 20px 22px;display:flex;flex-direction:column;flex:1}
-  .room h3{font-size:16.5px;margin:0 0 4px}
-  .room p{font-size:13.5px;color:var(--muted);margin:0 0 14px}
-  .room .from{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
-  .room .val{font-family:var(--font-display);font-size:23px;color:var(--accent);margin:2px 0 14px}
-  .room .val span{font-family:var(--font-sans);font-size:12px;color:var(--muted);font-weight:500}
-  .room .btn{margin-top:auto;width:100%}
-  .photo{aspect-ratio:5/4;border-radius:18px;background:linear-gradient(155deg,#f2e5d9,#cdb097);
-    position:relative;overflow:hidden}
-  .photo .tag{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);
-    padding:6px 11px;border-radius:8px;font-size:11px;font-weight:700;letter-spacing:.08em;
-    text-transform:uppercase;color:#6b3a1d}
-  .benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
-  .benefit{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:#fff}
-  .benefit b{display:block;font-size:14px;margin-bottom:2px}
-  .benefit span{font-size:13px;color:var(--muted)}
-  @media (max-width:900px){
-    .book{grid-template-columns:1fr 1fr;margin-top:24px}
+  body{font-size:16.5px;line-height:1.62}
+  .site-header{background:rgba(248,242,231,.88)}
+  .site-header.is-scrolled{background:rgba(248,242,231,.97)}
+  .brand-mark{border-radius:50%;font-family:var(--font-display);font-size:20px;background:var(--accent)}
+  .brand-text{font-family:var(--font-display);font-size:21px;font-weight:600}
+  .brand-text small{font-family:var(--font-text);font-size:9px;letter-spacing:.2em}
+  .nav a{font-family:var(--font-text);font-size:13px;letter-spacing:.02em}
+  .btn{border-radius:4px;letter-spacing:.02em}
+
+  .hero{position:relative;overflow:hidden;display:flex;align-items:flex-end;color:#fff;
+    min-height:min(86vh,760px);background:#1a1512;
+    padding:clamp(90px,14vw,160px) 0 clamp(46px,7vw,84px)}
+  .hero-img{position:absolute;inset:0;z-index:0}
+  .hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(12deg,rgba(12,18,16,.9) 0%,rgba(12,18,16,.58) 40%,rgba(12,18,16,.12) 72%),
+               linear-gradient(0deg,rgba(12,18,16,.55),transparent 40%)}
+  .hero .wrap{position:relative;z-index:2}
+  .hero .eyebrow{color:var(--sand);margin-bottom:14px}
+  .hero h1{color:#fff;font-size:clamp(54px,8.4vw,106px);line-height:.9;letter-spacing:-.04em;max-width:12ch}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--sand)}
+  .hero .lead{color:#f0e7d9;max-width:47ch;margin-top:18px;font-size:17px}
+  .hero-actions{margin-top:26px}
+  .hero .btn--primary{background:#f4e8d5;color:#241c15;box-shadow:0 14px 30px -18px rgba(0,0,0,.7)}
+  .hero .btn--primary:hover{background:#fff5e4}
+  .hero .btn--ghost{border-color:rgba(255,255,255,.45);color:#fff;background:transparent}
+  .hero .btn--ghost:hover{border-color:#fff;box-shadow:none}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:30px;padding-top:16px;
+    border-top:1px solid rgba(255,255,255,.22);font-size:10.5px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:#d8c8b3}
+  .hero-meta span{display:inline-flex;align-items:center;gap:7px}
+  .hero-meta i{width:4px;height:4px;border-radius:50%;background:var(--sand);flex:none}
+
+  .rooms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,26px)}
+  .room{background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;
+    transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+  .room:hover{transform:translateY(-3px);box-shadow:var(--shadow-2);border-color:var(--line-2)}
+  .room .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--surface-2)}
+  .room .ph img{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.25,1)}
+  .room:hover .ph img{transform:scale(1.035)}
+  .room .n{position:absolute;left:12px;top:12px;background:rgba(19,33,31,.86);color:#f7eddd;
+    font-family:var(--font-display);font-size:13px;letter-spacing:.08em;padding:4px 9px}
+  .room .body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+  .room h3{font-family:var(--font-display);font-size:27px;font-weight:600;line-height:1.05;
+    letter-spacing:-.015em;margin-bottom:6px}
+  .room p{font-size:13.5px;line-height:1.55;color:var(--muted);margin:0 0 16px}
+  .room .specs{display:flex;flex-wrap:wrap;gap:4px 12px;padding-top:12px;margin-top:auto;
+    border-top:1px solid var(--line);font-size:10px;font-weight:600;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--muted)}
+  .room .go{display:inline-flex;align-items:center;gap:7px;margin-top:16px;
+    font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--accent-ink);
+    text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+  .room .go svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.8;
+    stroke-linecap:round;stroke-linejoin:round}
+  .room .go:hover{color:var(--accent)}
+  .rooms-note{margin-top:22px;font-size:11.5px;line-height:1.6;color:var(--muted);max-width:66ch}
+
+  .house{background:#172a27;color:#f2eadc;padding:clamp(50px,7.4vw,88px) 0}
+  .house .eyebrow{color:var(--sand)}
+  .house .eyebrow::before{background:var(--sand)}
+  .house-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(30px,5vw,66px);align-items:start}
+  .house h2{color:#fff;font-size:clamp(31px,4.2vw,50px);line-height:1.02;max-width:12ch}
+  .house .lead{color:#c8d3ca;max-width:42ch;margin-top:14px;font-size:15.5px}
+  .amen-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.14)}
+  .amen{background:#172a27;padding:clamp(18px,2.6vw,24px)}
+  .amen svg{width:19px;height:19px;stroke:var(--sand);fill:none;stroke-width:1.5;
+    stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+  .amen h3{font-family:var(--font-text);font-size:10.5px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:#fff;margin-bottom:4px}
+  .amen p{font-size:12.8px;line-height:1.55;color:#aebdb4;margin:0}
+
+  .book{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,68px);align-items:start}
+  .book-aside .lead{max-width:42ch}
+  .book-info{display:grid;gap:0;margin-top:24px;border-top:1px solid var(--line)}
+  .book-info .row{display:grid;grid-template-columns:92px 1fr;gap:14px;padding:11px 0;
+    border-bottom:1px solid var(--line);font-size:12.5px;line-height:1.5}
+  .book-info dt{font-size:9.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+    color:var(--muted);padding-top:2px}
+  .book-info dd{margin:0;color:var(--ink-2)}
+  .book-info dd a{text-decoration:underline;text-underline-offset:3px;
+    text-decoration-color:var(--line-2)}
+  .book-info dd a:hover{text-decoration-color:var(--accent)}
+  .book-note{margin-top:16px;font-size:11.5px;line-height:1.6;color:var(--muted);max-width:42ch}
+  .form{border-radius:var(--radius);box-shadow:var(--shadow-2)}
+  .form .field label .req{color:var(--brass)}
+  .form .btn--primary{width:100%}
+  .dates{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .stay-note{font-size:11px;line-height:1.5;color:var(--muted);margin-top:-6px}
+
+  .location{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,5vw,58px);align-items:center}
+  .location .map-card{grid-template-columns:1fr;margin:0}
+  .location .map-art{min-height:280px}
+  .location-copy .lead{max-width:44ch}
+  .location-list{display:grid;gap:10px;margin-top:20px}
+  .location-list li{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.55;
+    color:var(--ink-2)}
+  .location-list .tick{width:18px;height:18px;border-radius:50%;background:var(--accent-soft);
+    color:var(--accent-ink);display:grid;place-items:center;flex:none;margin-top:2px;
+    font-size:9px;font-weight:700}
+  .faq-split{grid-template-columns:.8fr 1.2fr;align-items:start}
+
+  @media (max-width:960px){
+    .hero{min-height:min(78vh,660px)}
+    .rooms{grid-template-columns:1fr 1fr}
+    .room:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
+    .room:last-child .ph{aspect-ratio:auto;height:100%}
+    .house-grid,.book,.location,.faq-split{grid-template-columns:1fr}
+    .house h2{max-width:16ch}
+    .amen-grid{max-width:680px}
+    .book-aside{order:0}
+    .form{max-width:620px}
+    .location .map-card{order:-1}
+    .location .map-art{min-height:220px}
+  }
+  @media (max-width:700px){
+    .hero{min-height:0;padding-top:110px;padding-bottom:40px}
+    .hero h1{font-size:clamp(48px,13vw,64px)}
+    .hero .lead{font-size:15.5px}
+    .hero-actions .btn{width:100%}
+    .hero-meta{font-size:9.5px;gap:6px 16px}
     .rooms{grid-template-columns:1fr}
-    .benefits{grid-template-columns:1fr}
+    .room:last-child{display:flex;grid-column:auto}
+    .room:last-child .ph{aspect-ratio:4/3;height:auto}
+    .amen-grid{grid-template-columns:1fr}
+    .dates{grid-template-columns:1fr}
+    .book-info .row{grid-template-columns:80px 1fr}
+    .location .map-art{min-height:190px}
   }
-  @media (max-width:520px){.book{grid-template-columns:1fr}}
-  .room .ph{aspect-ratio:4/3;overflow:hidden;background:var(--soft)}
-  .estadia{max-width:760px}
 </style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Hotel","name":"Hotel Serra Azul",
-"description":"Hotel no centro de Jequié com café da manhã regional incluso.",
-"telephone":"+55-73-90000-0000","priceRange":"R$ 260 - R$ 480","starRating":{"@type":"Rating","ratingValue":"4"},
-"address":{"@type":"PostalAddress","streetAddress":"Av. Rio Branco, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45200-000","addressCountry":"BR"},
-"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true},{"@type":"LocationFeatureSpecification","name":"Estacionamento","value":true},{"@type":"LocationFeatureSpecification","name":"Café da manhã","value":true}]}
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "@id": "https://evertonfagundes.github.io/kit-sites-jequie/hotel.html#hotel",
+  "name": "Hotel Serra Azul",
+  "url": "https://evertonfagundes.github.io/kit-sites-jequie/hotel.html",
+  "image": "https://evertonfagundes.github.io/kit-sites-jequie/assets/og/hotel.jpg",
+  "description": "Hotel no centro de Jequié com café da manhã, ar-condicionado, Wi-Fi e recepção 24 horas.",
+  "telephone": "+55-73-98865-9878",
+  "email": "reservas@serraazuljequie.com.br",
+  "priceRange": "Sob consulta",
+  "currenciesAccepted": "BRL",
+  "paymentAccepted": "Dinheiro, Pix, Cartão de crédito, Cartão de débito",
+  "checkinTime": "14:00",
+  "checkoutTime": "12:00",
+  "petsAllowed": false,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Frederico Costa, 000, Centro",
+    "addressLocality": "Jequié",
+    "addressRegion": "BA",
+    "postalCode": "45200-000",
+    "addressCountry": "BR"
+  },
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=R.+Frederico+Costa,+Centro,+Jequi%C3%A9+-+BA",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Café da manhã", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Estacionamento", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Ar-condicionado", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Recepção 24 horas", "value": true}
+  ]
+}
 </script>
 </head>
 <body>
+
+<div class="demo-band"><span><i aria-hidden="true"></i> Modelo demonstrativo · dados fictícios</span></div>
 <a class="skip" href="#main">Ir para o conteúdo</a>
 
-<header class="site-header">
-  <div class="wrap">
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
     <a class="brand" href="hotel.html">
-      <span class="mark">S</span>
-      <span>Serra Azul<small>Hotel · Jequié</small></span>
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span class="brand-text">Serra Azul<small>Hotel · Jequié</small></span>
     </a>
-    <input type="checkbox" id="navt" class="nav-toggle">
-    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
-    <nav class="nav">
-      <a href="#acomodacoes">Acomodações</a>
-      <a href="#experiencias">Experiências</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+            aria-label="Abrir menu" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Menu principal" data-nav>
+      <a href="#quartos">Quartos</a>
+      <a href="#hotel">O hotel</a>
+      <a href="#reserva">Reserva</a>
       <a href="#localizacao">Localização</a>
-      <a href="#contato">Contato</a>
+      <a href="#duvidas">Dúvidas</a>
     </nav>
-    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20consultar%20disponibilidade.">Reservar</a>
+    <a class="btn btn--primary btn--sm header-cta" href="#reserva">Reservar</a>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-img">
+      <img src="assets/img/w/hotel-hero-900.webp"
+           srcset="assets/img/w/hotel-hero-480.webp 480w, assets/img/w/hotel-hero-900.webp 900w, assets/img/w/hotel-hero-1400.webp 1400w"
+           sizes="100vw" width="1400" height="1050" fetchpriority="high" decoding="async"
+           alt="Quarto com parede verde, cama de casal e abajures acesos">
+    </div>
     <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Centro de Jequié · Bahia</p>
-          <h1 class="h1">Chegar e<br>se sentir <em>em casa</em></h1>
-          <p class="lead">Quartos confortáveis no coração da cidade, café da manhã regional incluso e uma equipe que atende 24 horas. Para quem vem a trabalho ou de passagem.</p>
-          <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20consultar%20disponibilidade.">Consultar disponibilidade</a>
-            <a class="btn btn--ghost btn--lg" href="#acomodacoes">Ver acomodações</a>
-          </div>
-          <div class="hero-note">
-            <span><i class="dot"></i> Café regional incluso</span>
-            <span><i class="dot"></i> Estacionamento</span>
-            <span><i class="dot"></i> Pet friendly</span>
-          </div>
-        </div>
-        <div class="visual">
-          <img src="assets/img/hotel-hero.jpg" alt="Quarto de hotel com parede verde, cama de linho e luz quente" loading="eager" decoding="async">
-          <div class="hero-card"><b>24h</b><span>recepção e atendimento</span></div>
-        </div>
+      <p class="eyebrow reveal">Hotel · Centro de Jequié</p>
+      <h1 id="hero-title" class="reveal">Chegar e ficar <em>bem</em>.</h1>
+      <p class="lead reveal">Um hotel de cidade para quem chega a trabalho ou de passagem. Quartos com ar-condicionado, café da manhã e recepção 24 horas, no centro de Jequié.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn--primary btn--lg" href="#reserva">Reservar</a>
+        <a class="btn btn--ghost btn--lg" href="#quartos">Ver os quartos</a>
+      </div>
+      <div class="hero-meta reveal">
+        <span><i aria-hidden="true"></i> Centro de Jequié</span>
+        <span><i aria-hidden="true"></i> Reserva direta</span>
+        <span><i aria-hidden="true"></i> Recepção 24h</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="quartos" aria-labelledby="rooms-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Quartos</p>
+        <h2 class="h2" id="rooms-title">Três jeitos de dormir bem</h2>
+        <p class="lead">Todos os quartos têm banheiro privativo, ar-condicionado, TV e Wi-Fi. A diferença está no espaço e na acomodação.</p>
       </div>
 
+      <div class="rooms reveal reveal--d1">
+        <article class="room">
+          <div class="ph">
+            <span class="n">01</span>
+            <img src="assets/img/w/hotel-1-900.webp"
+                 srcset="assets/img/w/hotel-1-480.webp 480w, assets/img/w/hotel-1-900.webp 900w"
+                 sizes="(max-width: 960px) 46vw, 360px" width="900" height="675" loading="lazy" decoding="async"
+                 alt="Quarto com cama de casal, parede verde e cortinas cinza">
+          </div>
+          <div class="body">
+            <h3>Quarto Casal</h3>
+            <p>Cama de casal, criado-mudo e cortina blackout. Para duas pessoas, com espaço para bagagem.</p>
+            <div class="specs"><span>2 pessoas</span><span>Cama de casal</span><span>Banheiro privativo</span></div>
+            <a class="go" href="#reserva" data-pick-room="Quarto Casal">Reservar este quarto
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="room">
+          <div class="ph">
+            <span class="n">02</span>
+            <img src="assets/img/w/hotel-2-900.webp"
+                 srcset="assets/img/w/hotel-2-480.webp 480w, assets/img/w/hotel-2-900.webp 900w"
+                 sizes="(max-width: 960px) 46vw, 360px" width="900" height="675" loading="lazy" decoding="async"
+                 alt="Quarto com cama de casal, janela ampla e poltrona">
+          </div>
+          <div class="body">
+            <h3>Quarto Superior</h3>
+            <p>Mais espaço, janela ampla e poltrona de leitura. Boa escolha para quem vai ficar mais de uma noite.</p>
+            <div class="specs"><span>2 pessoas</span><span>Cama de casal</span><span>Janela ampla</span></div>
+            <a class="go" href="#reserva" data-pick-room="Quarto Superior">Reservar este quarto
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="room">
+          <div class="ph">
+            <span class="n">03</span>
+            <img src="assets/img/w/hotel-3-900.webp"
+                 srcset="assets/img/w/hotel-3-480.webp 480w, assets/img/w/hotel-3-900.webp 900w"
+                 sizes="(max-width: 960px) 92vw, 360px" width="900" height="675" loading="lazy" decoding="async"
+                 alt="Sala de estar com sofá cinza, mesa de centro e televisão">
+          </div>
+          <div class="body">
+            <h3>Suíte Família</h3>
+            <p>Sala separada do quarto, com sofá-cama. Atende até quatro pessoas, entre adultos e crianças.</p>
+            <div class="specs"><span>Até 4 pessoas</span><span>Sala separada</span><span>Sofá-cama</span></div>
+            <a class="go" href="#reserva" data-pick-room="Suíte Família">Reservar este quarto
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <p class="rooms-note reveal">As tarifas variam conforme a data e o número de hóspedes. A recepção informa o valor e a disponibilidade antes de confirmar a reserva.</p>
+    </div>
+  </section>
+
+  <section class="house" id="hotel" aria-labelledby="house-title">
+    <div class="wrap">
+      <div class="house-grid">
+        <div class="reveal">
+          <p class="eyebrow">O hotel</p>
+          <h2 id="house-title">O necessário, bem feito.</h2>
+          <p class="lead">Sem lobby enorme nem serviço que ninguém usa. O Serra Azul é um hotel de cidade: cama boa, banho quente, café da manhã e alguém na recepção a qualquer hora.</p>
+        </div>
+        <div class="amen-grid reveal reveal--d1">
+          <article class="amen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h12v5a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8ZM16 9h2a2 2 0 0 1 0 4h-2M6 3v2M10 3v2M14 3v2"/></svg>
+            <h3>Café da manhã</h3>
+            <p>Incluso na diária, servido na recepção.</p>
+          </article>
+          <article class="amen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9a15 15 0 0 1 18 0M6 13a10 10 0 0 1 12 0M9 17a5 5 0 0 1 6 0"/><circle cx="12" cy="20" r="1"/></svg>
+            <h3>Wi-Fi</h3>
+            <p>Nos quartos e nas áreas comuns.</p>
+          </article>
+          <article class="amen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16h16M6 16V9l2-4h8l2 4v7M8 16v3M16 16v3"/><circle cx="7.5" cy="12.5" r="1"/><circle cx="16.5" cy="12.5" r="1"/></svg>
+            <h3>Estacionamento</h3>
+            <p>Vagas no local, sujeitas a disponibilidade.</p>
+          </article>
+          <article class="amen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 8h14M5 8l-2 5a3 3 0 0 0 6 0L5 8ZM19 8l-2 5a3 3 0 0 0 6 0l-2-5ZM7 21h10"/></svg>
+            <h3>Ar-condicionado</h3>
+            <p>Em todos os quartos, com controle individual.</p>
+          </article>
+          <article class="amen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Recepção 24h</h3>
+            <p>Chegada fora do horário, avise na reserva.</p>
+          </article>
+          <article class="amen">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <h3>Centro</h3>
+            <p>Perto do comércio da Av. Rio Branco.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reserva" aria-labelledby="book-title">
+    <div class="wrap">
       <div class="book">
-        <div class="field"><label>Check-in</label><span>20 nov 2026</span></div>
-        <div class="field"><label>Check-out</label><span>21 nov 2026</span></div>
-        <div class="field"><label>Hóspedes</label><span>2 adultos</span></div>
-        <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20ver%20disponibilidade%20para%202%20h%C3%B3spedes.">Ver tarifas</a>
+        <div class="book-aside reveal">
+          <p class="eyebrow">Reserva</p>
+          <h2 class="h2" id="book-title">Reserve com a recepção</h2>
+          <p class="lead">Informe as datas e o quarto. A recepção responde com disponibilidade e tarifa; a reserva só é confirmada depois dessa resposta.</p>
+          <dl class="book-info">
+            <div class="row"><dt>Telefone</dt><dd><a href="tel:+5573988659878" data-tel data-phone-text>(73) 98865-9878</a></dd></div>
+            <div class="row"><dt>E-mail</dt><dd><a href="mailto:reservas@serraazuljequie.com.br">reservas@serraazuljequie.com.br</a></dd></div>
+            <div class="row"><dt>Entrada</dt><dd>A partir das 14h</dd></div>
+            <div class="row"><dt>Saída</dt><dd>Até as 12h</dd></div>
+            <div class="row"><dt>Pagamento</dt><dd>Dinheiro, Pix e cartão</dd></div>
+          </dl>
+          <p class="book-note">A política de cancelamento e a chegada fora do horário são confirmadas pela recepção no momento da reserva.</p>
+        </div>
+
+        <form class="form reveal reveal--d1" id="reserva-form"
+              data-wa-form="Olá! Vim pelo site do Hotel Serra Azul e quero reservar um quarto."
+              action="https://wa.me/5573988659878" method="get" target="_blank" novalidate>
+          <div class="field">
+            <label for="nome">Seu nome <span class="req" aria-hidden="true">*</span></label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required minlength="2"
+                   placeholder="Como podemos chamar você?">
+            <span class="error" role="alert"></span>
+          </div>
+          <div class="dates">
+            <div class="field">
+              <label for="checkin">Entrada <span class="req" aria-hidden="true">*</span></label>
+              <input id="checkin" name="entrada" type="date" required>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="checkout">Saída <span class="req" aria-hidden="true">*</span></label>
+              <input id="checkout" name="saida" type="date" required>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+          <p class="stay-note">A saída precisa ser pelo menos um dia depois da entrada.</p>
+          <div class="form-row">
+            <div class="field">
+              <label for="hospedes">Hóspedes <span class="req" aria-hidden="true">*</span></label>
+              <select id="hospedes" name="hospedes" required>
+                <option value="">Escolha</option>
+                <option>1 pessoa</option>
+                <option>2 pessoas</option>
+                <option>3 pessoas</option>
+                <option>4 pessoas</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="quarto">Quarto <span class="req" aria-hidden="true">*</span></label>
+              <select id="quarto" name="quarto" required>
+                <option value="">Escolha</option>
+                <option>Quarto Casal</option>
+                <option>Quarto Superior</option>
+                <option>Suíte Família</option>
+                <option>Não sei — me ajudem a escolher</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="obs">Observação <span class="note">(opcional)</span></label>
+            <textarea id="obs" name="observacao" rows="3" data-label="Observação"
+                      placeholder="Ex.: chego depois das 22h e preciso de estacionamento."></textarea>
+          </div>
+          <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--primary btn--lg btn--block" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.8L3 21l1.8-5A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+            Enviar pedido de reserva
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-foot">O envio abre o WhatsApp com os dados. A reserva só existe depois da confirmação da recepção. Nada é armazenado neste site.</p>
+          <noscript><p class="form-foot">O formulário precisa de JavaScript. Se preferir, ligue: <a href="tel:+5573988659878">(73) 98865-9878</a>.</p></noscript>
+        </form>
       </div>
     </div>
   </section>
 
-  <section class="section" id="acomodacoes">
+  <section class="section section--alt" id="localizacao" aria-labelledby="loc-title">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Acomodações</p>
-        <h2 class="h2">Escolha o quarto e reserve direto</h2>
-        <p class="lead">Reservando pelo site, você garante a melhor tarifa e o café da manhã já incluso. Sem taxa de plataforma.</p>
-      </div>
-
-      <div class="rooms">
-        <article class="room">
-          <div class="ph"><img src="assets/img/hotel-1.jpg" alt="Quarto standard com cama de casal e luz suave" loading="lazy"></div>
-          <div class="b">
-            <h3>Standard Casal</h3>
-            <p>Ar-condicionado, TV, Wi-Fi e banheiro privativo. Ideal para uma noite de passagem.</p>
-            <div class="from">A partir de</div>
-            <div class="val">R$ 260 <span>/ noite</span></div>
-            <a class="btn btn--ghost" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20quarto%20Standard.">Consultar</a>
-          </div>
-        </article>
-        <article class="room">
-          <div class="ph"><img src="assets/img/hotel-2.jpg" alt="Quarto superior com cama e janela ampla" loading="lazy"></div>
-          <div class="b">
-            <h3>Superior Duplo</h3>
-            <p>Mais espaço, cama queen e vista para a cidade. Boa escolha para quem fica mais de uma noite.</p>
-            <div class="from">A partir de</div>
-            <div class="val">R$ 350 <span>/ noite</span></div>
-            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20quarto%20Superior.">Reservar</a>
-          </div>
-        </article>
-        <article class="room">
-          <div class="ph"><img src="assets/img/hotel-3.jpg" alt="Suite com sala de estar e iluminacao indireta" loading="lazy"></div>
-          <div class="b">
-            <h3>Master</h3>
-            <p>Suíte ampla com hidromassagem, para ocasiões especiais ou estadias mais longas.</p>
-            <div class="from">A partir de</div>
-            <div class="val">R$ 480 <span>/ noite</span></div>
-            <a class="btn btn--ghost" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20a%20su%C3%ADte%20Master.">Consultar</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt" id="experiencias">
-    <div class="wrap">
-      <div class="estadia">
-        <div>
-          <p class="eyebrow">A estadia</p>
-          <h2 class="h2">Pequenos detalhes que fazem diferença</h2>
-          <p class="lead">Café da manhã com bolo de fubá, tapioca e frutas da região. Wi-Fi que funciona no quarto. E uma recepção que resolve, não que transfere.</p>
-          <div class="benefits">
-            <div class="benefit"><b>Café regional</b><span>Servido das 6h às 10h, incluso na diária.</span></div>
-            <div class="benefit"><b>Estacionamento</b><span>Vagas no local, sem cobrança extra.</span></div>
-            <div class="benefit"><b>Pet friendly</b><span>Traga seu animal de pequeno porte.</span></div>
-            <div class="benefit"><b>Localização central</b><span>A poucos minutos do comércio e da rodoviária.</span></div>
-          </div>
-          <div class="hero-actions" style="margin-top:26px">
-            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20estadia.">Falar com a recepção</a>
+      <div class="location">
+        <div class="location-copy reveal">
+          <p class="eyebrow">Localização</p>
+          <h2 class="h2" id="loc-title">No centro, perto do que importa</h2>
+          <p class="lead">A poucos minutos do comércio da Av. Rio Branco, dos bancos e do terminal. Para quem chega pela BR-116, a recepção orienta o trajeto.</p>
+          <ul class="location-list">
+            <li><span class="tick" aria-hidden="true">✓</span> Restaurantes e farmácias a pé</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Estacionamento no local, sujeito a vagas</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Recepção 24 horas para chegadas noturnas</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&amp;query=R.+Frederico+Costa,+Centro,+Jequi%C3%A9+-+BA"
+               target="_blank" rel="noopener">Abrir no Google Maps</a>
           </div>
         </div>
-        
+        <div class="map-card reveal reveal--d1">
+          <div class="map-art" aria-hidden="true"><span class="map-pin"></span></div>
+          <div class="map-copy">
+            <span class="lbl">Endereço</span>
+            <address>R. Frederico Costa, 000 — Centro<br>Jequié · Bahia · 45200-000</address>
+            <p class="note">A recepção fica no térreo, com entrada pela rua.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="localizacao">
+  <section class="section" id="duvidas" aria-labelledby="faq-title">
     <div class="wrap">
-      <div class="section-head center">
-        <p class="eyebrow">Localização</p>
-        <h2 class="h2">No centro, perto de tudo</h2>
-        <p class="lead">A poucos minutos do comércio, dos consultórios e da rodoviária. Fácil de chegar e fácil de sair.</p>
-      </div>
-      <div class="info-grid">
-        <div class="info"><div class="lbl">Endereço</div><strong>Av. Rio Branco, 000 — Centro<br>Jequié · BA · 45200-000</strong></div>
-        <div class="info"><div class="lbl">Recepção</div><strong>24 horas, todos os dias<br>Check-in a partir das 14h</strong></div>
-        <div class="info"><div class="lbl">Contato</div><strong>(73) 90000-0000<br>reservas@serraazul.com.br</strong></div>
-      </div>
-
-      <div class="grid grid--3" style="margin-top:34px">
-        <div class="quote"><div class="stars">★★★★★</div><p>“Quarto limpo, café excelente e a recepção resolveu tudo na hora. Voltarei.”</p><div class="who"><span class="avatar">R</span> Ricardo M. · Salvador</div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>“Fiquei a trabalho três noites. Wi-Fi bom, silêncio e localização perfeita.”</p><div class="who"><span class="avatar">L</span> Luciana F. · Vitória da Conquista</div></div>
-        <div class="quote"><div class="stars">★★★★★</div><p>“Reservei direto pelo WhatsApp e saiu mais barato que no app.”</p><div class="who"><span class="avatar">P</span> Paulo A. · Feira de Santana</div></div>
-      </div>
-
-      <div style="margin-top:44px">
-        <div class="cta-band">
-          <div>
-            <h2>Reserve direto e pague menos</h2>
-            <p>Café da manhã incluso, melhor tarifa garantida e cancelamento flexível. Fale com a recepção agora.</p>
-          </div>
-          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20reservar%20direto.">Reservar pelo WhatsApp</a>
+      <div class="split faq-split">
+        <div>
+          <p class="eyebrow reveal">Dúvidas</p>
+          <h2 class="h2 reveal" id="faq-title">Antes de reservar</h2>
+          <p class="lead reveal mt-4">Se a sua pergunta não estiver aqui, chame a recepção no WhatsApp. O atendimento é 24 horas.</p>
+        </div>
+        <div class="faq reveal reveal--d1">
+          <details>
+            <summary>A reserva é confirmada na hora?</summary>
+            <p>Não. O formulário abre o WhatsApp com os seus dados; a recepção responde com disponibilidade e tarifa. O quarto fica reservado somente depois dessa confirmação.</p>
+          </details>
+          <details>
+            <summary>O café da manhã está incluso?</summary>
+            <p>Sim, em todas as diárias. É servido das 7h às 9h30. Se você precisar sair antes, avise na véspera para a recepção separar algo para levar.</p>
+          </details>
+          <details>
+            <summary>Posso chegar antes das 14h?</summary>
+            <p>Se o quarto já estiver pronto, sim. Caso contrário, a recepção guarda a bagagem para você resolver o que precisa até a entrada.</p>
+          </details>
+          <details>
+            <summary>Vocês aceitam animais de estimação?</summary>
+            <p>Não recebemos animais de estimação. Cães-guia são sempre bem-vindos.</p>
+          </details>
+          <details>
+            <summary>Como faço para chegar de carro?</summary>
+            <p>O hotel fica no Centro. A recepção orienta o caminho e informa as vagas disponíveis; não é possível reservar vaga com antecedência.</p>
+          </details>
         </div>
       </div>
     </div>
@@ -215,54 +530,89 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="hotel.html" style="margin-bottom:14px">
-          <span class="mark">S</span>
-          <span>Serra Azul<small>Hotel · Jequié</small></span>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="hotel.html">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-text">Serra Azul<small>Hotel · Jequié</small></span>
         </a>
-        <p style="max-width:34ch;font-size:13.5px">Hotel no centro de Jequié, com café da manhã regional incluso.</p>
+        <p>Hotel de cidade no centro de Jequié. Quartos com ar-condicionado, café da manhã e recepção 24 horas.</p>
       </div>
       <div>
-        <h3>Hotel</h3>
-        <ul>
-          <li><a href="#acomodacoes">Acomodações</a></li>
-          <li><a href="#experiencias">Experiências</a></li>
+        <h3 class="footer-title">Navegação</h3>
+        <ul class="footer-links">
+          <li><a href="#quartos">Quartos</a></li>
+          <li><a href="#hotel">O hotel</a></li>
+          <li><a href="#reserva">Reserva</a></li>
           <li><a href="#localizacao">Localização</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contato</h3>
-        <ul>
-          <li>(73) 90000-0000</li>
-          <li>Av. Rio Branco, 000 — Centro</li>
-          <li>Recepção 24h</li>
+        <h3 class="footer-title">Contato</h3>
+        <ul class="footer-links">
+          <li>R. Frederico Costa, 000</li>
+          <li>Centro · Jequié · BA</li>
+          <li>Recepção 24 horas</li>
+          <li><a href="mailto:reservas@serraazuljequie.com.br">reservas@serraazuljequie.com.br</a></li>
         </ul>
       </div>
     </div>
-    <div class="bottom">
-      <span>© 2026 Hotel Serra Azul</span>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Hotel Serra Azul</span>
       <span>Jequié · Bahia</span>
     </div>
-    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+    <p class="demo-note"><strong>Modelo demonstrativo.</strong> Nome, endereço, e-mail, tarifas e informações de serviço são fictícios e servem apenas para apresentação comercial. Fotografias ilustrativas de banco de imagens — no site final entram fotos reais do hotel. O WhatsApp deste link é do desenvolvedor do modelo. A publicação por um cliente exige conferir todos os dados e as condições de hospedagem.</p>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
-  WhatsApp
+<a class="wa" href="#reserva" data-wa="Olá! Vim pelo site do Hotel Serra Azul e quero consultar disponibilidade."
+   aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
 </a>
 
+<script src="assets/site.js" defer></script>
 <script>
-/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
-document.querySelectorAll(".nav a").forEach(function (a) {
-  a.addEventListener("click", function () {
-    var t = document.getElementById("navt");
-    if (t) t.checked = false;
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('reserva-form');
+    if (!form) return;
+    var checkin = form.querySelector('#checkin');
+    var checkout = form.querySelector('#checkout');
+    var room = form.querySelector('#quarto');
+    var status = form.querySelector('.form-status');
+
+    function iso(d) {
+      return new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    }
+    function syncDates() {
+      if (!checkin.value) return;
+      var d = new Date(checkin.value + 'T12:00:00');
+      d.setDate(d.getDate() + 1);
+      checkout.min = iso(d);
+      if (checkout.value && checkout.value < checkout.min) checkout.value = '';
+    }
+    checkin.addEventListener('change', syncDates);
+    syncDates();
+
+    document.querySelectorAll('[data-pick-room]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        room.value = link.getAttribute('data-pick-room');
+      });
+    });
+
+    form.addEventListener('submit', function (e) {
+      if (checkin.value && checkout.value && checkout.value <= checkin.value) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        checkout.closest('.field').classList.add('is-invalid');
+        var err = checkout.closest('.field').querySelector('.error');
+        if (err) err.textContent = 'Escolha uma data depois da entrada.';
+        status.className = 'form-status is-visible is-error';
+        status.textContent = 'A saída precisa ser depois da entrada.';
+        checkout.focus();
+      }
+    }, true);
   });
-});
 </script>
 </body>
 </html>
-
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}

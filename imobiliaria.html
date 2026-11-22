@@ -3,221 +3,503 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#2f5d4a">
+<meta name="theme-color" content="#17352c">
 <title>Imóveis em Jequié | Horizonte Imóveis</title>
-<meta name="description" content="Casas, apartamentos, terrenos e imóveis comerciais em Jequié e região. Compra, venda e locação com corretor credenciado.">
-<meta property="og:title" content="Horizonte Imóveis — Jequié e região">
-<meta property="og:description" content="Encontre seu imóvel em Jequié. Compra, venda e locação.">
+<meta name="description" content="Casas, apartamentos, terrenos e salas comerciais em Jequié. Filtre por tipo, bairro e finalidade e fale direto com o corretor pelo WhatsApp.">
+<link rel="canonical" href="https://evertonfagundes.github.io/kit-sites-jequie/imobiliaria.html">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232f5d4a'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>H</text></svg>">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Horizonte Imóveis">
+<meta property="og:title" content="Horizonte Imóveis — Jequié e região">
+<meta property="og:description" content="Casas, apartamentos e pontos comerciais com visita acompanhada e documentação conferida.">
+<meta property="og:url" content="https://evertonfagundes.github.io/kit-sites-jequie/imobiliaria.html">
+<meta property="og:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/imobiliaria.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Casa em condomínio em Jequié — Horizonte Imóveis">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Horizonte Imóveis — Jequié e região">
+<meta name="twitter:description" content="Casas, apartamentos e pontos comerciais em Jequié.">
+<meta name="twitter:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/imobiliaria.jpg">
+<link rel="icon" href="assets/favicon-imobiliaria.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-imobiliaria.png">
+<link rel="preload" href="assets/fonts/bricolage-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/w/imob-hero-900.webp"
+      imagesrcset="assets/img/w/imob-hero-480.webp 480w, assets/img/w/imob-hero-900.webp 900w, assets/img/w/imob-hero-1400.webp 1400w"
+      imagesizes="100vw">
 <link rel="stylesheet" href="assets/base.css">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-  body{--accent:#2f5d4a;--accent-soft:#e8f1ec;--soft:#f4f7f5}
+  :root{
+    --bg:#f7f4ee;
+    --bg-2:#efeae1;
+    --surface:#fffdf9;
+    --surface-2:#f2ede4;
+    --ink:#14231d;
+    --ink-2:#2c3d36;
+    --muted:#5e6b64;
+    --line:#e2dcd1;
+    --line-2:#cbc3b5;
+    --accent:#1f4d3d;
+    --accent-ink:#173d30;
+    --accent-soft:#e3ece6;
+    --accent-on:#fdfcf8;
+    --selection:#d8e5dd;
+    --font-display:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;
+    --font-text:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    --footer-bg:#12251e;
+  }
+  .site-header{background:rgba(247,244,238,.82)}
+  .site-header.is-scrolled{background:rgba(247,244,238,.95)}
+
+  .hero{
+    position:relative;min-height:min(76vh,620px);display:flex;align-items:flex-end;
+    padding:clamp(90px,14vw,150px) 0 clamp(80px,10vw,110px);color:#fff;overflow:hidden;
+    background:#14231d;
+  }
+  .hero-photo{position:absolute;inset:0;z-index:0}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 55%}
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(78deg,rgba(9,20,15,.82) 0%,rgba(9,20,15,.52) 46%,rgba(9,20,15,.14) 78%),
+               linear-gradient(0deg,rgba(9,20,15,.55),transparent 45%)}
+  .hero .wrap{position:relative;z-index:2}
+  .hero .eyebrow{color:#dfe9e2}
+  .hero h1{font-size:clamp(38px,5.4vw,68px);max-width:13ch;color:#fff}
+  .hero h1 em{font-style:normal;color:#e4cba0}
+  .hero .lead{color:#e6ebe6;max-width:48ch;margin-top:16px}
+  .hero-actions{margin-top:26px}
+  .hero .btn--ghost{border-color:rgba(255,255,255,.5);color:#fff;background:transparent}
+  .hero .btn--ghost:hover{border-color:#fff;box-shadow:none}
+  .hero-proof{color:#c9d4cd}
+  .hero-proof svg{stroke:#e4cba0}
+
+  .search-section{position:relative;z-index:6;margin-top:-44px;padding-bottom:8px}
   .search{
-    background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;
-    display:grid;grid-template-columns:1.1fr 1fr 1fr auto;gap:10px;margin-top:-34px;
-    position:relative;z-index:5;box-shadow:0 18px 44px rgba(17,24,32,.10);max-width:920px;
+    background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:14px;display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px;
+    box-shadow:0 26px 50px -30px rgba(12,22,20,.4);
   }
-  .field{padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:#fff}
-  .field label{display:block;font-size:10px;letter-spacing:.13em;text-transform:uppercase;
-    color:var(--muted);font-weight:700;margin-bottom:2px}
-  .field span{font-size:14px;font-weight:600}
-  .search .btn{align-self:stretch}
-  .props{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .prop{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;
-    transition:transform .18s,box-shadow .18s}
-  .prop:hover{transform:translateY(-3px);box-shadow:0 20px 44px rgba(17,24,32,.10)}
-  .prop .b{padding:18px 20px 22px}
-  .ptype{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);
-    font-weight:700;margin-bottom:6px}
-  .prop h3{font-size:16px;margin:0 0 10px;line-height:1.35}
-  .specs{display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--muted);margin-bottom:12px}
-  .price{font-family:var(--font-display);font-size:22px;color:var(--accent)}
-  .chips{display:flex;gap:9px;flex-wrap:wrap}
-  .chips span{border:1px solid var(--line);background:#fff;border-radius:999px;
-    padding:7px 14px;font-size:13px;color:var(--muted)}
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
-  .strip{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
-  .strip b{display:block;font-family:var(--font-display);font-size:30px;color:var(--accent);line-height:1}
-  .strip span{font-size:12.5px;color:var(--muted);display:block;margin-top:6px}
-  @media (max-width:900px){
-    .search{grid-template-columns:1fr 1fr;margin-top:24px}
+  .search .field{gap:2px;padding:7px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+  .search .field label{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase}
+  .search select{border:0;min-height:28px;padding:0 24px 0 0;font-size:14px;font-weight:600;
+    background-color:transparent;background-position:right 2px center}
+  .search select:focus{box-shadow:none}
+  .search .btn{align-self:stretch;min-height:52px}
+
+  .props-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    margin-bottom:26px}
+  .props-head .section-head{margin-bottom:0}
+  .filter-count{font-size:12.5px;color:var(--muted);margin:0}
+  .filter-count b{color:var(--ink);font-weight:600}
+  .clear{font-size:12px;color:var(--muted);text-decoration:underline;text-underline-offset:3px;
+    background:none;padding:4px 0}
+  .clear:hover{color:var(--ink)}
+  .props{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .prop{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;display:flex;flex-direction:column;
+    transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+  .prop:hover{transform:translateY(-3px);box-shadow:var(--shadow-2);border-color:var(--line-2)}
+  .prop .ph{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--surface-2)}
+  .prop .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.25,1)}
+  .prop:hover .ph img{transform:scale(1.03)}
+  .tag-prop{position:absolute;left:12px;top:12px;background:rgba(20,35,29,.9);color:#fff;
+    font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    padding:5px 9px;border-radius:5px}
+  .tag-prop--rent{background:#e4cba0;color:#2b2112}
+  .prop .b{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+  .prop .where{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-ink);margin-bottom:6px}
+  .prop h3{font-family:var(--font-text);font-size:17px;font-weight:600;letter-spacing:-.01em;
+    line-height:1.35;margin-bottom:10px}
+  .specs{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--muted);
+    margin-bottom:16px}
+  .specs span{display:inline-flex;align-items:center;gap:5px}
+  .specs b{font-weight:600;color:var(--ink-2)}
+  .prop .foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;
+    border-top:1px solid var(--line);padding-top:14px}
+  .price{font-family:var(--font-display);font-size:23px;font-weight:600;letter-spacing:-.02em;line-height:1}
+  .price small{font-family:var(--font-text);font-size:11px;font-weight:400;color:var(--muted);letter-spacing:0}
+  .interest{font-size:12.5px;font-weight:600;color:var(--accent-ink);display:inline-flex;align-items:center;gap:5px;
+    white-space:nowrap}
+  .interest svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.8}
+  .interest:hover{text-decoration:underline;text-underline-offset:3px}
+  .prop--cta{background:var(--accent);border-color:transparent;color:#fff;padding:clamp(26px,4vw,38px);
+    justify-content:space-between;min-height:280px}
+  .prop--cta .k{font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:#cfe0d6;margin-bottom:12px}
+  .prop--cta h3{font-family:var(--font-display);font-size:clamp(24px,3vw,31px);font-weight:600;
+    letter-spacing:-.02em;line-height:1.1;margin-bottom:10px}
+  .prop--cta p{font-size:13.5px;color:#d7e3dc;max-width:34ch}
+  .prop--cta .btn{align-self:flex-start;background:var(--surface);color:var(--accent-ink);margin-top:18px}
+  .empty{border:1px dashed var(--line-2);border-radius:var(--radius);padding:44px 24px;text-align:center}
+  .empty p{color:var(--muted);margin-bottom:16px}
+
+  .owner-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(28px,5vw,58px);align-items:center}
+  .owner-media{border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow-3)}
+  .owner-media img{width:100%;height:100%;object-fit:cover}
+  .owner-list{display:grid;gap:0;border-top:1px solid var(--line);margin-top:22px}
+  .owner-list li{display:grid;grid-template-columns:30px 1fr;gap:10px;padding:15px 0;border-bottom:1px solid var(--line)}
+  .owner-list .n{font-family:var(--font-display);font-size:12px;color:var(--accent-ink);padding-top:2px}
+  .owner-list strong{display:block;font-size:14.5px;font-weight:600}
+  .owner-list span{font-size:13px;color:var(--muted);line-height:1.5}
+
+  .hoods{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .hood{border:1px solid var(--line-2);border-radius:999px;padding:7px 13px;font-size:12.5px;
+    color:var(--ink-2);background:transparent}
+  .hood:hover{border-color:var(--accent);color:var(--accent-ink)}
+
+  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:26px}
+  .contact-card{border-top:1px solid var(--line);padding-top:16px}
+  .contact-card .lbl{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:6px}
+  .contact-card strong{display:block;font-size:14.5px;line-height:1.5}
+  .contact-card a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line-2)}
+  .contact-card a:hover{text-decoration-color:var(--accent)}
+
+  @media (max-width:960px){
+    .search{grid-template-columns:1fr 1fr}
+    .search .btn{grid-column:1/-1}
     .props{grid-template-columns:1fr}
-    .split{grid-template-columns:1fr;gap:30px}
-    .strip{grid-template-columns:1fr;gap:24px}
+    .owner-grid{grid-template-columns:1fr}
+    .owner-media{order:-1;aspect-ratio:16/10}
+    .contact-grid{grid-template-columns:1fr;gap:0}
+    .contact-card{padding:14px 0}
+    .hero{min-height:0;padding-top:70px}
   }
-  @media (max-width:520px){ .search{grid-template-columns:1fr} }
-  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  @media (max-width:560px){
+    .search{grid-template-columns:1fr;padding:10px;margin-top:0}
+    .search-section{margin-top:-26px}
+    .hero h1{font-size:clamp(34px,10vw,44px)}
+    .hero{padding-bottom:64px}
+    .prop .foot{flex-direction:column;align-items:flex-start;gap:8px}
+    .props-head{gap:10px}
+  }
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Horizonte Imóveis",
-"description":"Imobiliária em Jequié com compra, venda e locação de imóveis.",
-"telephone":"+55-73-90000-0000","areaServed":"Jequié e região",
-"address":{"@type":"PostalAddress","streetAddress":"R. da Itália, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45200-000","addressCountry":"BR"}}
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "@id": "https://evertonfagundes.github.io/kit-sites-jequie/imobiliaria.html#imobiliaria",
+  "name": "Horizonte Imóveis",
+  "url": "https://evertonfagundes.github.io/kit-sites-jequie/imobiliaria.html",
+  "image": "https://evertonfagundes.github.io/kit-sites-jequie/assets/og/imobiliaria.jpg",
+  "description": "Imobiliária em Jequié com compra, venda e locação de casas, apartamentos, terrenos e salas comerciais.",
+  "telephone": "+55-73-98865-9878",
+  "email": "contato@horizonteimoveis.com.br",
+  "priceRange": "Sob consulta",
+  "areaServed": "Jequié e região",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. da Itália, Centro",
+    "addressLocality": "Jequié",
+    "addressRegion": "BA",
+    "postalCode": "45200-000",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"}
+  ],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=R.+da+It%C3%A1lia,+Centro,+Jequi%C3%A9+-+BA"
+}
 </script>
 </head>
 <body>
+
+<div class="demo-band"><span><i aria-hidden="true"></i> Modelo demonstrativo · dados fictícios</span></div>
 <a class="skip" href="#main">Ir para o conteúdo</a>
 
-<header class="site-header">
-  <div class="wrap">
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
     <a class="brand" href="imobiliaria.html">
-      <span class="mark">H</span>
-      <span>Horizonte<small>Imóveis · Jequié</small></span>
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-text">Horizonte<small>Imóveis · Jequié</small></span>
     </a>
-    <input type="checkbox" id="navt" class="nav-toggle">
-    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
-    <nav class="nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+            aria-label="Abrir menu" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Menu principal" data-nav>
       <a href="#imoveis">Imóveis</a>
+      <a href="#proprietarios">Anunciar</a>
       <a href="#bairros">Bairros</a>
-      <a href="#proprietarios">Proprietários</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20im%C3%B3veis%20em%20Jequi%C3%A9.">Falar com corretor</a>
+    <a class="btn btn--primary btn--sm header-cta" href="#contato"
+       data-wa="Olá! Vim pelo site e quero falar com um corretor.">Falar com corretor</a>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-photo">
+      <img src="assets/img/w/imob-hero-900.webp"
+           srcset="assets/img/w/imob-hero-480.webp 480w, assets/img/w/imob-hero-900.webp 900w, assets/img/w/imob-hero-1400.webp 1400w"
+           sizes="100vw" width="1400" height="1050" fetchpriority="high" decoding="async"
+           alt="Casas de condomínio com jardim e palmeiras ao entardecer">
+    </div>
     <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Compra · Venda · Locação</p>
-          <h1 class="h1">O imóvel certo<br>para a vida que você<br><em>está construindo</em></h1>
-          <p class="lead">Casas, apartamentos, terrenos e pontos comerciais em Jequié e região. Atendimento direto com o corretor, sem intermediário e sem enrolação.</p>
-          <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="#imoveis">Ver imóveis</a>
-            <a class="btn btn--ghost btn--lg" href="#proprietarios">Quero vender ou alugar</a>
-          </div>
-          <div class="hero-note">
-            <span><i class="dot"></i> CRECI ativo</span>
-            <span><i class="dot"></i> Avaliação gratuita</span>
-            <span><i class="dot"></i> Jequié e região</span>
-          </div>
-        </div>
-        <div class="visual">
-          <img src="assets/img/imob-hero.jpg" alt="Casas modernas em condominio com jardim e palmeiras" loading="eager" decoding="async">
-          <div class="hero-card"><b>+120</b><span>imóveis para venda e locação</span></div>
-        </div>
+      <p class="eyebrow">Compra · Venda · Locação</p>
+      <h1 id="hero-title">O imóvel certo, <em>sem pressa</em></h1>
+      <p class="lead">Casas, apartamentos e pontos comerciais em Jequié. A visita é acompanhada e a documentação é conferida antes de qualquer proposta.</p>
+      <div class="hero-actions">
+        <a class="btn btn--primary btn--lg" href="#imoveis">Ver imóveis</a>
+        <a class="btn btn--ghost btn--lg" href="#proprietarios">Quero anunciar o meu</a>
       </div>
-
-      <div class="search">
-        <div class="field"><label>Finalidade</label><span>Comprar</span></div>
-        <div class="field"><label>Tipo</label><span>Casa</span></div>
-        <div class="field"><label>Bairro</label><span>Todos</span></div>
-        <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20estou%20procurando%20um%20im%C3%B3vel%20em%20Jequi%C3%A9.">Buscar</a>
-      </div>
+      <ul class="hero-proof">
+        <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Atendimento direto com o corretor</span></li>
+        <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Visita acompanhada</span></li>
+        <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Jequié e região</span></li>
+      </ul>
     </div>
   </section>
 
-  <section class="section" id="imoveis">
+  <section class="search-section" aria-label="Filtrar imóveis">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Destaques</p>
-        <h2 class="h2">Selecionados desta semana</h2>
-        <p class="lead">Uma amostra do que está disponível. Mande uma mensagem e recebemos a lista completa com fotos e valores atualizados.</p>
+      <form class="search" data-filter>
+        <div class="field">
+          <label for="f-finalidade">Finalidade</label>
+          <select id="f-finalidade" data-filter-control="finalidade">
+            <option value="">Comprar ou alugar</option>
+            <option value="comprar">Comprar</option>
+            <option value="alugar">Alugar</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-tipo">Tipo</label>
+          <select id="f-tipo" data-filter-control="tipo">
+            <option value="">Todos os tipos</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="sobrado">Sobrado</option>
+            <option value="comercial">Comercial</option>
+            <option value="terreno">Terreno</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-bairro">Bairro</label>
+          <select id="f-bairro" data-filter-control="bairro">
+            <option value="">Todos os bairros</option>
+            <option value="centro">Centro</option>
+            <option value="sao-judas">São Judas Tadeu</option>
+            <option value="jequiezinho">Jequiezinho</option>
+            <option value="sunville">Sunville</option>
+            <option value="mandacaru">Mandacaru</option>
+          </select>
+        </div>
+        <a class="btn btn--primary" href="#imoveis">Ver resultados</a>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section--flush-top" id="imoveis" aria-labelledby="imoveis-title">
+    <div class="wrap">
+      <div class="props-head">
+        <div class="section-head">
+          <p class="eyebrow">Selecionados</p>
+          <h2 class="h2" id="imoveis-title">Imóveis na carteira</h2>
+        </div>
+        <div class="cluster" style="align-items:center">
+          <p class="filter-count"><b data-filter-count>5</b> imóveis encontrados</p>
+          <button class="clear" type="button" data-filter-reset>Limpar filtros</button>
+        </div>
       </div>
 
       <div class="props">
-        <article class="prop">
-          <div class="ph"><img src="assets/img/imob-3.jpg" alt="Fachada de casa moderna com janelas amplas" loading="lazy"></div>
+        <article class="prop" data-prop data-finalidade="comprar" data-tipo="casa" data-bairro="sao-judas">
+          <div class="ph">
+            <span class="tag-prop">Venda</span>
+            <img src="assets/img/w/imob-3-900.webp"
+                 srcset="assets/img/w/imob-3-480.webp 480w, assets/img/w/imob-3-900.webp 820w"
+                 sizes="(max-width:760px) 92vw, 540px" width="820" height="615" loading="lazy" decoding="async"
+                 alt="Fachada de casa moderna com janelas amplas e jardim">
+          </div>
           <div class="b">
-            <div class="ptype">Casa · São Judas Tadeu</div>
+            <div class="where">Casa · São Judas Tadeu</div>
             <h3>Casa com 4 quartos, 2 suítes e quintal amplo</h3>
-            <div class="specs"><span>4 quartos</span><span>2 suítes</span><span>2 vagas</span></div>
-            <div class="price">R$ 380.000</div>
+            <div class="specs"><span><b>4</b> quartos</span><span><b>2</b> suítes</span><span><b>2</b> vagas</span><span><b>210</b> m²</span></div>
+            <div class="foot">
+              <div class="price">R$ 380.000</div>
+              <a class="interest" href="#contato" data-wa="Olá! Tenho interesse na casa de 4 quartos em São Judas Tadeu (R$ 380.000).">Tenho interesse <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
           </div>
         </article>
-        <article class="prop">
-          <div class="ph"><img src="assets/img/imob-2.jpg" alt="Predio de apartamentos moderno com varandas" loading="lazy"></div>
+
+        <article class="prop" data-prop data-finalidade="alugar" data-tipo="apartamento" data-bairro="centro">
+          <div class="ph">
+            <span class="tag-prop tag-prop--rent">Locação</span>
+            <img src="assets/img/w/imob-2-900.webp"
+                 srcset="assets/img/w/imob-2-480.webp 480w, assets/img/w/imob-2-900.webp 820w"
+                 sizes="(max-width:760px) 92vw, 540px" width="820" height="615" loading="lazy" decoding="async"
+                 alt="Prédio de apartamentos moderno com varandas de vidro">
+          </div>
           <div class="b">
-            <div class="ptype">Apartamento · Centro</div>
+            <div class="where">Apartamento · Centro</div>
             <h3>Apartamento novo a 200 m da Av. Rio Branco</h3>
-            <div class="specs"><span>2 quartos</span><span>1 suíte</span><span>1 vaga</span></div>
-            <div class="price">R$ 1.300 / mês</div>
+            <div class="specs"><span><b>2</b> quartos</span><span><b>1</b> suíte</span><span><b>1</b> vaga</span><span><b>68</b> m²</span></div>
+            <div class="foot">
+              <div class="price">R$ 1.300 <small>/mês</small></div>
+              <a class="interest" href="#contato" data-wa="Olá! Tenho interesse no apartamento de 2 quartos no Centro (R$ 1.300/mês).">Tenho interesse <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
           </div>
         </article>
-        <article class="prop">
-          <div class="ph"><img src="assets/img/imob-1.jpg" alt="Sobrado contemporaneo com fachada de concreto e vidro" loading="lazy"></div>
+
+        <article class="prop" data-prop data-finalidade="comprar" data-tipo="sobrado" data-bairro="sunville">
+          <div class="ph">
+            <span class="tag-prop">Venda</span>
+            <img src="assets/img/w/imob-1-900.webp"
+                 srcset="assets/img/w/imob-1-480.webp 480w, assets/img/w/imob-1-900.webp 820w"
+                 sizes="(max-width:760px) 92vw, 540px" width="820" height="615" loading="lazy" decoding="async"
+                 alt="Sobrado contemporâneo com fachada de concreto e vidro">
+          </div>
           <div class="b">
-            <div class="ptype">Sobrado · Sunville</div>
-            <h3>Sobrado novo com 3 quartos e área gourmet</h3>
-            <div class="specs"><span>3 quartos</span><span>2 vagas</span><span>Condomínio</span></div>
-            <div class="price">R$ 445.000</div>
+            <div class="where">Sobrado · Sunville</div>
+            <h3>Sobrado com 3 quartos e área gourmet</h3>
+            <div class="specs"><span><b>3</b> quartos</span><span><b>1</b> suíte</span><span><b>2</b> vagas</span><span><b>165</b> m²</span></div>
+            <div class="foot">
+              <div class="price">R$ 445.000</div>
+              <a class="interest" href="#contato" data-wa="Olá! Tenho interesse no sobrado de 3 quartos no Sunville (R$ 445.000).">Tenho interesse <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
           </div>
+        </article>
+
+        <article class="prop" data-prop data-finalidade="comprar" data-tipo="casa" data-bairro="jequiezinho">
+          <div class="ph">
+            <span class="tag-prop">Venda</span>
+            <img src="assets/img/w/imob-prop-900.webp"
+                 srcset="assets/img/w/imob-prop-480.webp 480w, assets/img/w/imob-prop-900.webp 900w"
+                 sizes="(max-width:760px) 92vw, 540px" width="1000" height="750" loading="lazy" decoding="async"
+                 alt="Casa térrea com jardim frontal e fachada clara">
+          </div>
+          <div class="b">
+            <div class="where">Casa · Jequiezinho</div>
+            <h3>Casa térrea com 3 quartos e quintal</h3>
+            <div class="specs"><span><b>3</b> quartos</span><span><b>1</b> vaga</span><span><b>140</b> m²</span><span><b>300</b> m² terreno</span></div>
+            <div class="foot">
+              <div class="price">R$ 260.000</div>
+              <a class="interest" href="#contato" data-wa="Olá! Tenho interesse na casa térrea de 3 quartos no Jequiezinho (R$ 260.000).">Tenho interesse <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop" data-prop data-finalidade="comprar" data-tipo="terreno" data-bairro="mandacaru">
+          <div class="ph">
+            <span class="tag-prop">Venda</span>
+            <img src="assets/img/w/imob-1-900.webp"
+                 srcset="assets/img/w/imob-1-480.webp 480w, assets/img/w/imob-1-900.webp 820w"
+                 sizes="(max-width:760px) 92vw, 540px" width="820" height="615" loading="lazy" decoding="async"
+                 alt="Terreno plano com vista para casas ao fundo">
+          </div>
+          <div class="b">
+            <div class="where">Terreno · Mandacaru</div>
+            <h3>Terreno plano em rua asfaltada</h3>
+            <div class="specs"><span><b>300</b> m²</span><span>Murado</span><span>Água e luz na rua</span></div>
+            <div class="foot">
+              <div class="price">R$ 150.000</div>
+              <a class="interest" href="#contato" data-wa="Olá! Tenho interesse no terreno de 300 m² no Mandacaru (R$ 150.000).">Tenho interesse <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="prop prop--cta">
+          <div>
+            <div class="k">Não encontrou?</div>
+            <h3>Conte o que você procura.</h3>
+            <p>Bairro, faixa de preço e número de quartos. A gente responde com as opções que existem de verdade — e avisa quando entrar uma nova.</p>
+          </div>
+          <a class="btn" href="#contato" data-wa="Olá! Procuro um imóvel em Jequié. Meu bairro de interesse é ___ e a faixa de preço é ___.">Falar com o corretor</a>
         </article>
       </div>
 
-      <div style="margin-top:34px;text-align:center">
-        <a class="btn btn--ghost btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20receber%20a%20lista%20completa%20de%20im%C3%B3veis.">Ver lista completa no WhatsApp</a>
+      <div class="empty" data-filter-empty hidden>
+        <p>Nenhum imóvel com esses filtros agora. Me conte o que procura e eu aviso quando entrar.</p>
+        <a class="btn btn--primary" href="#contato" data-wa="Olá! Não achei um imóvel com os filtros do site. Procuro ___.">Pedir por WhatsApp</a>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt" id="bairros">
+  <section class="section section--alt" id="proprietarios" aria-labelledby="owner-title">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Onde atuamos</p>
-        <h2 class="h2">Bairros com imóveis disponíveis</h2>
-      </div>
-      <div class="chips">
-        <span>Centro</span><span>Jequiezinho</span><span>São Judas Tadeu</span><span>Joaquim Romão</span>
-        <span>Mandacaru</span><span>Amaralina</span><span>Itaigara</span><span>KM 3</span>
-        <span>Pompílio Sampaio</span><span>São Luís</span><span>Curral Novo</span><span>Sunville</span>
-      </div>
-      <div style="margin-top:44px">
-        <div class="strip">
-          <div><b>18</b><span>anos no mercado de Jequié</span></div>
-          <div><b>+120</b><span>imóveis ativos na carteira</span></div>
-          <div><b>+400</b><span>negócios fechados</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="proprietarios">
-    <div class="wrap">
-      <div class="split">
-        <div>
+      <div class="owner-grid">
+        <div class="reveal">
           <p class="eyebrow">Para proprietários</p>
-          <h2 class="h2">Seu imóvel anunciado, visitado e vendido</h2>
-          <p class="lead">A gente cuida de tudo: avaliação de preço, fotos, anúncio, agendamento das visitas e a documentação até a assinatura.</p>
-          <ul class="features" style="margin-top:22px">
-            <li><span class="tick">✓</span> Avaliação de mercado sem compromisso</li>
-            <li><span class="tick">✓</span> Fotos e anúncio profissional incluídos</li>
-            <li><span class="tick">✓</span> Filtro de interessados — você não perde tempo</li>
-            <li><span class="tick">✓</span> Apoio na papelada e no financiamento</li>
-          </ul>
-          <div class="hero-actions" style="margin-top:26px">
-            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20avaliar%20meu%20im%C3%B3vel.">Pedir avaliação gratuita</a>
+          <h2 class="h2" id="owner-title">Seu imóvel anunciado, visitado e vendido</h2>
+          <p class="lead">A corretagem cuida do anúncio, das visitas e da papelada. Você acompanha cada etapa e decide com informação.</p>
+          <ol class="owner-list">
+            <li><span class="n">01</span><div><strong>Avaliação de mercado</strong><span>Preço comparado com imóveis parecidos na mesma região, sem chute.</span></div></li>
+            <li><span class="n">02</span><div><strong>Fotos e anúncio</strong><span>Imagens tratadas, descrição honesta e divulgação nos canais certos.</span></div></li>
+            <li><span class="n">03</span><div><strong>Visitas filtradas</strong><span>Só visita quem está dentro do perfil e com horário combinado.</span></div></li>
+            <li><span class="n">04</span><div><strong>Documentação</strong><span>Conferência de matrícula, certidões e apoio no financiamento.</span></div></li>
+          </ol>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#contato" data-wa="Olá! Quero anunciar meu imóvel com a Horizonte.">Quero anunciar</a>
           </div>
         </div>
-        <div class="photo"><img src="assets/img/imob-prop.jpg" alt="Casa de alto padrao com jardim" loading="lazy"></div>
+        <div class="owner-media reveal reveal--d1">
+          <img src="assets/img/w/imob-prop-900.webp"
+               srcset="assets/img/w/imob-prop-480.webp 480w, assets/img/w/imob-prop-900.webp 900w"
+               sizes="(max-width:960px) 92vw, 520px" width="1000" height="750" loading="lazy" decoding="async"
+               alt="Casa de alto padrão com jardim e fachada iluminada">
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt" id="contato">
+  <section class="section" id="bairros" aria-labelledby="bairros-title">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Contato</p>
-        <h2 class="h2">Fale com quem conhece a cidade</h2>
+      <div class="section-head reveal">
+        <p class="eyebrow">Onde atuamos</p>
+        <h2 class="h2" id="bairros-title">Jequié inteira, sem achismo</h2>
+        <p class="lead">Conhecemos as ruas, o comércio e o que muda de um bairro para outro. Se o imóvel que você quer não estiver na lista, pergunte.</p>
       </div>
-      <div class="info-grid">
-        <div class="info"><div class="lbl">Escritório</div><strong>R. da Itália, 000 — Centro<br>Jequié · BA</strong></div>
-        <div class="info"><div class="lbl">Atendimento</div><strong>Segunda a sexta, 8h às 18h<br>Sábado, 8h às 12h</strong></div>
-        <div class="info"><div class="lbl">Contato</div><strong>(73) 90000-0000<br>contato@horizonteimoveis.com.br</strong></div>
+      <div class="hoods reveal">
+        <span class="hood">Centro</span><span class="hood">Jequiezinho</span><span class="hood">São Judas Tadeu</span>
+        <span class="hood">Joaquim Romão</span><span class="hood">Mandacaru</span><span class="hood">Amaralina</span>
+        <span class="hood">Itaigara</span><span class="hood">KM 3</span><span class="hood">Pompílio Sampaio</span>
+        <span class="hood">São Luís</span><span class="hood">Curral Novo</span><span class="hood">Sunville</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="contato" aria-labelledby="contato-title">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="lbl">Escritório</div>
+          <strong>R. da Itália — Centro<br>Jequié · BA</strong>
+        </div>
+        <div class="contact-card">
+          <div class="lbl">Atendimento</div>
+          <strong>Segunda a sexta, 8h às 18h<br>Sábado, 8h às 12h</strong>
+        </div>
+        <div class="contact-card">
+          <div class="lbl">Contato</div>
+          <strong><a href="tel:+5573988659878" data-tel data-phone-text>(73) 98865-9878</a><br>
+          <a href="mailto:contato@horizonteimoveis.com.br">contato@horizonteimoveis.com.br</a></strong>
+        </div>
       </div>
 
-      <div style="margin-top:44px">
-        <div class="cta-band">
-          <div>
-            <h2>Procurando ou vendendo?</h2>
-            <p>Mande uma mensagem com o que você precisa. Respondemos com opções reais, não com catálogo genérico.</p>
-          </div>
-          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">Chamar no WhatsApp</a>
+      <div class="map-card reveal">
+        <div class="map-art" aria-hidden="true"><span class="map-pin"></span></div>
+        <div class="map-copy">
+          <span class="lbl">Como chegar</span>
+          <address>R. da Itália — Centro<br>Jequié · Bahia</address>
+          <p class="note">Perto do comércio da Rio Branco. Atendimento com hora marcada.</p>
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=R.+da+It%C3%A1lia,+Centro,+Jequi%C3%A9+-+BA"
+             target="_blank" rel="noopener">Abrir no Google Maps
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
         </div>
+      </div>
+
+      <div class="band reveal mt-7">
+        <div>
+          <h2 id="contato-title">Procurando ou vendendo?</h2>
+          <p>Mande uma mensagem com o que você precisa. Respondemos com opções reais, não com catálogo genérico.</p>
+        </div>
+        <a class="btn btn--lg" href="#imoveis" data-wa="Olá! Vim pelo site e quero falar com um corretor.">Chamar no WhatsApp</a>
       </div>
     </div>
   </section>
@@ -226,56 +508,44 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="imobiliaria.html" style="margin-bottom:14px">
-          <span class="mark">H</span>
-          <span>Horizonte<small>Imóveis · Jequié</small></span>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="imobiliaria.html">
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span class="brand-text">Horizonte<small>Imóveis · Jequié</small></span>
         </a>
-        <p style="max-width:34ch;font-size:13.5px">Compra, venda e locação de imóveis em Jequié e região.</p>
+        <p>Compra, venda e locação de imóveis em Jequié e região. Atendimento direto com o corretor.</p>
       </div>
       <div>
-        <h3>Navegação</h3>
-        <ul>
+        <h3 class="footer-title">Navegação</h3>
+        <ul class="footer-links">
           <li><a href="#imoveis">Imóveis</a></li>
+          <li><a href="#proprietarios">Anunciar</a></li>
           <li><a href="#bairros">Bairros</a></li>
-          <li><a href="#proprietarios">Proprietários</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contato</h3>
-        <ul>
-          <li>(73) 90000-0000</li>
-          <li>R. da Itália, 000 — Centro</li>
-          <li>CRECI 00000-F</li>
+        <h3 class="footer-title">Registro</h3>
+        <ul class="footer-links">
+          <li>CRECI-BA 00000-F</li>
+          <li>Jequié · Bahia</li>
+          <li>Seg a sex, 8h às 18h</li>
         </ul>
       </div>
     </div>
-    <div class="bottom">
-      <span>© 2026 Horizonte Imóveis</span>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Horizonte Imóveis</span>
       <span>Jequié · Bahia</span>
     </div>
-    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+    <p class="demo-note"><strong>Modelo demonstrativo.</strong> Nome, CRECI, endereço, e-mail, preços e imóveis são fictícios e servem apenas para apresentação comercial. Fotos ilustrativas de banco de imagens — no site final entram fotos reais dos imóveis. O WhatsApp deste link é do desenvolvedor do modelo. Publicação por um cliente exige conferir o registro CRECI e os dados de cada anúncio.</p>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
-  WhatsApp
+<a class="wa" href="#contato" data-wa="Olá! Vim pelo site e quero falar com um corretor." aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
 </a>
 
-<script>
-/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
-document.querySelectorAll(".nav a").forEach(function (a) {
-  a.addEventListener("click", function () {
-    var t = document.getElementById("navt");
-    if (t) t.checked = false;
-  });
-});
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
-
-  .prop .ph{aspect-ratio:4/3}
-  .photo{aspect-ratio:4/3;border-radius:20px;overflow:hidden;background:var(--soft);box-shadow:0 34px 60px -36px rgba(47,93,74,.5)}

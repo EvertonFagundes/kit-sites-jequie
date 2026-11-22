@@ -3,52 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0f766e">
-<title>Dentista em Jequié | Clínica Sorriso Novo</title>
-<meta name="description" content="Clínica odontológica em Jequié: implantes, ortodontia, clareamento e clínica geral. Agende sua avaliação pelo WhatsApp.">
-<meta property="og:title" content="Clínica Sorriso Novo — Odontologia em Jequié">
-<meta property="og:description" content="Tratamentos odontológicos com equipe especializada no centro de Jequié.">
+<meta name="theme-color" content="#0b3b36">
+<title>Dentista em Jequié | Sorriso Novo Odontologia</title>
+<meta name="description" content="Odontologia em Jequié com hora marcada: implantes, ortodontia, clareamento e clínica geral. Plano de tratamento por escrito e agendamento pelo WhatsApp.">
+<link rel="canonical" href="https://evertonfagundes.github.io/kit-sites-jequie/odonto.html">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f766e'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>S</text></svg>">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Sorriso Novo Odontologia">
+<meta property="og:title" content="Sorriso Novo — Odontologia em Jequié">
+<meta property="og:description" content="Hora marcada, plano de tratamento por escrito e atendimento no centro de Jequié.">
+<meta property="og:url" content="https://evertonfagundes.github.io/kit-sites-jequie/odonto.html">
+<meta property="og:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/odonto.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Consultório odontológico em Jequié — Sorriso Novo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sorriso Novo — Odontologia em Jequié">
+<meta name="twitter:description" content="Hora marcada, plano por escrito e atendimento no centro de Jequié.">
+<meta name="twitter:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/odonto.jpg">
+<link rel="icon" href="assets/favicon-odonto.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-odonto.png">
+<link rel="preload" href="assets/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/w/odonto-sala-900.webp"
+      imagesrcset="assets/img/w/odonto-sala-480.webp 480w, assets/img/w/odonto-sala-900.webp 900w"
+      imagesizes="(max-width: 960px) 92vw, 520px">
 <link rel="stylesheet" href="assets/base.css">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-  body{--accent:#0f766e;--accent-soft:#e6f4f1;--soft:#f5f8f7}
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
-    border:1px solid var(--line);border-radius:14px;overflow:hidden}
-  .stat{background:#fff;padding:22px 18px;text-align:center}
-  .stat b{display:block;font-family:var(--font-display);font-size:28px;line-height:1;color:var(--accent)}
-  .stat span{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-top:7px}
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-  @media (max-width:900px){.split{grid-template-columns:1fr;gap:32px}
-    .stats{grid-template-columns:repeat(2,1fr)}}
-  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  :root{
+    --bg:#fbfaf7;
+    --bg-2:#f2f0e9;
+    --surface:#ffffff;
+    --surface-2:#f4f2ec;
+    --ink:#12211e;
+    --ink-2:#263832;
+    --muted:#5b6a65;
+    --line:#e3e0d6;
+    --line-2:#cbc8bd;
+    --accent:#0d5c52;
+    --accent-ink:#0a4a42;
+    --accent-soft:#e2f0eb;
+    --accent-on:#ffffff;
+    --selection:#d6ebe4;
+    --font-display:'Fraunces',Georgia,'Times New Roman',serif;
+    --font-text:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    --footer-bg:#0a211d;
+  }
+  .hero{background:
+    radial-gradient(70% 90% at 88% 6%,#e6f1ec 0%,rgba(230,241,236,0) 62%),
+    linear-gradient(180deg,#fbfaf7 0%,#fbfaf7 100%);
+    padding-top:clamp(38px,6vw,64px);
+  }
+  .hero .h1{max-width:13ch}
+  .hero .h1 em{font-style:normal;color:var(--accent);white-space:nowrap}
+  .hero .lead{max-width:47ch}
+  .hero-media .visual{aspect-ratio:4/4.15}
+  .hero-media .visual img{object-position:50% 42%}
+  .visual--arch{border-radius:48% 48% 22px 22px / 32% 32% 22px 22px}
+  .hero-card{
+    position:absolute;left:16px;bottom:16px;z-index:2;max-width:250px;
+    background:#ffffff;border:1px solid rgba(255,255,255,.7);
+    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    border-radius:14px;padding:13px 16px;box-shadow:0 18px 34px -20px rgba(12,22,20,.5);
+  }
+  .hero-card .k{display:block;font-size:9.5px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent-ink);margin-bottom:3px}
+  .hero-card strong{display:block;font-family:var(--font-display);font-size:18px;line-height:1.1}
+  .hero-card span{display:block;font-size:11px;color:var(--muted);margin-top:3px;line-height:1.35}
+  .tx-wrap{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(26px,5vw,64px);align-items:start}
+  .tx-wrap>*:first-child{position:sticky;top:calc(var(--header-h) + 26px)}
+  .tx{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;column-gap:44px}
+  .tx article{border-bottom:1px solid var(--line);padding:22px 0;display:grid;
+    grid-template-columns:38px 1fr;gap:12px;align-content:start}
+  .tx .n{font-family:var(--font-display);font-size:13px;letter-spacing:.08em;color:var(--accent);padding-top:3px}
+  .tx h3{font-size:18px;margin-bottom:4px}
+  .tx p{font-size:13.8px;line-height:1.55;color:var(--muted);margin:0}
+  .clinic-figure{position:relative}
+  .team-grid{margin-top:8px}
+  .person{display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:start}
+  .person .monogram{width:96px;height:96px;aspect-ratio:1;margin:0;font-size:27px}
+  .person:nth-child(2) .monogram{background:#f4ead9;color:#7a5426}
+  .person:nth-child(3) .monogram{background:#e6ecf4;color:#2f4c6b}
+  .quote-rule{font-family:var(--font-display);font-size:clamp(21px,2.6vw,29px);line-height:1.35;
+    letter-spacing:-.015em;max-width:24ch;margin:0}
+  .quote-side{display:grid;gap:16px;align-content:start}
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,56px);align-items:start}
+  .contact-aside{display:grid;gap:18px;align-content:start}
+  .contact-item{border-top:1px solid var(--line);padding-top:14px}
+  .contact-item .lbl{font-size:10px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+  .contact-item strong{font-size:15.5px;line-height:1.5;font-weight:600}
+  .contact-item a{text-decoration:underline;text-decoration-thickness:1px;
+    text-underline-offset:3px;text-decoration-color:var(--line-2)}
+  .contact-item a:hover{text-decoration-color:var(--accent)}
+  .map-card{margin-top:clamp(30px,5vw,48px)}
+  .faq-split{grid-template-columns:.85fr 1.15fr;align-items:start}
+  @media (max-width:960px){
+    .tx-wrap{grid-template-columns:1fr}
+    .tx-wrap>*:first-child{position:static}
+    .tx{grid-template-columns:1fr}
+    .hero-media .visual{aspect-ratio:4/3.4}
+    .contact-grid{grid-template-columns:1fr}
+    .faq-split{grid-template-columns:1fr}
+  }
+  @media (max-width:520px){
+    .hero .h1 em{white-space:normal}
+    .hero-card{max-width:210px;left:12px;bottom:12px;padding:11px 13px}
+    .tx article{grid-template-columns:30px 1fr;gap:9px}
+  }
 </style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dentist","name":"Clínica Sorriso Novo",
-"description":"Clínica odontológica em Jequié com implantes, ortodontia, clareamento e clínica geral.",
-"telephone":"+55-73-90000-0000","priceRange":"$$",
-"address":{"@type":"PostalAddress","streetAddress":"Av. Rio Branco, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45200-000","addressCountry":"BR"},
-"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}]}
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": "https://evertonfagundes.github.io/kit-sites-jequie/odonto.html#clinica",
+  "name": "Sorriso Novo Odontologia",
+  "url": "https://evertonfagundes.github.io/kit-sites-jequie/odonto.html",
+  "image": "https://evertonfagundes.github.io/kit-sites-jequie/assets/og/odonto.jpg",
+  "description": "Clínica odontológica em Jequié com implantes, ortodontia, clareamento, próteses e clínica geral.",
+  "telephone": "+55-73-98865-9878",
+  "priceRange": "Sob consulta",
+  "currenciesAccepted": "BRL",
+  "paymentAccepted": "Dinheiro, Pix, Cartão de crédito",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Rio Branco, Centro",
+    "addressLocality": "Jequié",
+    "addressRegion": "BA",
+    "postalCode": "45200-000",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"}
+  ],
+  "availableService": [
+    {"@type": "MedicalProcedure", "name": "Implantes dentários"},
+    {"@type": "MedicalProcedure", "name": "Ortodontia"},
+    {"@type": "MedicalProcedure", "name": "Clareamento dental"},
+    {"@type": "MedicalProcedure", "name": "Clínica geral odontológica"},
+    {"@type": "MedicalProcedure", "name": "Próteses e lentes dentais"},
+    {"@type": "MedicalProcedure", "name": "Atendimento de urgência odontológica"}
+  ],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Av.+Rio+Branco,+Centro,+Jequi%C3%A9+-+BA"
+}
 </script>
 </head>
 <body>
+
+<div class="demo-band"><span><i aria-hidden="true"></i> Modelo demonstrativo · dados fictícios</span></div>
+
 <a class="skip" href="#main">Ir para o conteúdo</a>
 
-<header class="site-header">
-  <div class="wrap">
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
     <a class="brand" href="odonto.html">
-      <span class="mark">S</span>
-      <span>Sorriso Novo<small>Odontologia · Jequié</small></span>
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span class="brand-text">Sorriso Novo<small>Odontologia · Jequié</small></span>
     </a>
-    <input type="checkbox" id="navt" class="nav-toggle">
-    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
-    <nav class="nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+            aria-label="Abrir menu" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Menu principal" data-nav>
       <a href="#tratamentos">Tratamentos</a>
-      <a href="#clinica">A clínica</a>
-      <a href="#depoimentos">Pacientes</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.">Agendar</a>
+    <a class="btn btn--primary btn--sm header-cta" href="#contato"
+       data-wa="Olá! Vim pelo site e quero agendar uma consulta.">Agendar</a>
   </div>
 </header>
 
@@ -58,166 +185,306 @@
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <p class="eyebrow">Odontologia em Jequié</p>
-          <h1 class="h1">Seu sorriso merece<br>um cuidado <em>de verdade</em></h1>
-          <p class="lead">Implantes, ortodontia, clareamento e clínica geral em um só lugar, com equipe especializada e atendimento sem pressa. No centro de Jequié.</p>
+          <p class="eyebrow">Odontologia em Jequié · BA</p>
+          <h1 class="h1">Odontologia com <em>hora marcada</em></h1>
+          <p class="lead">Implantes, ortodontia e clínica geral no centro de Jequié. Antes de qualquer procedimento, você recebe o plano por escrito: o que será feito, em quantas etapas e quanto custa.</p>
           <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.">Agendar avaliação</a>
+            <a class="btn btn--primary btn--lg" href="#contato"
+               data-wa="Olá! Vim pelo site e quero agendar uma consulta.">Agendar pelo WhatsApp</a>
             <a class="btn btn--ghost btn--lg" href="#tratamentos">Ver tratamentos</a>
           </div>
-          <div class="hero-note">
-            <span><i class="dot"></i> Atendimento particular</span>
-            <span><i class="dot"></i> Parcelamento em até 12x</span>
-            <span><i class="dot"></i> Urgência no mesmo dia</span>
-          </div>
-        </div>
-        <div class="visual">
-          <img src="assets/img/odonto-hero.jpg" alt="Consultorio odontologico moderno com cadeira e equipamentos" loading="eager" decoding="async">
-          <div class="hero-card"><b>+20</b><span>anos cuidando de sorrisos em Jequié</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tight" style="padding-top:0">
-    <div class="wrap">
-      <div class="stats">
-        <div class="stat"><b>+4.000</b><span>Pacientes atendidos</span></div>
-        <div class="stat"><b>6</b><span>Especialidades</span></div>
-        <div class="stat"><b>4,9</b><span>Nota no Google</span></div>
-        <div class="stat"><b>12x</b><span>Parcelamento</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt" id="tratamentos">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">O que fazemos</p>
-        <h2 class="h2">Tratamentos para cada fase do seu sorriso</h2>
-        <p class="lead">Da prevenção à reabilitação completa. Você começa com uma avaliação e sai sabendo exatamente o que precisa, quanto custa e em quanto tempo fica pronto.</p>
-      </div>
-      <div class="grid grid--3">
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c-2 0-3 1-4.5 1S5 3.5 4.5 5C3.8 7 4 10 5 13c.8 2.4 1.2 5 2.5 5s1-3 4.5-3 3.2 3 4.5 3 1.7-2.6 2.5-5c1-3 1.2-6 .5-8-.5-1.5-1.5-2-3-2S14 3 12 3Z"/></svg></div>
-          <h3 class="h3">Implantes dentários</h3>
-          <p>Reposição de dentes com implantes de titânio e coroa de porcelana. Planejamento digital e carga imediata quando indicado.</p>
-        </article>
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 9h16M6 9V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2M8 9v10M16 9v10M6 19h12"/></svg></div>
-          <h3 class="h3">Ortodontia</h3>
-          <p>Aparelhos fixos e alinhadores transparentes para corrigir posição e mordida, com acompanhamento mensal incluso.</p>
-        </article>
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v2M12 19v2M5 12H3M21 12h-2M6.3 6.3 4.9 4.9M19.1 19.1l-1.4-1.4M17.7 6.3l1.4-1.4M4.9 19.1l1.4-1.4"/><circle cx="12" cy="12" r="4"/></svg></div>
-          <h3 class="h3">Clareamento</h3>
-          <p>Clareamento em consultório ou com moldeira caseira. Resultado visível na primeira sessão.</p>
-        </article>
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg></div>
-          <h3 class="h3">Clínica geral</h3>
-          <p>Limpeza, restaurações, tratamento de canal e prevenção. A base para não voltar ao consultório toda hora.</p>
-        </article>
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 3h8v4a4 4 0 0 1-8 0V3ZM12 11v4M8 21h8M10 15h4l1 6H9l1-6Z"/></svg></div>
-          <h3 class="h3">Próteses e lentes</h3>
-          <p>Próteses fixas e móveis, lentes de contato dental em resina ou porcelana, feitas sob medida.</p>
-        </article>
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg></div>
-          <h3 class="h3">Urgência</h3>
-          <p>Dor de dente não espera. Reserve um horário no mesmo dia para avaliação e alívio da dor.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="clinica">
-    <div class="wrap">
-      <div class="split">
-        <div class="photo"><img src="assets/img/odonto-sala.jpg" alt="Dentista atendendo paciente na clinica" loading="lazy"></div>
-        <div>
-          <p class="eyebrow">A clínica</p>
-          <h2 class="h2">Estrutura completa, sem sala de espera desconfortável</h2>
-          <p class="lead">Consultórios equipados, esterilização rigorosa e uma equipe que explica cada etapa antes de começar. Você entende o tratamento — não só assina o orçamento.</p>
-          <ul class="features" style="margin-top:22px">
-            <li><span class="tick">✓</span> Avaliação com plano de tratamento escrito e valor fechado</li>
-            <li><span class="tick">✓</span> Raio-X digital e escaneamento intraoral no local</li>
-            <li><span class="tick">✓</span> Acesso para cadeira de rodas e estacionamento próximo</li>
-            <li><span class="tick">✓</span> Atendimento com hora marcada — sem fila</li>
+          <ul class="hero-proof">
+            <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Hora marcada de verdade</span></li>
+            <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Plano de tratamento por escrito</span></li>
+            <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Horário reservado para dor</span></li>
           </ul>
-          <div class="hero-actions" style="margin-top:26px">
-            <a class="btn btn--primary" href="https://wa.me/5573900000000">Falar com a recepção</a>
+        </div>
+        <div class="hero-media">
+          <div class="visual visual--arch">
+            <img src="assets/img/w/odonto-sala-900.webp"
+                 srcset="assets/img/w/odonto-sala-480.webp 480w, assets/img/w/odonto-sala-900.webp 900w"
+                 sizes="(max-width: 960px) 92vw, 520px"
+                 width="1100" height="825" fetchpriority="high" decoding="async"
+                 alt="Dentista atendendo um paciente na cadeira odontológica">
+          </div>
+          <div class="hero-card">
+            <span class="k">Atendimento</span>
+            <strong>Hora marcada</strong>
+            <span>Centro de Jequié · particular</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt" id="depoimentos">
+  <section class="section section--tight section--flush-top" id="como-funciona" aria-labelledby="como-title">
     <div class="wrap">
-      <div class="section-head center">
-        <p class="eyebrow">Pacientes</p>
-        <h2 class="h2">Quem já passou por aqui</h2>
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">Como funciona</p>
+        <h2 class="h2" id="como-title">Três passos, sem surpresa no meio do caminho</h2>
+        <p class="lead">O tratamento começa com uma conversa e termina com um plano claro. Nada de descobrir o valor só no fim.</p>
       </div>
-      <div class="grid grid--3">
-        <div class="quote">
-          <div class="stars">★★★★★</div>
-          <p>“Tinha medo de dentista desde criança. Aqui explicaram tudo com calma e no fim eu quase dormi na cadeira.”</p>
-          <div class="who"><span class="avatar">M</span> Mariana S. · Jequié</div>
+      <div class="steps reveal reveal--d1">
+        <article class="step">
+          <span class="num">01</span>
+          <h3>Conte o que precisa</h3>
+          <p>Chame no WhatsApp e diga o que está sentindo ou o resultado que procura. A recepção responde em horário comercial.</p>
+        </article>
+        <article class="step">
+          <span class="num">02</span>
+          <h3>Receba o plano</h3>
+          <p>Na consulta, você faz o exame e sai com o diagnóstico, as etapas e o valor por escrito — antes de decidir.</p>
+        </article>
+        <article class="step">
+          <span class="num">03</span>
+          <h3>Escolha o horário</h3>
+          <p>O atendimento é com hora marcada e a confirmação chega na véspera. Você não perde a manhã esperando.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="tratamentos" aria-labelledby="tx-title">
+    <div class="wrap">
+      <div class="tx-wrap">
+        <div>
+          <p class="eyebrow reveal">Tratamentos</p>
+          <h2 class="h2 reveal" id="tx-title">O que a clínica resolve</h2>
+          <p class="lead reveal">Da prevenção à reabilitação. Se o caso exigir um especialista de fora, a clínica avisa — e não inventa tratamento para segurar você.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn--ghost" href="#contato" data-wa="Olá! Quero saber qual tratamento é indicado para o meu caso.">Falar sobre meu caso</a>
+          </div>
         </div>
-        <div class="quote">
-          <div class="stars">★★★★★</div>
-          <p>“Fiz dois implantes e não senti dor no pós. O acompanhamento foi melhor do que eu esperava.”</p>
-          <div class="who"><span class="avatar">J</span> João P. · Jequiezinho</div>
-        </div>
-        <div class="quote">
-          <div class="stars">★★★★★</div>
-          <p>“Coloquei aparelho e em um ano já vi diferença enorme. Sempre atendem no horário marcado.”</p>
-          <div class="who"><span class="avatar">A</span> Ana C. · Centro</div>
+        <div class="tx reveal reveal--d1">
+          <article>
+            <span class="n">01</span>
+            <div><h3>Implantes dentários</h3><p>Reposição de dentes com planejamento digital e coroa de porcelana. A carga imediata é avaliada caso a caso.</p></div>
+          </article>
+          <article>
+            <span class="n">02</span>
+            <div><h3>Ortodontia</h3><p>Aparelho fixo e alinhadores transparentes, com acompanhamento mensal e ajustes programados.</p></div>
+          </article>
+          <article>
+            <span class="n">03</span>
+            <div><h3>Clareamento</h3><p>Em consultório ou com moldeira caseira. A indicação depende do esmalte e da sensibilidade.</p></div>
+          </article>
+          <article>
+            <span class="n">04</span>
+            <div><h3>Clínica geral</h3><p>Limpeza, restaurações, tratamento de canal e prevenção. A base para não voltar ao consultório toda hora.</p></div>
+          </article>
+          <article>
+            <span class="n">05</span>
+            <div><h3>Próteses e lentes</h3><p>Próteses fixas e móveis, lentes de resina ou porcelana, feitas sob medida para o seu sorriso.</p></div>
+          </article>
+          <article>
+            <span class="n">06</span>
+            <div><h3>Atendimento de urgência</h3><p>Horário reservado no mesmo dia para dor e trauma. Chame no WhatsApp e informe o que está sentindo.</p></div>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="contato">
+  <section class="section" id="clinica" aria-labelledby="clinica-title">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Onde estamos</p>
-        <h2 class="h2">Fica fácil chegar</h2>
-      </div>
-      <div class="info-grid">
-        <div class="info">
-          <div class="lbl">Endereço</div>
-          <strong>Av. Rio Branco, 000 — Centro<br>Jequié · BA · 45200-000</strong>
-        </div>
-        <div class="info">
-          <div class="lbl">Horário</div>
-          <strong>Segunda a sexta, 8h às 18h<br>Sábado, 8h às 12h</strong>
-        </div>
-        <div class="info">
-          <div class="lbl">Contato</div>
-          <strong>(73) 90000-0000<br>contato@sorrisonovo.com.br</strong>
-        </div>
-      </div>
-
-      <div style="margin-top:40px">
-        <div class="faq">
-          <details><summary>Atende convênio?</summary><p>O atendimento é particular. Emitimos nota e recibo para reembolso do seu plano, quando houver cobertura.</p></details>
-          <details><summary>Quanto custa a avaliação?</summary><p>A primeira avaliação é gratuita e inclui exame clínico. Se precisar de exame de imagem, o valor é informado antes.</p></details>
-          <details><summary>Dá para parcelar o tratamento?</summary><p>Sim, em até 12x no cartão. O parcelamento é combinado na apresentação do plano de tratamento.</p></details>
-          <details><summary>Vocês atendem urgência?</summary><p>Reservamos horários diários para casos de dor. Chame no WhatsApp e informe o que está sentindo.</p></details>
-        </div>
-      </div>
-
-      <div style="margin-top:44px">
-        <div class="cta-band">
-          <div>
-            <h2>Agende sua avaliação</h2>
-            <p>Atendimento com hora marcada. Respondemos no WhatsApp em horário comercial.</p>
+      <div class="split split--wide">
+        <div class="clinic-figure reveal">
+          <div class="media media--4x3">
+            <img src="assets/img/w/odonto-hero-900.webp"
+                 srcset="assets/img/w/odonto-hero-480.webp 480w, assets/img/w/odonto-hero-900.webp 900w, assets/img/w/odonto-hero-1400.webp 1400w"
+                 sizes="(max-width: 960px) 92vw, 520px"
+                 width="1400" height="1050" loading="lazy" decoding="async"
+                 alt="Consultório odontológico claro, com cadeira, equipo e armários">
           </div>
-          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.">Chamar no WhatsApp</a>
         </div>
+        <div>
+          <p class="eyebrow reveal">A clínica</p>
+          <h2 class="h2 reveal" id="clinica-title">Estrutura completa, conversa sem pressa</h2>
+          <p class="lead reveal">Consultórios equipados, esterilização rigorosa e uma equipe que explica cada etapa antes de começar. Você entende o tratamento — não só assina o orçamento.</p>
+          <ul class="checks reveal mt-5">
+            <li><span class="tick" aria-hidden="true">✓</span> Avaliação com plano escrito e valor fechado</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Raio-X digital e escaneamento no local</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Acesso para cadeira de rodas</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Atendimento com hora marcada, sem fila</li>
+          </ul>
+          <div class="hero-actions reveal">
+            <a class="btn btn--primary" href="#contato" data-wa="Olá! Quero marcar uma avaliação.">Marcar avaliação</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="equipe" aria-labelledby="equipe-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Equipe</p>
+        <h2 class="h2" id="equipe-title">Quem atende</h2>
+        <p class="lead">Cada profissional cuida de uma área. Na primeira consulta você já sabe quem vai acompanhar o seu caso.</p>
+      </div>
+      <div class="team team-grid reveal reveal--d1">
+        <article class="person">
+          <div class="monogram" aria-hidden="true">MS</div>
+          <h3>Dra. Marina Salles</h3>
+          <p class="role">Implantodontia · CRO-BA 00.000</p>
+          <p>Planejamento de implantes e reabilitação oral. Atende na unidade do Centro.</p>
+        </article>
+        <article class="person">
+          <div class="monogram" aria-hidden="true">JP</div>
+          <h3>Dr. João Prado</h3>
+          <p class="role">Ortodontia · CRO-BA 00.000</p>
+          <p>Aparelho fixo e alinhadores. Acompanha cada ajuste e explica o tempo de cada fase.</p>
+        </article>
+        <article class="person">
+          <div class="monogram" aria-hidden="true">AC</div>
+          <h3>Dra. Ana Clara Reis</h3>
+          <p class="role">Clínica geral · CRO-BA 00.000</p>
+          <p>Prevenção, restaurações e clareamento. É quem recebe os casos de urgência no mesmo dia.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="duvidas" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="split faq-split">
+        <div>
+          <p class="eyebrow reveal">Dúvidas</p>
+          <h2 class="h2 reveal" id="faq-title">Perguntas que chegam antes da consulta</h2>
+          <p class="quote-rule reveal mt-5">“Se eu não souber o nome do tratamento, como peço o horário?”</p>
+          <p class="note reveal mt-4">Peça uma avaliação. É na consulta que o dentista identifica o problema e explica as opções — sem compromisso de fechar na hora.</p>
+        </div>
+        <div class="faq reveal reveal--d1">
+          <details>
+            <summary>A clínica atende convênio?</summary>
+            <p>O atendimento é particular. Emitimos recibo e nota para você pedir reembolso ao plano, quando houver cobertura.</p>
+          </details>
+          <details>
+            <summary>Como funciona a primeira consulta?</summary>
+            <p>É uma avaliação clínica: exame, conversa sobre o que você precisa e explicação das opções. O valor da consulta é informado antes do agendamento.</p>
+          </details>
+          <details>
+            <summary>Dá para parcelar o tratamento?</summary>
+            <p>Sim, em até 12x no cartão. O parcelamento é combinado na apresentação do plano, com o valor total e o número de parcelas por escrito.</p>
+          </details>
+          <details>
+            <summary>Vocês atendem dor de dente no mesmo dia?</summary>
+            <p>Reservamos horários para urgência de segunda a sábado. Chame no WhatsApp, informe o que está sentindo e a recepção encaixa você na agenda do dia.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo dura o tratamento?</summary>
+            <p>Depende do caso. O prazo estimado vai no plano escrito, com as etapas e os retornos. Casos simples de clínica geral costumam resolver em uma ou duas sessões.</p>
+          </details>
+          <details>
+            <summary>Preciso levar raio-X?</summary>
+            <p>Se você já tem um exame recente, traga. Se não, a clínica faz a imagem no local e inclui no plano de tratamento.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="contato" aria-labelledby="contato-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Agendamento</p>
+        <h2 class="h2" id="contato-title">Peça seu horário</h2>
+        <p class="lead">Preencha os campos e o WhatsApp abre com a mensagem pronta. A recepção responde em horário comercial.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="form reveal" data-wa-form="Olá! Vim pelo site da Sorriso Novo e quero agendar uma consulta."
+              action="https://wa.me/5573988659878" method="get" target="_blank" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="nome">Seu nome <span class="req" aria-hidden="true">*</span></label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required minlength="2"
+                     placeholder="Como podemos chamar você?">
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="servico">Serviço <span class="req" aria-hidden="true">*</span></label>
+              <select id="servico" name="servico" required>
+                <option value="">Escolha</option>
+                <option>Avaliação / clínica geral</option>
+                <option>Implantes</option>
+                <option>Ortodontia</option>
+                <option>Clareamento</option>
+                <option>Próteses e lentes</option>
+                <option>Dor de dente</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="horario">Melhor horário <span class="req" aria-hidden="true">*</span></label>
+            <select id="horario" name="horario" required>
+              <option value="">Escolha</option>
+              <option>Manhã (8h às 12h)</option>
+              <option>Tarde (12h às 18h)</option>
+              <option>Sábado pela manhã</option>
+              <option>Tanto faz — me sugira o primeiro horário</option>
+            </select>
+            <span class="error" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="obs">Algo que devemos saber? <span class="note">(opcional)</span></label>
+            <textarea id="obs" name="observacao" rows="3" data-label="Observação"
+                      placeholder="Ex.: sinto dor no dente do fundo há dois dias."></textarea>
+          </div>
+          <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--primary btn--lg btn--block" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.8L3 21l1.8-5A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-foot">Ao enviar, o WhatsApp abre com a mensagem já montada. Nada é armazenado neste site.</p>
+          <noscript><p class="form-foot">O formulário precisa de JavaScript. Se preferir, chame direto: <a href="https://wa.me/5573988659878">(73) 98865-9878</a>.</p></noscript>
+        </form>
+
+        <div class="contact-aside reveal reveal--d1">
+          <div class="contact-item">
+            <div class="lbl">Horário</div>
+            <strong>Segunda a sexta, 8h às 18h<br>Sábado, 8h às 12h</strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">Telefone e WhatsApp</div>
+            <strong><a href="tel:+5573988659878" data-tel data-phone-text>(73) 98865-9878</a></strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">E-mail</div>
+            <strong><a href="mailto:contato@sorrisonovo.com.br">contato@sorrisonovo.com.br</a></strong>
+          </div>
+          <p class="note">Atendimento particular. Em caso de urgência fora do horário, procure o pronto-socorro mais próximo.</p>
+        </div>
+      </div>
+
+      <div class="map-card reveal">
+        <div class="map-art" aria-hidden="true">
+          <span class="map-pin"></span>
+        </div>
+        <div class="map-copy">
+          <span class="lbl">Como chegar</span>
+          <address>Av. Rio Branco — Centro<br>Jequié · Bahia</address>
+          <p class="note">A duas quadras da praça central. Há estacionamento na rua.</p>
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Rio+Branco,+Centro,+Jequi%C3%A9+-+BA"
+             target="_blank" rel="noopener">
+            Abrir no Google Maps
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="band reveal">
+        <div>
+          <h2>Prefere resolver por mensagem?</h2>
+          <p>Mande o que você precisa. A recepção responde com os horários disponíveis e o valor da avaliação.</p>
+        </div>
+        <a class="btn btn--lg" href="#contato" data-wa="Olá! Quero saber os horários disponíveis para avaliação.">Chamar no WhatsApp</a>
       </div>
     </div>
   </section>
@@ -226,55 +493,47 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="odonto.html" style="margin-bottom:14px">
-          <span class="mark">S</span>
-          <span>Sorriso Novo<small>Odontologia · Jequié</small></span>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="odonto.html">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-text">Sorriso Novo<small>Odontologia · Jequié</small></span>
         </a>
-        <p style="max-width:34ch;font-size:13.5px">Clínica odontológica no centro de Jequié. Implantes, ortodontia, clareamento e clínica geral.</p>
+        <p>Clínica odontológica no centro de Jequié. Implantes, ortodontia, clareamento e clínica geral com hora marcada.</p>
       </div>
       <div>
-        <h3>Tratamentos</h3>
-        <ul>
-          <li>Implantes</li>
-          <li>Ortodontia</li>
-          <li>Clareamento</li>
-          <li>Próteses e lentes</li>
+        <h3 class="footer-title">Navegação</h3>
+        <ul class="footer-links">
+          <li><a href="#tratamentos">Tratamentos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contato</h3>
-        <ul>
-          <li>(73) 90000-0000</li>
-          <li>Av. Rio Branco, 000 — Centro</li>
-          <li>Seg a sex, 8h às 18h</li>
+        <h3 class="footer-title">Tratamentos</h3>
+        <ul class="footer-links">
+          <li><a href="#tratamentos">Implantes</a></li>
+          <li><a href="#tratamentos">Ortodontia</a></li>
+          <li><a href="#tratamentos">Clareamento</a></li>
+          <li><a href="#tratamentos">Próteses e lentes</a></li>
         </ul>
       </div>
     </div>
-    <div class="bottom">
-      <span>© 2026 Sorriso Novo Odontologia</span>
-      <span>Responsável técnico: CRO-BA 00000</span>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Sorriso Novo Odontologia</span>
+      <span>Jequié · Bahia</span>
     </div>
-    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+    <p class="demo-note"><strong>Modelo demonstrativo.</strong> Nome, equipe, registros profissionais, endereço e e-mail são fictícios e servem apenas para apresentação comercial. Fotos ilustrativas de banco de imagens — no site final entram fotos reais da clínica. O WhatsApp deste link é do desenvolvedor do modelo. A publicação por um cliente exige conferir texto e imagens com o CRO responsável (Res. CFO 196/2019).</p>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
-  WhatsApp
+<a class="wa" href="#contato" data-wa="Olá! Vim pelo site e quero agendar uma consulta."
+   aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
 </a>
 
-<script>
-/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
-document.querySelectorAll(".nav a").forEach(function (a) {
-  a.addEventListener("click", function () {
-    var t = document.getElementById("navt");
-    if (t) t.checked = false;
-  });
-});
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
-
-  .photo{aspect-ratio:4/3;border-radius:20px;overflow:hidden;background:var(--soft);box-shadow:0 34px 60px -36px rgba(15,118,110,.55)}

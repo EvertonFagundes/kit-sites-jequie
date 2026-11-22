@@ -3,243 +3,750 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#4338ca">
+<meta name="theme-color" content="#1d1c55">
 <title>Contabilidade em Jequié | Nova Contabilidade</title>
-<meta name="description" content="Abertura de empresa, contabilidade mensal e planejamento tributário em Jequié. Atendimento para MEI, Simples Nacional e pequenas empresas.">
-<meta property="og:title" content="Nova Contabilidade — Jequié">
-<meta property="og:description" content="Contabilidade para MEI, Simples Nacional e pequenas empresas.">
+<meta name="description" content="Contabilidade para MEI, microempresa, empresa e pessoa física em Jequié. Rotina organizada, calendário de obrigações e conferência de guias. Fale com o escritório.">
+<link rel="canonical" href="https://evertonfagundes.github.io/kit-sites-jequie/contabilidade.html">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234338ca'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>N</text></svg>">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Nova Contabilidade">
+<meta property="og:title" content="Nova Contabilidade — Jequié, BA">
+<meta property="og:description" content="Cada perfil tem um calendário. O escritório organiza guias, prazos e documentos.">
+<meta property="og:url" content="https://evertonfagundes.github.io/kit-sites-jequie/contabilidade.html">
+<meta property="og:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/contabilidade.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nova Contabilidade — escritório em Jequié, Bahia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nova Contabilidade — Jequié, BA">
+<meta name="twitter:description" content="MEI, ME, empresa e pessoa física com a rotina no lugar.">
+<meta name="twitter:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/contabilidade.jpg">
+<link rel="icon" href="assets/favicon-contabilidade.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-contabilidade.png">
+<link rel="preload" href="assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/w/cont-hero-900.webp"
+      imagesrcset="assets/img/w/cont-hero-480.webp 480w, assets/img/w/cont-hero-900.webp 900w, assets/img/w/cont-hero-1400.webp 1400w"
+      imagesizes="(max-width: 960px) 92vw, 520px">
 <link rel="stylesheet" href="assets/base.css">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-  body{--accent:#4338ca;--accent-soft:#ecebfb;--soft:#f6f5fe}
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
-  .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
-  .plan--hi .badge-hi{position:absolute;top:-11px;left:50%;transform:translateX(-50%);
-    background:var(--accent);color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;
-    text-transform:uppercase;padding:4px 12px;border-radius:999px;white-space:nowrap}
-  .who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  .who-card{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff}
-  .who-card .k{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
-    color:var(--accent);margin-bottom:8px}
-  .who-card h3{font-size:16px;margin:0 0 8px}
-  .who-card p{font-size:13.5px;color:var(--muted);margin:0}
-  .checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin-top:22px}
-  .checklist li{display:flex;gap:10px;font-size:14px;align-items:flex-start}
-  .checklist .tick{width:19px;height:19px;border-radius:50%;background:var(--accent-soft);
-    color:var(--accent);display:grid;place-items:center;flex:none;font-size:10.5px;
-    font-weight:800;margin-top:1px}
-  @media (max-width:900px){
-    .split{grid-template-columns:1fr;gap:30px}
-    .plans,.who-grid{grid-template-columns:1fr}
-    .checklist{grid-template-columns:1fr}
+  :root{
+    --bg:#f7f6ee;
+    --bg-2:#efeee3;
+    --surface:#fffef9;
+    --surface-2:#f0efe4;
+    --ink:#17172f;
+    --ink-2:#2d2d46;
+    --muted:#5f5f6d;
+    --line:#e1dfce;
+    --line-2:#c9c7b4;
+    --accent:#24236b;
+    --accent-ink:#1d1c55;
+    --accent-soft:#e7e6f4;
+    --accent-on:#ffffff;
+    --lime:#c7f464;
+    --lime-ink:#25320a;
+    --selection:#e2f2bb;
+    --font-display:'Space Grotesk','Segoe UI',Arial,sans-serif;
+    --font-text:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    --footer-bg:#141430;
   }
-  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  body{font-size:16.5px;line-height:1.62}
+  .site-header{background:rgba(247,246,238,.86)}
+  .site-header.is-scrolled{background:rgba(247,246,238,.96)}
+  .brand-mark{border-radius:10px;font-family:var(--font-display);font-size:18px}
+  .nav a{font-size:13.5px}
+  .btn{border-radius:10px}
+  .btn--primary{background:var(--accent);color:#fff}
+  .eyebrow{color:var(--accent-ink)}
+
+  .hero{padding:22px 0 0}
+  .hero-poster{position:relative;overflow:hidden;background:#1d1c55;color:#f6f5ec;
+    border-radius:calc(var(--radius-lg) + 6px);padding:clamp(28px,5.2vw,68px);
+    box-shadow:0 36px 70px -40px rgba(20,20,48,.65)}
+  .hero-poster::before{content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      repeating-linear-gradient(90deg,transparent 0 calc(20% - 1px),rgba(255,255,255,.07) calc(20% - 1px) 20%),
+      radial-gradient(60% 90% at 88% 8%,rgba(199,244,100,.14),transparent 60%)}
+  .hero-poster::after{content:"";position:absolute;right:-90px;bottom:-120px;width:360px;height:360px;
+    border-radius:50%;border:1px solid rgba(199,244,100,.3);pointer-events:none}
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.22fr .78fr;
+    gap:clamp(30px,5vw,64px);align-items:end}
+  .hero .eyebrow{color:var(--lime);justify-content:flex-start}
+  .hero .eyebrow::before{background:var(--lime)}
+  .hero h1{color:#fff;font-size:clamp(37px,5.4vw,64px);line-height:1.01;letter-spacing:-.04em;max-width:15ch}
+  .hero h1 em{font-style:normal;color:var(--lime)}
+  .hero .lead{color:#d9d8ea;max-width:50ch;margin-top:18px;font-size:17px}
+  .hero-actions{margin-top:26px}
+  .hero .btn--primary{background:var(--lime);color:var(--lime-ink);box-shadow:none}
+  .hero .btn--primary:hover{background:#d7ff85}
+  .hero .btn--ghost{border-color:rgba(255,255,255,.34);color:#fff;background:transparent}
+  .hero .btn--ghost:hover{border-color:#fff;box-shadow:none}
+  .hero-note{margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16);
+    font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#b8b7d2}
+  .profile-index{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.22)}
+  .profile-index .k{display:block;font-size:9.5px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--lime);padding:12px 0 8px}
+  .profile-index a{display:grid;grid-template-columns:28px 1fr 16px;gap:8px;align-items:center;
+    padding:10px 0;border-bottom:1px solid rgba(255,255,255,.16);color:#ecebf5}
+  .profile-index a:hover{color:var(--lime)}
+  .profile-index .n{font-family:var(--font-display);font-size:10px;color:#9d9cba}
+  .profile-index .t{font-family:var(--font-display);font-size:17px;font-weight:500;letter-spacing:-.01em}
+  .profile-index svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.6;
+    stroke-linecap:round;stroke-linejoin:round}
+
+  .tabs-shell{background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    padding:6px;box-shadow:var(--shadow-1)}
+  .tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+  .tab{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;
+    padding:8px 10px;border-radius:11px;font-family:var(--font-display);font-size:14.5px;
+    font-weight:500;color:var(--muted);transition:background .18s,color .18s}
+  .tab .n{font-size:10px;color:var(--line-2);font-weight:700;letter-spacing:.08em}
+  .tab[aria-selected="true"]{background:var(--accent);color:#fff}
+  .tab[aria-selected="true"] .n{color:var(--lime)}
+  .tab:hover{color:var(--ink)}
+  .tab[aria-selected="true"]:hover{color:#fff}
+  .panel{padding-top:clamp(28px,4vw,40px)}
+  .panel-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:clamp(28px,5vw,60px);align-items:start}
+  .panel-intro .badge{margin-bottom:12px}
+  .panel-intro h3{font-size:clamp(25px,3vw,33px);margin-bottom:8px}
+  .panel-intro p{font-size:14.5px;color:var(--muted);line-height:1.65;max-width:40ch}
+  .panel-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,34px)}
+  .panel-col{border-top:1px solid var(--line);padding-top:16px}
+  .panel-col h4{font-family:var(--font-text);font-size:10px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--accent-ink);margin-bottom:10px}
+  .panel-col ul{display:grid;gap:9px}
+  .panel-col li{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+  .panel-col li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);
+    flex:none;margin-top:7px}
+  .panel-foot{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);
+    font-size:11.5px;line-height:1.6;color:var(--muted);max-width:70ch}
+
+  .cal-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(26px,4vw,54px);align-items:start}
+  .cal-every{background:#1d1c55;color:#f3f2e8;border-radius:var(--radius);padding:clamp(24px,3.4vw,32px);
+    position:relative;overflow:hidden}
+  .cal-every::after{content:"";position:absolute;right:-46px;top:-46px;width:150px;height:150px;
+    border:1px solid rgba(199,244,100,.35);border-radius:50%}
+  .cal-every .k{font-size:9.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--lime);margin-bottom:6px}
+  .cal-every h3{font-size:25px;color:#fff;margin-bottom:16px}
+  .cal-every dl{display:grid;gap:0;margin:0}
+  .cal-every .row{display:flex;justify-content:space-between;gap:14px;align-items:baseline;
+    padding:11px 0;border-top:1px solid rgba(255,255,255,.16);font-size:13.5px}
+  .cal-every .row dt{color:#e3e2f0}
+  .cal-every .row dd{margin:0;font-family:var(--font-display);font-size:12px;color:var(--lime);
+    white-space:nowrap;letter-spacing:.04em}
+  .cal-every p{font-size:11.5px;line-height:1.55;color:#b9b8d3;margin:16px 0 0}
+  .cal-year{border-top:1px solid var(--line)}
+  .cal-year .row{display:grid;grid-template-columns:62px 1fr auto;gap:14px;align-items:baseline;
+    padding:14px 0;border-bottom:1px solid var(--line)}
+  .cal-year .m{font-family:var(--font-display);font-size:17px;font-weight:600;color:var(--accent-ink);
+    text-transform:uppercase;letter-spacing:.04em}
+  .cal-year .t strong{display:block;font-size:14px;font-weight:600;line-height:1.4}
+  .cal-year .t span{display:block;font-size:12.5px;color:var(--muted);line-height:1.45}
+  .cal-year .d{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--muted);white-space:nowrap}
+  .cal-note{margin-top:18px;font-size:11.5px;line-height:1.6;color:var(--muted);max-width:68ch}
+
+  .check-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:clamp(28px,5vw,62px);align-items:start}
+  .check-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(22px,3.4vw,32px);box-shadow:var(--shadow-2)}
+  .check-card .head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;
+    border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:4px}
+  .check-card .head h3{font-size:22px}
+  .check-card .head span{font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);white-space:nowrap;padding-top:5px}
+  .check-item{display:flex;align-items:flex-start;gap:12px;padding:13px 0;
+    border-bottom:1px solid var(--line);font-size:14px;line-height:1.45;cursor:pointer}
+  .check-item:last-of-type{border-bottom:0}
+  .check-item input{width:19px;height:19px;margin:1px 0 0;flex:none;accent-color:var(--accent);cursor:pointer}
+  .check-item:has(input:checked){color:var(--muted)}
+  .check-card .note{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);
+    font-size:11.5px;line-height:1.55}
+  .check-copy .checks{margin-top:20px}
+  .check-copy .checks li{font-size:14px}
+
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+  .step{padding:26px 26px 30px 0;border-bottom:1px solid var(--line)}
+  .step+.step{padding-left:26px;border-left:1px solid var(--line)}
+  .step .num{display:block;font-family:var(--font-display);font-size:13px;letter-spacing:.1em;
+    color:var(--accent-ink);margin-bottom:30px}
+  .step h3{font-size:22px;margin-bottom:7px}
+  .step p{font-size:14px;color:var(--muted);line-height:1.6;margin:0;max-width:33ch}
+
+  .tech{display:grid;grid-template-columns:.3fr .7fr;gap:clamp(28px,5vw,66px);align-items:center}
+  .tech .monogram{width:100%;max-width:260px;aspect-ratio:1;border-radius:var(--radius);
+    background:var(--accent);color:var(--lime);font-size:clamp(46px,7vw,78px)}
+  .tech .monogram::after{background:radial-gradient(120% 100% at 80% 0%,rgba(199,244,100,.22),transparent 60%)}
+  .tech .lead{max-width:52ch}
+  .tech .crc{display:inline-flex;align-items:center;gap:8px;margin-top:16px;padding:6px 12px;
+    border:1px solid var(--line-2);border-radius:999px;font-size:11px;font-weight:600;
+    letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink)}
+  .tech .crc i{width:5px;height:5px;border-radius:50%;background:var(--accent);flex:none}
+  .tech .quote{margin-top:20px;padding-left:16px;border-left:2px solid var(--lime);
+    font-family:var(--font-display);font-size:17px;line-height:1.45;color:var(--ink-2);max-width:44ch}
+
+  .contact-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(30px,5vw,60px);align-items:start}
+  .contact-aside{display:grid;gap:16px;align-content:start}
+  .contact-item{border-top:1px solid var(--line);padding-top:13px}
+  .contact-item .lbl{font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:4px}
+  .contact-item strong{display:block;font-size:15px;line-height:1.55;font-weight:600}
+  .contact-item a{text-decoration:underline;text-decoration-thickness:1px;
+    text-underline-offset:3px;text-decoration-color:var(--line-2)}
+  .contact-item a:hover{text-decoration-color:var(--accent)}
+  .contact-aside .note{font-size:11.5px;line-height:1.6}
+  .map-card{margin-top:clamp(32px,5vw,48px)}
+
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:30px;align-items:start}
+    .profile-index{max-width:420px}
+    .panel-grid,.cal-grid,.check-grid{grid-template-columns:1fr;gap:30px}
+    .cal-every{max-width:520px}
+    .steps{grid-template-columns:1fr}
+    .step{padding:20px 0 24px}
+    .step+.step{padding-left:0;border-left:0}
+    .step .num{margin-bottom:12px}
+    .tech{grid-template-columns:1fr;gap:26px}
+    .tech .monogram{max-width:150px}
+    .contact-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:620px){
+    .hero{padding-top:14px}
+    .hero-poster{border-radius:20px;padding:26px 20px}
+    .hero h1{font-size:clamp(34px,9.4vw,44px)}
+    .hero .lead{font-size:15.5px}
+    .hero-actions .btn{width:100%}
+    .profile-index{display:grid;grid-template-columns:1fr;gap:0}
+    .profile-index .k{grid-column:auto}
+    .profile-index a{grid-template-columns:24px 1fr 14px}
+    .profile-index .t{font-size:16px}
+    .tabs{grid-template-columns:1fr 1fr}
+    .tab{justify-content:flex-start;font-size:13.5px}
+    .panel-cols{grid-template-columns:1fr}
+    .cal-year .row{grid-template-columns:50px 1fr;gap:10px}
+    .cal-year .d{grid-column:2;font-size:9.5px;margin-top:2px}
+    .check-card{padding:20px}
+    .check-card .head{flex-direction:column;gap:2px}
+    .check-card .head span{padding-top:0}
+    .tech .monogram{max-width:120px}
+    .contact-grid{gap:34px}
+  }
 </style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"AccountingService","name":"Nova Contabilidade",
-"description":"Escritório de contabilidade em Jequié. Abertura de empresa, contabilidade mensal e planejamento tributário.",
-"telephone":"+55-73-90000-0000","priceRange":"$$",
-"address":{"@type":"PostalAddress","streetAddress":"Av. Franz Gedeon, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45200-130","addressCountry":"BR"}}
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://evertonfagundes.github.io/kit-sites-jequie/contabilidade.html#escritorio",
+  "name": "Nova Contabilidade",
+  "url": "https://evertonfagundes.github.io/kit-sites-jequie/contabilidade.html",
+  "image": "https://evertonfagundes.github.io/kit-sites-jequie/assets/og/contabilidade.jpg",
+  "description": "Escritório de contabilidade em Jequié com atendimento a MEI, microempresas, empresas e pessoas físicas.",
+  "telephone": "+55-73-98865-9878",
+  "email": "contato@novacontabilidade.com.br",
+  "priceRange": "Sob consulta",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Franz Gedeon, 000, Centro",
+    "addressLocality": "Jequié",
+    "addressRegion": "BA",
+    "postalCode": "45200-000",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"}
+  ],
+  "areaServed": ["Jequié","Bahia"],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Av.+Franz+Gedeon,+Centro,+Jequi%C3%A9+-+BA",
+  "knowsAbout": ["MEI","Simples Nacional","Lucro Presumido","Imposto de Renda","Folha de pagamento","Planejamento tributário"]
+}
 </script>
 </head>
 <body>
+
+<div class="demo-band"><span><i aria-hidden="true"></i> Modelo demonstrativo · dados fictícios</span></div>
 <a class="skip" href="#main">Ir para o conteúdo</a>
 
-<header class="site-header">
-  <div class="wrap">
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
     <a class="brand" href="contabilidade.html">
-      <span class="mark">N</span>
-      <span>Nova Contabilidade<small>Jequié · BA</small></span>
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span class="brand-text">Nova Contabilidade<small>Jequié · Bahia</small></span>
     </a>
-    <input type="checkbox" id="navt" class="nav-toggle">
-    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
-    <nav class="nav">
-      <a href="#servicos">Serviços</a>
-      <a href="#planos">Planos</a>
-      <a href="#quem">Para quem</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+            aria-label="Abrir menu" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Menu principal" data-nav>
+      <a href="#perfis">Perfis</a>
+      <a href="#calendario">Calendário</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#escritorio">Escritório</a>
+      <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20contabilidade.">Falar agora</a>
+    <a class="btn btn--primary btn--sm header-cta" href="#contato"
+       data-wa="Olá! Vim pelo site da Nova Contabilidade e quero falar sobre a minha empresa.">Falar com contador</a>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Contabilidade em Jequié</p>
-          <h1 class="h1">Sua empresa em dia,<br>sem <em>susto no fim do mês</em></h1>
-          <p class="lead">Abertura de empresa, contabilidade mensal e planejamento tributário. Você cuida do negócio, a gente cuida do prazo que não pode passar.</p>
-          <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20abrir%20minha%20empresa.">Abrir minha empresa</a>
-            <a class="btn btn--ghost btn--lg" href="#planos">Ver planos</a>
-          </div>
-          <div class="hero-note">
-            <span><i class="dot"></i> Resposta em até 1 dia útil</span>
-            <span><i class="dot"></i> Atendimento remoto</span>
-            <span><i class="dot"></i> Nota fiscal sem dor de cabeça</span>
-          </div>
-        </div>
-        <div class="visual">
-          <img src="assets/img/cont-hero.jpg" alt="Pessoa digitando em notebook sobre mesa de marmore" loading="eager" decoding="async">
-          <div class="hero-card"><b>+300</b><span>empresas atendidas na região</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt" id="servicos">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Serviços</p>
-        <h2 class="h2">O que sai da sua mesa</h2>
-        <p class="lead">Tudo o que envolve imposto, folha e obrigação acessória fica com a gente — e você recebe um resumo em linguagem que dá para entender.</p>
-      </div>
-      <div class="grid grid--2">
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12M8 20v-6h8v6M4 20h16"/></svg></div>
-          <h3 class="h3">Abertura de empresa</h3>
-          <p>CNPJ, alvará, enquadramento e inscrição estadual. Você sai com a empresa pronta para emitir nota.</p>
-        </article>
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/></svg></div>
-          <h3 class="h3">Contabilidade mensal</h3>
-          <p>Escrituração, folha de pagamento, impostos e obrigações acessórias entregues no prazo.</p>
-        </article>
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 18V6M4 18h16M8 14l3-4 3 2 4-6"/></svg></div>
-          <h3 class="h3">Planejamento tributário</h3>
-          <p>Análise do regime ideal e revisão de impostos pagos. Muitas empresas pagam mais do que deveriam.</p>
-        </article>
-        <article class="card">
-          <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-          <h3 class="h3">Departamento pessoal</h3>
-          <p>Admissão, demissão, férias, 13º e eSocial. Sem multa por atraso e sem cliente sem resposta.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="planos">
-    <div class="wrap">
-      <div class="section-head center">
-        <p class="eyebrow">Planos</p>
-        <h2 class="h2">Preço fixo, sem surpresa</h2>
-        <p class="lead">Você sabe quanto paga todo mês. Sem cobrança extra por dúvida.</p>
-      </div>
-
-      <div class="plans">
-        <div class="plan">
-          <div class="tag">MEI</div>
-          <h3 style="font-size:17px;margin:0">Essencial</h3>
-          <div class="price">R$ 149<span> /mês</span></div>
-          <p style="font-size:13px;color:var(--muted);margin:6px 0 0">Para quem está começando e quer ficar em dia.</p>
-          <ul>
-            <li>DAS-MEI em dia</li>
-            <li>Declaração anual</li>
-            <li>Emissão de nota fiscal</li>
-            <li>Suporte por WhatsApp</li>
-          </ul>
-          <a class="btn btn--ghost" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20plano%20Essencial.">Começar</a>
-        </div>
-
-        <div class="plan plan--hi">
-          <span class="badge-hi">Mais escolhido</span>
-          <div class="tag">Simples Nacional</div>
-          <h3 style="font-size:17px;margin:0">Crescimento</h3>
-          <div class="price">R$ 299<span> /mês</span></div>
-          <p style="font-size:13px;color:var(--muted);margin:6px 0 0">Para a empresa que já tem funcionário e quer crescer.</p>
-          <ul>
-            <li>Tudo do Essencial</li>
-            <li>Folha de pagamento</li>
-            <li>eSocial e FGTS</li>
-            <li>Relatório mensal de resultados</li>
-          </ul>
-          <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20plano%20Crescimento.">Escolher plano</a>
-        </div>
-
-        <div class="plan">
-          <div class="tag">Lucro Presumido</div>
-          <h3 style="font-size:17px;margin:0">Completo</h3>
-          <div class="price">R$ 549<span> /mês</span></div>
-          <p style="font-size:13px;color:var(--muted);margin:6px 0 0">Para quem fatura mais e precisa de planejamento.</p>
-          <ul>
-            <li>Tudo do Crescimento</li>
-            <li>Planejamento tributário anual</li>
-            <li>Reunião trimestral</li>
-            <li>Suporte prioritário</li>
-          </ul>
-          <a class="btn btn--ghost" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20o%20plano%20Completo.">Falar com contador</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt" id="quem">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Para quem</p>
-        <h2 class="h2">Cada negócio tem uma regra diferente</h2>
-      </div>
-      <div class="who-grid">
-        <div class="who-card">
-          <div class="k">Pessoa física</div>
-          <h3>Quero formalizar</h3>
-          <p>Abra o MEI em poucos dias, com enquadramento correto desde o início e sem pagar imposto a mais.</p>
-        </div>
-        <div class="who-card">
-          <div class="k">Pequena empresa</div>
-          <h3>Já tenho CNPJ</h3>
-          <p>Troca de contador sem dor: a gente busca a documentação e assume as obrigações do mês corrente.</p>
-        </div>
-        <div class="who-card">
-          <div class="k">Prestador de serviço</div>
-          <h3>Emito nota todo dia</h3>
-          <p>Emissão de nota, controle de recebimento e apuração de ISS sem atraso e sem multa.</p>
-        </div>
-      </div>
-
-      <div class="split" style="margin-top:52px">
-        <div class="photo"><img src="assets/img/cont-photo.jpg" alt="Notebook em escritorio com luz natural" loading="lazy"></div>
-        <div>
-          <h2 class="h2" style="font-size:26px">O que você recebe todo mês</h2>
-          <ul class="checklist">
-            <li><span class="tick">✓</span> Guias de imposto com antecedência</li>
-            <li><span class="tick">✓</span> Resumo de faturamento e despesas</li>
-            <li><span class="tick">✓</span> Aviso de vencimento no WhatsApp</li>
-            <li><span class="tick">✓</span> Cópia de tudo arquivada na nuvem</li>
-          </ul>
-          <div class="hero-actions" style="margin-top:26px">
-            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20trocar%20de%20contador.">Quero trocar de contador</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contato">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Dúvidas</p>
-        <h2 class="h2">Perguntas frequentes</h2>
-      </div>
-      <div class="faq">
-        <details><summary>Quanto custa para abrir uma empresa?</summary><p>A abertura é gratuita nos planos mensais. Você paga apenas as taxas oficiais do estado e do município, que informamos antes.</p></details>
-        <details><summary>Posso trocar de contador no meio do ano?</summary><p>Sim, e é mais simples do que parece. Cuidamos da transição e da busca da documentação com o escritório anterior.</p></details>
-        <details><summary>Vocês atendem empresa de outra cidade?</summary><p>Sim. O atendimento é remoto para todo o Brasil, com documentos digitais e assinatura eletrônica.</p></details>
-        <details><summary>Emito nota fiscal pelo celular?</summary><p>Sim. Configuramos o emissor e orientamos o uso. Em caso de dúvida, o suporte responde no mesmo dia útil.</p></details>
-      </div>
-
-      <div style="margin-top:44px">
-        <div class="cta-band">
+      <div class="hero-poster">
+        <div class="hero-grid">
           <div>
-            <h2>Vamos colocar sua empresa em dia?</h2>
-            <p>Mande uma mensagem contando em que situação você está. Respondemos com o próximo passo, sem compromisso.</p>
+            <p class="eyebrow reveal">Contabilidade · Jequié, BA</p>
+            <h1 id="hero-title" class="reveal">Sua empresa em dia, com a <em>rotina no lugar</em>.</h1>
+            <p class="lead reveal">MEI, microempresa, empresa ou pessoa física: cada perfil tem um calendário próprio. O escritório organiza as guias, os prazos e o que você precisa enviar a cada mês.</p>
+            <div class="hero-actions reveal">
+              <a class="btn btn--primary btn--lg" href="#contato"
+                 data-wa="Olá! Vim pelo site da Nova Contabilidade e quero falar sobre a minha empresa.">Falar com um contador</a>
+              <a class="btn btn--ghost btn--lg" href="#perfis">Ver os perfis</a>
+            </div>
+            <p class="hero-note reveal">Atendimento presencial em Jequié e remoto para a Bahia</p>
           </div>
-          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20contabilidade.">Chamar no WhatsApp</a>
+          <nav class="profile-index reveal reveal--d1" aria-label="Ir para um perfil">
+            <span class="k">Escolha o seu perfil</span>
+            <a href="#perfis"><span class="n">01</span><span class="t">MEI</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="#perfis"><span class="n">02</span><span class="t">Microempresa</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="#perfis"><span class="n">03</span><span class="t">Empresa</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="#perfis"><span class="n">04</span><span class="t">Pessoa física</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="perfis" aria-labelledby="perfis-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Por perfil</p>
+        <h2 class="h2" id="perfis-title">A rotina certa para o seu caso</h2>
+        <p class="lead">O regime muda o calendário, os documentos e a forma de apuração. Selecione o perfil mais próximo — se estiver em dúvida, a primeira conversa serve para isso.</p>
+      </div>
+
+      <div data-tabs class="reveal reveal--d1">
+        <div class="tabs-shell">
+          <div class="tabs" role="tablist" aria-label="Perfis de atendimento">
+            <button class="tab" id="tab-mei" role="tab" aria-selected="true" aria-controls="panel-mei" type="button">
+              <span class="n">01</span> MEI
+            </button>
+            <button class="tab" id="tab-me" role="tab" aria-selected="false" aria-controls="panel-me" tabindex="-1" type="button">
+              <span class="n">02</span> Microempresa
+            </button>
+            <button class="tab" id="tab-empresa" role="tab" aria-selected="false" aria-controls="panel-empresa" tabindex="-1" type="button">
+              <span class="n">03</span> Empresa
+            </button>
+            <button class="tab" id="tab-pf" role="tab" aria-selected="false" aria-controls="panel-pf" tabindex="-1" type="button">
+              <span class="n">04</span> Pessoa física
+            </button>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-mei" role="tabpanel" aria-labelledby="tab-mei">
+          <div class="panel-grid">
+            <div class="panel-intro">
+              <span class="badge">MEI</span>
+              <h3>Para quem trabalha por conta própria</h3>
+              <p>A rotina inclui a guia mensal, o controle de faturamento e a declaração anual. Se você tem um funcionário, a folha também entra no acompanhamento.</p>
+            </div>
+            <div>
+              <div class="panel-cols">
+                <div class="panel-col">
+                  <h4>Na rotina</h4>
+                  <ul>
+                    <li>DAS mensal e conferência de valores</li>
+                    <li>Controle do limite de faturamento</li>
+                    <li>Declaração anual do MEI</li>
+                    <li>Orientação sobre desenquadramento</li>
+                  </ul>
+                </div>
+                <div class="panel-col">
+                  <h4>Você envia</h4>
+                  <ul>
+                    <li>Notas fiscais emitidas no mês</li>
+                    <li>Comprovantes de compras e despesas</li>
+                    <li>Folha do funcionário, se houver</li>
+                    <li>Informe de rendimentos e extratos</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="panel-foot">O MEI que passa do limite precisa avaliar a migração para microempresa. O escritório faz a conta e explica o efeito no ano seguinte.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-me" role="tabpanel" aria-labelledby="tab-me" hidden>
+          <div class="panel-grid">
+            <div class="panel-intro">
+              <span class="badge">Microempresa</span>
+              <h3>Simples Nacional com acompanhamento</h3>
+              <p>A microempresa precisa de apuração mensal, controle de notas e uma visão clara do que entra e do que sai. O enquadramento é revisto antes de qualquer mudança.</p>
+            </div>
+            <div>
+              <div class="panel-cols">
+                <div class="panel-col">
+                  <h4>Na rotina</h4>
+                  <ul>
+                    <li>Apuração do Simples Nacional</li>
+                    <li>Folha, encargos e pró-labore</li>
+                    <li>Declaração anual e obrigações acessórias</li>
+                    <li>Controle de faturamento e estoque</li>
+                  </ul>
+                </div>
+                <div class="panel-col">
+                  <h4>Você envia</h4>
+                  <ul>
+                    <li>Notas de entrada e de saída</li>
+                    <li>Extratos bancários do mês</li>
+                    <li>Folha e admissões ou desligamentos</li>
+                    <li>Contratos e documentos dos sócios</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="panel-foot">O Simples tem faixas e anexos diferentes conforme a atividade. A classificação correta evita guia errada e retrabalho.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-empresa" role="tabpanel" aria-labelledby="tab-empresa" hidden>
+          <div class="panel-grid">
+            <div class="panel-intro">
+              <span class="badge">Empresa</span>
+              <h3>Lucro Presumido ou Real</h3>
+              <p>Para operações maiores, a rotina pede fechamento mensal, conciliação contábil e apuração trimestral. O acompanhamento inclui as obrigações fiscais e trabalhistas.</p>
+            </div>
+            <div>
+              <div class="panel-cols">
+                <div class="panel-col">
+                  <h4>Na rotina</h4>
+                  <ul>
+                    <li>Conciliação bancária e contábil</li>
+                    <li>Apuração de tributos federais e municipais</li>
+                    <li>ECD, ECF e demais obrigações</li>
+                    <li>Folha, pró-labore e encargos</li>
+                  </ul>
+                </div>
+                <div class="panel-col">
+                  <h4>Você envia</h4>
+                  <ul>
+                    <li>Extratos e conciliações</li>
+                    <li>Notas fiscais e contratos</li>
+                    <li>Documentos de sócios e financiamentos</li>
+                    <li>Relatórios de estoque e vendas</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="panel-foot">O planejamento tributário é feito dentro da lei, com comparação de cenários. Não há promessa de redução de imposto.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-pf" role="tabpanel" aria-labelledby="tab-pf" hidden>
+          <div class="panel-grid">
+            <div class="panel-intro">
+              <span class="badge">Pessoa física</span>
+              <h3>Imposto de renda e patrimônio</h3>
+              <p>Para quem recebe aluguel, trabalha como autônomo, vendeu um imóvel ou precisa organizar os bens. A rotina é anual, com obrigações mensais quando há rendimento tributável.</p>
+            </div>
+            <div>
+              <div class="panel-cols">
+                <div class="panel-col">
+                  <h4>Na rotina</h4>
+                  <ul>
+                    <li>Declaração anual do IRPF</li>
+                    <li>Carnê-leão sobre rendimentos</li>
+                    <li>Ganho de capital em venda de bens</li>
+                    <li>Regularização de imóveis e bens</li>
+                  </ul>
+                </div>
+                <div class="panel-col">
+                  <h4>Você envia</h4>
+                  <ul>
+                    <li>Informes de rendimento</li>
+                    <li>Recibos de aluguel e serviços</li>
+                    <li>Escrituras e matrículas de imóveis</li>
+                    <li>Extratos e comprovantes de despesas</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="panel-foot">A declaração errada pode gerar malha fina e multa. A conferência dos documentos antes do envio é parte do serviço.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="calendario" aria-labelledby="cal-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Calendário</p>
+        <h2 class="h2" id="cal-title">O ano contábil, mês a mês</h2>
+        <p class="lead">As obrigações mudam conforme o regime e o município. Este é o mapa de referência que o escritório usa para montar a agenda de cada cliente.</p>
+      </div>
+
+      <div class="cal-grid">
+        <aside class="cal-every reveal" aria-labelledby="every-title">
+          <p class="k">Todo mês</p>
+          <h3 id="every-title">O que não pode atrasar</h3>
+          <dl>
+            <div class="row"><dt>DAS do MEI</dt><dd>até o dia 20</dd></div>
+            <div class="row"><dt>Folha e encargos</dt><dd>até o dia 20</dd></div>
+            <div class="row"><dt>Notas e extratos</dt><dd>fechamento do mês</dd></div>
+            <div class="row"><dt>Conferência de guias</dt><dd>antes do vencimento</dd></div>
+          </dl>
+          <p>Quando o vencimento cai em fim de semana ou feriado, a data muda. O escritório confirma o dia exato de cada cliente.</p>
+        </aside>
+
+        <div class="cal-year reveal reveal--d1">
+          <div class="row">
+            <span class="m">Jan</span>
+            <span class="t"><strong>Reajuste de folha e calendário do ano</strong><span>Conferência de salários, benefícios e datas do exercício.</span></span>
+            <span class="d">Rotina</span>
+          </div>
+          <div class="row">
+            <span class="m">Mar</span>
+            <span class="t"><strong>Fechamento do primeiro trimestre</strong><span>Conciliação e revisão dos lançamentos antes das declarações.</span></span>
+            <span class="d">Rotina</span>
+          </div>
+          <div class="row">
+            <span class="m">Abr</span>
+            <span class="t"><strong>Imposto de Renda da pessoa física</strong><span>Envio da declaração dentro do prazo da Receita.</span></span>
+            <span class="d">Declaração</span>
+          </div>
+          <div class="row">
+            <span class="m">Mai</span>
+            <span class="t"><strong>Declaração anual do MEI</strong><span>DASN-SIMEI com o faturamento do ano anterior.</span></span>
+            <span class="d">Declaração</span>
+          </div>
+          <div class="row">
+            <span class="m">Jul</span>
+            <span class="t"><strong>Escrituração contábil fiscal</strong><span>ECF para empresas do Lucro Real e Presumido.</span></span>
+            <span class="d">Obrigação</span>
+          </div>
+          <div class="row">
+            <span class="m">Set</span>
+            <span class="t"><strong>Revisão do último trimestre</strong><span>Planejamento de tributos e conferência de pendências.</span></span>
+            <span class="d">Planejamento</span>
+          </div>
+          <div class="row">
+            <span class="m">Dez</span>
+            <span class="t"><strong>Fechamento do ano</strong><span>13º, férias, estoque e balanço do exercício.</span></span>
+            <span class="d">Fechamento</span>
+          </div>
+          <p class="cal-note">Datas de referência, não substituem a agenda oficial da Receita, do estado ou do município. O escritório confirma cada vencimento conforme o regime e a atividade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="checklist" aria-labelledby="check-title">
+    <div class="wrap">
+      <div class="check-grid">
+        <div class="check-copy reveal">
+          <p class="eyebrow">Checklist</p>
+          <h2 class="h2" id="check-title">O que separar antes do fechamento</h2>
+          <p class="lead">Quanto mais cedo os documentos chegam, menor a chance de guia errada e de correria no fim do mês. Marque o que já está pronto.</p>
+          <ul class="checks">
+            <li><span class="tick" aria-hidden="true">✓</span> Envie os arquivos no canal combinado, não em conversa pessoal</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Confira se as notas têm data, valor e CNPJ corretos</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Avise sobre admissões, férias e desligamentos antes de acontecerem</li>
+          </ul>
+        </div>
+
+        <div class="check-card reveal reveal--d1">
+          <div class="head">
+            <h3>Checklist do mês</h3>
+            <span>Marque o que já separou</span>
+          </div>
+          <label class="check-item"><input type="checkbox" name="ck1"> Extratos bancários do mês</label>
+          <label class="check-item"><input type="checkbox" name="ck2"> Notas fiscais emitidas</label>
+          <label class="check-item"><input type="checkbox" name="ck3"> Notas de compra e despesas</label>
+          <label class="check-item"><input type="checkbox" name="ck4"> Folha de pagamento e admissões</label>
+          <label class="check-item"><input type="checkbox" name="ck5"> Contratos e documentos de sócios</label>
+          <label class="check-item"><input type="checkbox" name="ck6"> Comprovantes de empréstimos e financiamentos</label>
+          <p class="note">O checklist é uma ferramenta de organização desta página. Nada é enviado ou armazenado ao marcar os itens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight section--alt" id="escritorio" aria-labelledby="office-title">
+    <div class="wrap">
+      <div class="tech">
+        <div class="monogram reveal" aria-hidden="true">CS</div>
+        <div class="reveal reveal--d1">
+          <p class="eyebrow">Quem cuida</p>
+          <h2 class="h2" id="office-title">Contabilidade com nome e responsável</h2>
+          <p class="lead">Cláudia Serra é contadora e responde tecnicamente pelo escritório. Atua com MEI, Simples Nacional e Lucro Presumido, com atendimento presencial em Jequié e remoto para a Bahia.</p>
+          <p class="crc"><i aria-hidden="true"></i> CRC-BA 00.000</p>
+          <p class="quote">“A guia paga em dia é o começo. O que evita susto é saber o que está acontecendo com o caixa e com as obrigações do mês.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="como-comeca" aria-labelledby="start-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Como começa</p>
+        <h2 class="h2" id="start-title">Do primeiro contato à rotina</h2>
+        <p class="lead">Sem contrato assinado na primeira conversa e sem promessa de resultado. Primeiro entendemos o cenário; depois vem a proposta.</p>
+      </div>
+      <div class="steps reveal reveal--d1">
+        <article class="step">
+          <span class="num">01</span>
+          <h3>Conversa</h3>
+          <p>Você conta o regime atual, o volume de notas e o que precisa resolver. A conversa pode ser por vídeo ou no escritório.</p>
+        </article>
+        <article class="step">
+          <span class="num">02</span>
+          <h3>Diagnóstico</h3>
+          <p>Conferimos guias, declarações e pendências. Você recebe o que está em aberto e o que precisa ser regularizado.</p>
+        </article>
+        <article class="step">
+          <span class="num">03</span>
+          <h3>Rotina</h3>
+          <p>Você recebe o calendário do seu perfil, o canal de envio e a proposta de honorários por escrito.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="duvidas" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Dúvidas</p>
+        <h2 class="h2" id="faq-title">Perguntas antes de trocar de contador</h2>
+      </div>
+      <div class="faq reveal reveal--d1">
+        <details>
+          <summary>Preciso esperar o fim do ano para trocar de contador?</summary>
+          <p>Não. A transição pode ser feita em qualquer mês, com a entrega dos documentos e a comunicação ao contador atual. O escritório organiza a lista do que precisa ser transferido.</p>
+        </details>
+        <details>
+          <summary>Como envio os documentos?</summary>
+          <p>Pelo canal combinado no início do atendimento, com uma pasta por mês. Senhas e acessos são tratados por um canal seguro — não envie senhas por WhatsApp.</p>
+        </details>
+        <details>
+          <summary>O escritório resolve pendências antigas?</summary>
+          <p>Faz o levantamento e explica o que pode ser regularizado, com prazos e custos. Cada situação depende da documentação e do tempo em aberto.</p>
+        </details>
+        <details>
+          <summary>Atendem empresas de outras cidades?</summary>
+          <p>Sim. O atendimento remoto cobre a Bahia, com reuniões por vídeo e envio digital de documentos. Para questões que exigem presença física, o escritório combina o deslocamento.</p>
+        </details>
+        <details>
+          <summary>Quanto custa?</summary>
+          <p>Depende do regime, do volume de notas, da folha e das obrigações do mês. O valor é apresentado em proposta depois do diagnóstico, sem surpresa na primeira guia.</p>
+        </details>
+        <details>
+          <summary>Vocês garantem redução de imposto?</summary>
+          <p>Não. Planejamento tributário é feito dentro da lei, com comparação de cenários e explicação dos riscos. Nenhum escritório sério pode prometer resultado antes de analisar os números.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contato" aria-labelledby="contato-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Contato</p>
+        <h2 class="h2" id="contato-title">Fale com o escritório</h2>
+        <p class="lead">Conte o seu perfil e o que precisa resolver. A resposta vem em horário comercial, com os próximos passos.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="form reveal" data-wa-form="Olá! Vim pelo site da Nova Contabilidade e quero falar sobre a minha situação."
+              action="https://wa.me/5573988659878" method="get" target="_blank" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="nome">Seu nome <span class="req" aria-hidden="true">*</span></label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required minlength="2"
+                     placeholder="Como podemos chamar você?">
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="perfil">Perfil <span class="req" aria-hidden="true">*</span></label>
+              <select id="perfil" name="perfil" required>
+                <option value="">Escolha</option>
+                <option>MEI</option>
+                <option>Microempresa (Simples Nacional)</option>
+                <option>Empresa (Lucro Presumido ou Real)</option>
+                <option>Pessoa física</option>
+                <option>Ainda vou abrir a empresa</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="assunto">O que você precisa? <span class="req" aria-hidden="true">*</span></label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Escolha</option>
+              <option>Abrir empresa ou MEI</option>
+              <option>Trocar de contador</option>
+              <option>Regularizar guias e declarações</option>
+              <option>Organizar a folha de pagamento</option>
+              <option>Declaração de imposto de renda</option>
+              <option>Outro assunto</option>
+            </select>
+            <span class="error" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="obs">Contexto <span class="note">(opcional)</span></label>
+            <textarea id="obs" name="observacao" rows="3" data-label="Contexto"
+                      placeholder="Ex.: tenho uma microempresa no Simples e quero trocar de contador neste mês."></textarea>
+          </div>
+          <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--primary btn--lg btn--block" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.8L3 21l1.8-5A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-foot">Ao enviar, o WhatsApp abre com a mensagem montada. Nada é armazenado neste site.</p>
+          <noscript><p class="form-foot">O formulário precisa de JavaScript. Se preferir, chame o escritório: <a href="tel:+5573988659878">(73) 98865-9878</a>.</p></noscript>
+        </form>
+
+        <div class="contact-aside reveal reveal--d1">
+          <div class="contact-item">
+            <div class="lbl">Telefone e WhatsApp</div>
+            <strong><a href="tel:+5573988659878" data-tel data-phone-text>(73) 98865-9878</a></strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">E-mail</div>
+            <strong><a href="mailto:contato@novacontabilidade.com.br">contato@novacontabilidade.com.br</a></strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">Endereço</div>
+            <strong>Av. Franz Gedeon, 000 — Centro<br>Jequié · BA · 45200-000</strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">Horário</div>
+            <strong>Segunda a sexta, 8h às 18h</strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">Responsável técnica</div>
+            <strong>Cláudia Serra · CRC-BA 00.000</strong>
+          </div>
+          <p class="note">Atendimento presencial com hora marcada ou por videoconferência. Documentos são recebidos pelo canal combinado, com pasta mensal.</p>
+        </div>
+      </div>
+
+      <div class="map-card reveal">
+        <div class="map-art" aria-hidden="true"><span class="map-pin"></span></div>
+        <div class="map-copy">
+          <span class="lbl">Como chegar</span>
+          <address>Av. Franz Gedeon, 000 — Centro<br>Jequié · Bahia</address>
+          <p class="note">A poucos minutos da Av. Rio Branco. Atendimento com hora marcada.</p>
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Franz+Gedeon,+Centro,+Jequi%C3%A9+-+BA"
+             target="_blank" rel="noopener">Abrir no Google Maps
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -249,55 +756,47 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="contabilidade.html" style="margin-bottom:14px">
-          <span class="mark">N</span>
-          <span>Nova Contabilidade<small>Jequié · BA</small></span>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="contabilidade.html">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-text">Nova Contabilidade<small>Jequié · Bahia</small></span>
         </a>
-        <p style="max-width:34ch;font-size:13.5px">Abertura de empresa, contabilidade mensal e planejamento tributário.</p>
+        <p>Contabilidade para MEI, microempresa, empresa e pessoa física. Rotina organizada, calendário claro e conferência de cada guia.</p>
       </div>
       <div>
-        <h3>Serviços</h3>
-        <ul>
-          <li>Abertura de empresa</li>
-          <li>Contabilidade mensal</li>
-          <li>Departamento pessoal</li>
-          <li>Planejamento tributário</li>
+        <h3 class="footer-title">Navegação</h3>
+        <ul class="footer-links">
+          <li><a href="#perfis">Perfis</a></li>
+          <li><a href="#calendario">Calendário</a></li>
+          <li><a href="#checklist">Checklist</a></li>
+          <li><a href="#escritorio">Escritório</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contato</h3>
-        <ul>
-          <li>(73) 90000-0000</li>
-          <li>Av. Franz Gedeon, 000 — Centro</li>
+        <h3 class="footer-title">Escritório</h3>
+        <ul class="footer-links">
+          <li>Av. Franz Gedeon, 000</li>
+          <li>Centro · Jequié · BA</li>
           <li>Seg a sex, 8h às 18h</li>
+          <li>CRC-BA 00.000</li>
         </ul>
       </div>
     </div>
-    <div class="bottom">
-      <span>© 2026 Nova Contabilidade</span>
-      <span>CRC-BA 00000</span>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Nova Contabilidade</span>
+      <span>Jequié · Bahia</span>
     </div>
-    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+    <p class="demo-note"><strong>Modelo demonstrativo.</strong> Nome, CRC, endereço, e-mail, equipe e prazos citados são fictícios ou de referência e servem apenas para apresentação comercial. Fotografia ilustrativa de banco de imagens — no site final entram imagens reais do escritório. O WhatsApp deste link é do desenvolvedor do modelo. A publicação por um cliente exige conferir todos os dados, o registro no CRC e o calendário vigente.</p>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
-  WhatsApp
+<a class="wa" href="#contato" data-wa="Olá! Vim pelo site da Nova Contabilidade e quero falar sobre a minha empresa."
+   aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
 </a>
 
-<script>
-/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
-document.querySelectorAll(".nav a").forEach(function (a) {
-  a.addEventListener("click", function () {
-    var t = document.getElementById("navt");
-    if (t) t.checked = false;
-  });
-});
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
-
-  .photo{aspect-ratio:4/3;border-radius:20px;overflow:hidden;background:var(--soft);box-shadow:0 34px 60px -36px rgba(67,56,202,.45)}

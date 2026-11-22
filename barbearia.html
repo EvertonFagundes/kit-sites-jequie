@@ -4,253 +4,616 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0b0c">
-<title>Barbearia em Jequié | Barbearia Navalha</title>
-<meta name="description" content="Corte, barba e cuidado masculino em Jequié. Agende seu horário pelo WhatsApp.">
-<meta property="og:title" content="Barbearia Navalha — Jequié">
-<meta property="og:description" content="Corte, barba e cuidado masculino. Agende pelo WhatsApp.">
+<title>Barbearia em Jequié | Navalha</title>
+<meta name="description" content="Corte, barba e acabamento com hora marcada no centro de Jequié. Tabela de preços, uma unidade e agendamento pelo WhatsApp.">
+<link rel="canonical" href="https://evertonfagundes.github.io/kit-sites-jequie/barbearia.html">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23f59e0b'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%231a1400' text-anchor='middle'>N</text></svg>">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Barbearia Navalha">
+<meta property="og:title" content="Barbearia Navalha — Jequié, BA">
+<meta property="og:description" content="Seu corte, seu horário. Tabela de preços e agendamento direto no centro de Jequié.">
+<meta property="og:url" content="https://evertonfagundes.github.io/kit-sites-jequie/barbearia.html">
+<meta property="og:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/barbearia.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Interior da Barbearia Navalha em Jequié, Bahia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Barbearia Navalha — Jequié, BA">
+<meta name="twitter:description" content="Seu corte, seu horário. Uma unidade no centro de Jequié.">
+<meta name="twitter:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/barbearia.jpg">
+<link rel="icon" href="assets/favicon-barbearia.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-barbearia.png">
+<link rel="preload" href="assets/fonts/archivo-black-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/w/barb-hero-900.webp"
+      imagesrcset="assets/img/w/barb-hero-480.webp 480w, assets/img/w/barb-hero-900.webp 900w, assets/img/w/barb-hero-1400.webp 1400w"
+      imagesizes="(max-width: 900px) 100vw, 46vw">
 <link rel="stylesheet" href="assets/base.css">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-  body{
-    --accent:#f59e0b;--accent-soft:#291f0a;
-    --bg:#0b0b0c;--bg-2:#0f0f12;--ink:#f5f5f6;--muted:#a1a1aa;
-    --line:#26262b;--soft:#131316;--star:#f0b429;
-    --font-display:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  :root{
+    --bg:#0b0b0c;
+    --bg-2:#101012;
+    --surface:#141416;
+    --surface-2:#19191c;
+    --ink:#f4f0e6;
+    --ink-2:#d9d4c8;
+    --muted:#a29c91;
+    --line:#2a2a2e;
+    --line-2:#3d3d43;
+    --accent:#f59e0b;
+    --accent-ink:#f7b83f;
+    --accent-soft:#2b2008;
+    --accent-on:#141416;
+    --selection:#f59e0b;
+    --font-display:'Archivo Black','Arial Black',Impact,sans-serif;
+    --font-text:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    --footer-bg:#08080a;
   }
-  .site-header{background:rgba(11,11,12,.92);border-bottom:1px solid var(--line)}
-  .nav a{color:#a1a1aa}
-  .nav a:hover{color:#fff}
-  .nav-burger{background:#131316;border-color:#26262b}
-  .nav-burger span{background:#f5f5f6}
-  .card,.quote,.info,.faq details,.plan{background:#131316;border-color:#26262b}
-  .card p,.quote p{color:#a1a1aa}
-  .quote p{color:#f5f5f6}
-  .btn--ghost{background:transparent;border-color:#2e2e34;color:#f5f5f6}
-  .btn--ghost:hover{border-color:var(--accent);color:var(--accent)}
-  .btn--primary{color:#0b0b0c}
-  .h1{text-transform:uppercase;font-weight:800;letter-spacing:-.03em;line-height:1.02}
-  .h2{text-transform:uppercase;font-weight:800;letter-spacing:-.02em}
-  .visual::before{background:radial-gradient(110% 90% at 80% 10%,rgba(245,158,11,.45),transparent 55%)}
-  .hero{padding-top:66px;padding-bottom:64px}
-  .hero .lead{color:#a1a1aa}
-  .cta-band{color:#0b0b0c}
-  .cta-band p{color:rgba(0,0,0,.74)}
-  .cta-band .btn{background:#0b0b0c;color:var(--accent)}
-  .cta-band h2{text-transform:uppercase;font-weight:800}
-  .brand .mark{color:#0b0b0c}
-  .hero-card{background:rgba(22,22,26,.94);color:#f5f5f6;box-shadow:0 14px 30px -14px rgba(0,0,0,.9)}
-  .hero-card b{color:#f5f5f6}
-  .hero-card span{color:#b4b4bd}
-  .nav{background:#0b0b0c}
+  body{background:var(--bg);color:var(--ink);font-size:16.5px;line-height:1.62}
+  ::selection{background:var(--accent);color:#0b0b0c}
+  .demo-band{background:var(--accent);color:#141416;letter-spacing:.1em;font-size:11px}
+  .demo-band i{background:#141416;opacity:.75}
+  .site-header{background:rgba(11,11,12,.82);border-bottom:1px solid transparent}
+  .site-header.is-scrolled{background:rgba(11,11,12,.96);border-bottom-color:var(--line)}
+  .brand-mark{border-radius:3px;background:var(--accent);color:#141416;
+    font-family:var(--font-display);font-size:17px}
+  .brand-text{font-family:var(--font-display);font-size:16px;letter-spacing:.01em;text-transform:uppercase}
+  .brand-text small{font-family:var(--font-text);font-size:9px;letter-spacing:.22em;color:var(--muted)}
+  .nav a{color:var(--muted);font-size:13px;letter-spacing:.02em}
+  .nav a:hover{color:var(--ink);background:var(--surface)}
+  .nav-toggle{background:var(--surface);border-color:var(--line-2)}
+  .nav-toggle-bars i{background:var(--ink)}
+  .nav-toggle[aria-expanded="true"]{border-color:var(--accent);background:var(--accent-soft)}
+  .btn{border-radius:2px;font-family:var(--font-text);letter-spacing:.01em}
+  .btn--primary{background:var(--accent);color:#141416}
+  .btn--primary:hover{background:#ffb31f}
+  .btn--ghost{border-color:var(--line-2);color:var(--ink)}
+  .btn--ghost:hover{border-color:var(--ink);box-shadow:0 0 0 1px var(--line)}
+  .eyebrow{color:var(--accent-ink);letter-spacing:.2em}
+  .eyebrow::before{background:var(--accent)}
+  h1,h2,.h1,.h2{font-weight:400;text-transform:none;letter-spacing:-.03em}
+  .lead{color:var(--muted)}
+  .section--alt{background:var(--bg-2)}
+  .note{color:var(--muted)}
 
-  .svcs{border-top:1px solid var(--line)}
-  .svc{display:flex;justify-content:space-between;align-items:center;gap:20px;
-    padding:22px 4px;border-bottom:1px solid var(--line)}
-  .svc b{display:block;font-size:16.5px;margin-bottom:2px}
-  .svc span{font-size:13.5px;color:#a1a1aa}
-  .svc .p{font-size:20px;font-weight:800;color:var(--accent);white-space:nowrap}
+  .hero{display:grid;grid-template-columns:1.04fr .96fr;min-height:min(86vh,720px);
+    border-bottom:1px solid var(--line);background:var(--bg)}
+  .hero-copy{padding:clamp(40px,7vw,92px) clamp(20px,5vw,54px) clamp(40px,6vw,74px) max(var(--gutter),calc((100vw - var(--container)) / 2));
+    display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+  .hero-copy .wrap-in{max-width:560px;margin-left:auto}
+  .hero .eyebrow{margin-bottom:18px}
+  .hero h1{font-family:var(--font-display);font-size:clamp(46px,6.7vw,91px);line-height:.87;
+    letter-spacing:-.055em;text-transform:uppercase;max-width:9ch;color:#fff}
+  .hero h1 span{color:var(--accent)}
+  .hero .lead{color:#c9c3b8;font-size:17px;max-width:42ch;margin-top:20px}
+  .hero-actions{margin-top:26px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:28px;padding-top:16px;
+    border-top:1px solid var(--line);font-size:10px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted)}
+  .hero-meta span{display:inline-flex;align-items:center;gap:7px}
+  .hero-meta i{width:4px;height:4px;background:var(--accent);flex:none}
+  .hero-media{position:relative;overflow:hidden;background:#111}
+  .hero-media img{width:100%;height:100%;object-fit:cover;object-position:52% 58%;
+    filter:saturate(.8) contrast(1.05)}
+  .hero-media::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(90deg,rgba(11,11,12,.62) 0%,rgba(11,11,12,.06) 32%,transparent 55%),
+               linear-gradient(0deg,rgba(11,11,12,.55),transparent 45%)}
+  .hero-sticker{position:absolute;right:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,32px);z-index:2;
+    background:var(--accent);color:#141416;padding:13px 15px 12px;rotate:-3deg;
+    box-shadow:0 16px 30px -16px rgba(0,0,0,.8);max-width:170px}
+  .hero-sticker b{display:block;font-family:var(--font-display);font-size:13px;line-height:1.1;
+    text-transform:uppercase;letter-spacing:.01em}
+  .hero-sticker span{display:block;font-size:9px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;margin-top:4px;opacity:.8}
 
-  .barber{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#131316}
-  .barber .ph b{font-size:44px;font-weight:800;color:#3a3a40;letter-spacing:-.03em}
-  .barber .b{padding:18px 20px 22px}
-  .barber h3{font-size:16px;margin:0 0 2px}
-  .barber .role{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--accent);font-weight:700;margin-bottom:8px}
-  .barber p{font-size:13.5px;color:#a1a1aa;margin:0}
+  .ticker{background:var(--accent);color:#141416;border-bottom:1px solid #2a1c02;overflow:hidden}
+  .ticker-track{display:flex;align-items:center;width:max-content;padding:9px 0;
+    animation:slide 28s linear infinite}
+  .ticker-track span{font-family:var(--font-display);font-size:12px;letter-spacing:.1em;
+    text-transform:uppercase;padding-right:30px;white-space:nowrap}
+  .ticker-track i{font-style:normal;font-size:14px;padding-right:30px}
+  @keyframes slide{to{transform:translateX(-50%)}}
 
-  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .price-layout{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(28px,5vw,72px);align-items:start}
+  .price-head{position:sticky;top:calc(var(--header-h) + 26px)}
+  .price-head .lead{max-width:38ch;margin-top:14px;font-size:15px}
+  .price-head .note{margin-top:20px;max-width:36ch}
+  .price-head .btn{margin-top:22px}
+  .price-list{border-top:1px solid var(--line)}
+  .price-row{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:start;
+    padding:16px 0;border-bottom:1px dashed var(--line-2)}
+  .price-row:first-child{padding-top:0}
+  .price-row h3{font-family:var(--font-text);font-size:16px;font-weight:600;line-height:1.35;
+    letter-spacing:0;text-transform:none;color:var(--ink);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .price-row p{font-size:12.8px;line-height:1.5;color:var(--muted);margin:3px 0 0;max-width:44ch}
+  .price-row .val{font-family:var(--font-display);font-size:19px;line-height:1.2;color:var(--accent);
+    white-space:nowrap;padding-top:1px}
+  .tag-combo{display:inline-flex;align-items:center;border:1px solid var(--accent);color:var(--accent);
+    font-family:var(--font-text);font-size:8.5px;font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;padding:2px 6px;line-height:1.2}
+  .price-foot{margin-top:18px;font-size:11.5px;line-height:1.6;color:var(--muted);max-width:58ch}
 
-  .hours{display:grid;gap:0;border-top:1px solid var(--line);max-width:520px}
-  .hours div{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);
-    font-size:14px;color:#d4d4d8}
-  .hours div span:last-child{color:#a1a1aa}
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
-  @media (max-width:900px){ .gallery{grid-template-columns:repeat(2,1fr)}
-    .split{grid-template-columns:1fr;gap:32px} }
-  @media (max-width:520px){ .gallery{gap:10px} }
-  .shot{aspect-ratio:1/1;border-radius:14px;overflow:hidden;background:var(--soft)}
-  .shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.25,1)}
-  .shot:hover img{transform:scale(1.04)}
-  .barber .ph b{color:rgba(245,158,11,.55);font-family:var(--font-display);font-weight:600}
+  .about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(30px,5vw,66px);align-items:center}
+  .collage{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .collage .a{grid-column:1/-1;aspect-ratio:16/9;overflow:hidden;background:var(--surface)}
+  .collage .b{aspect-ratio:1;overflow:hidden;background:var(--surface)}
+  .collage .c{aspect-ratio:1;overflow:hidden;background:var(--surface);position:relative}
+  .collage img{width:100%;height:100%;object-fit:cover;filter:saturate(.82)}
+  .collage .c::after{content:"";position:absolute;inset:0;background:rgba(245,158,11,.08)}
+  .about-copy .lead{max-width:46ch}
+  .about-copy .checks{margin-top:20px}
+  .about-copy .checks li{font-size:14px}
+  .about-copy .checks .tick{background:var(--accent);color:#141416}
+  .about-copy .sig{margin-top:22px;font-family:var(--font-display);font-size:13px;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+  .barbers{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+  .barber{padding:20px 22px 24px 0;border-bottom:1px solid var(--line)}
+  .barber+.barber{padding-left:22px;border-left:1px solid var(--line)}
+  .barber .mono{width:54px;height:54px;border-radius:50%;border:1px solid var(--line-2);
+    color:var(--accent);display:grid;place-items:center;font-family:var(--font-display);
+    font-size:16px;margin-bottom:14px}
+  .barber h3{font-family:var(--font-text);font-size:16px;font-weight:600;text-transform:none}
+  .barber .role{font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-ink);margin:4px 0 8px}
+  .barber p{font-size:12.8px;line-height:1.55;color:var(--muted);margin:0;max-width:30ch}
+
+  .book{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,68px);align-items:start}
+  .book-copy .lead{max-width:41ch;margin-top:14px}
+  .book-info{margin-top:24px;border-top:1px solid var(--line)}
+  .book-info .row{display:grid;grid-template-columns:84px 1fr;gap:14px;padding:11px 0;
+    border-bottom:1px solid var(--line);font-size:12.5px;line-height:1.5}
+  .book-info dt{font-size:9.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+    color:var(--muted);padding-top:2px}
+  .book-info dd{margin:0;color:var(--ink-2)}
+  .book-info a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line-2)}
+  .book-info a:hover{text-decoration-color:var(--accent)}
+  .book-note{margin-top:16px;font-size:11.5px;line-height:1.6;color:var(--muted);max-width:40ch}
+  .steps-mini{display:grid;gap:10px;margin-top:20px;counter-reset:s}
+  .steps-mini li{display:grid;grid-template-columns:24px 1fr;gap:10px;font-size:12.5px;line-height:1.5;
+    color:var(--ink-2)}
+  .steps-mini .n{width:22px;height:22px;border:1px solid var(--line-2);color:var(--accent);
+    display:grid;place-items:center;font-size:9px;font-weight:700;margin-top:1px}
+
+  .form{background:var(--surface);border-color:var(--line);border-radius:4px;box-shadow:none}
+  .form .field label{color:var(--ink-2)}
+  .form .field label .req{color:var(--accent)}
+  .form .field input,.form .field select,.form .field textarea{
+    background:#0e0e10;border-color:var(--line-2);color:var(--ink);border-radius:3px}
+  .form .field input::placeholder,.form .field textarea::placeholder{color:#726d64}
+  .form .field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' fill='none' stroke='%23a29c91' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E")}
+  .form .field input:focus,.form .field select:focus,.form .field textarea:focus{
+    border-color:var(--accent);box-shadow:0 0 0 3px rgba(245,158,11,.14)}
+  .form .field .error{color:#ff8b7a}
+  .form .field.is-invalid input,.form .field.is-invalid select{border-color:#ff8b7a}
+  .form-status.is-error{color:#ff8b7a}
+  .form-status.is-ok{color:var(--accent-ink)}
+  .form-foot{color:var(--muted)}
+  .form-foot a{color:var(--accent-ink)}
+  .form .btn--primary{width:100%}
+
+  .map-card{background:var(--surface);border-color:var(--line)}
+  .map-art{background:
+    radial-gradient(80% 70% at 20% 20%,rgba(245,158,11,.12),transparent 60%),
+    linear-gradient(145deg,#181613,#0f0f10)}
+  .map-art::before{background:
+    repeating-linear-gradient(24deg,transparent 0 42px,rgba(245,158,11,.10) 42px 44px),
+    repeating-linear-gradient(112deg,transparent 0 58px,rgba(255,255,255,.06) 58px 60px)}
+  .map-pin{background:var(--accent);box-shadow:0 10px 24px -6px rgba(245,158,11,.45)}
+  .map-pin::after{background:#141416}
+  .map-copy address{color:var(--ink)}
+  .map-copy .btn--ghost{color:var(--ink)}
+
+  .faq{border-top-color:var(--line)}
+  .faq details{border-bottom-color:var(--line)}
+  .faq summary{color:var(--ink)}
+  .faq summary::after{color:var(--accent)}
+  .faq details p{color:var(--muted)}
+  .faq-split{grid-template-columns:.8fr 1.2fr;align-items:start}
+
+  .site-footer{background:var(--footer-bg);border-top:1px solid var(--line);color:#a8a297}
+  .site-footer .brand-text small{color:#8f897f}
+  .site-footer .footer-about p{color:#8f897f}
+  .footer-links a:hover{color:#fff}
+  .footer-bottom{color:#8f897f}
+  .demo-note{color:#8f897f}
+  .demo-note strong{color:#b0a99d}
+
+  @media (max-width:960px){
+    .hero{grid-template-columns:1fr;min-height:0}
+    .hero-copy{padding:clamp(34px,7vw,56px) var(--gutter) 36px}
+    .hero-copy .wrap-in{max-width:none;margin:0}
+    .hero h1{font-size:clamp(44px,9.6vw,70px);max-width:11ch}
+    .hero-media{aspect-ratio:16/9;min-height:260px}
+    .hero-sticker{right:16px;bottom:16px}
+    .price-layout,.about-grid,.book,.faq-split{grid-template-columns:1fr}
+    .price-head{position:static}
+    .price-head .lead,.price-head .note{max-width:56ch}
+    .barbers{grid-template-columns:1fr}
+    .barber{padding:18px 0 20px}
+    .barber+.barber{padding-left:0;border-left:0}
+    .book-copy{order:0}
+    .form{max-width:620px}
+  }
+  @media (max-width:600px){
+    .hero-media{aspect-ratio:4/3}
+    .hero h1{font-size:clamp(42px,12.4vw,58px)}
+    .hero .lead{font-size:15.5px}
+    .hero-actions .btn{width:100%}
+    .hero-meta{font-size:9px;gap:6px 14px}
+    .hero-sticker{padding:10px 12px;max-width:140px}
+    .hero-sticker b{font-size:11px}
+    .price-row{grid-template-columns:1fr auto;gap:12px;padding:14px 0}
+    .price-row h3{font-size:15px}
+    .price-row .val{font-size:17px}
+    .collage .a{aspect-ratio:4/3}
+    .book-info .row{grid-template-columns:74px 1fr}
+    .barbers{margin-top:4px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .ticker-track{animation:none;transform:none;width:auto;flex-wrap:wrap;justify-content:center;
+      padding:8px var(--gutter)}
+    .ticker-track span{white-space:normal;font-size:10px;padding-right:16px}
+    .ticker-track i{display:none}
+  }
 </style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HairSalon","name":"Barbearia Navalha",
-"description":"Barbearia em Jequié. Corte, barba e cuidado masculino.",
-"telephone":"+55-73-90000-0000","priceRange":"$$",
-"address":{"@type":"PostalAddress","streetAddress":"R. Cel. Costa Brito, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45200-010","addressCountry":"BR"},
-"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"18:00"}]}
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "@id": "https://evertonfagundes.github.io/kit-sites-jequie/barbearia.html#barbearia",
+  "name": "Barbearia Navalha",
+  "url": "https://evertonfagundes.github.io/kit-sites-jequie/barbearia.html",
+  "image": "https://evertonfagundes.github.io/kit-sites-jequie/assets/og/barbearia.jpg",
+  "description": "Barbearia no centro de Jequié com corte, barba, sobrancelha e acabamento, com hora marcada.",
+  "telephone": "+55-73-98865-9878",
+  "email": "contato@barbearianavalha.com.br",
+  "priceRange": "R$ 15 a R$ 65",
+  "currenciesAccepted": "BRL",
+  "paymentAccepted": "Dinheiro, Pix, Cartão de crédito, Cartão de débito",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Sete de Setembro, 000, Centro",
+    "addressLocality": "Jequié",
+    "addressRegion": "BA",
+    "postalCode": "45200-000",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "18:00"}
+  ],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=R.+Sete+de+Setembro,+Centro,+Jequi%C3%A9+-+BA",
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corte máquina"}, "price": "35", "priceCurrency": "BRL"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corte tesoura"}, "price": "45", "priceCurrency": "BRL"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Barba"}, "price": "30", "priceCurrency": "BRL"},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corte + barba"}, "price": "65", "priceCurrency": "BRL"}
+  ]
+}
 </script>
 </head>
 <body>
+
+<div class="demo-band"><span><i aria-hidden="true"></i> Modelo demonstrativo · dados fictícios</span></div>
 <a class="skip" href="#main">Ir para o conteúdo</a>
 
-<header class="site-header">
-  <div class="wrap">
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
     <a class="brand" href="barbearia.html">
-      <span class="mark">N</span>
-      <span>Navalha<small>Barbearia · Jequié</small></span>
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span class="brand-text">Navalha<small>Barbearia · Jequié</small></span>
     </a>
-    <input type="checkbox" id="navt" class="nav-toggle">
-    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
-    <nav class="nav">
-      <a href="#servicos">Serviços</a>
-      <a href="#time">Time</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#horario">Horário</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+            aria-label="Abrir menu" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Menu principal" data-nav>
+      <a href="#precos">Preços</a>
+      <a href="#barbearia">A barbearia</a>
+      <a href="#equipe">Quem corta</a>
+      <a href="#agendar">Agendar</a>
+      <a href="#duvidas">Dúvidas</a>
     </nav>
-    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio.">Agendar</a>
+    <a class="btn btn--primary btn--sm header-cta" href="#agendar">Agendar</a>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Corte · Barba · Cuidado</p>
-          <h1 class="h1">Seu corte<br>no <em>ponto</em></h1>
-          <p class="lead">Ambiente climatizado, cadeira confortável e profissional que escuta o que você quer. Agendamento pelo WhatsApp — sem fila de espera.</p>
-          <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio.">Agendar horário</a>
-            <a class="btn btn--ghost btn--lg" href="#servicos">Ver serviços e preços</a>
-          </div>
-          <div class="hero-note">
-            <span><i class="dot"></i> 3 unidades na cidade</span>
-            <span><i class="dot"></i> Aberto até 20h</span>
-            <span><i class="dot"></i> Cartão e Pix</span>
-          </div>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="wrap-in">
+        <p class="eyebrow reveal">Barbearia · Centro de Jequié</p>
+        <h1 id="hero-title" class="reveal">Seu corte, <span>seu horário.</span></h1>
+        <p class="lead reveal">Corte, barba e acabamento com hora marcada. Uma unidade só, no centro de Jequié — sem fila e sem passar o dia esperando.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn--primary btn--lg" href="#agendar">Agendar horário</a>
+          <a class="btn btn--ghost btn--lg" href="#precos">Ver preços</a>
         </div>
-        <div class="visual">
-          <img src="assets/img/barb-hero.jpg" alt="Interior de barbearia moderna com cadeiras de couro e luz ambar" loading="eager" decoding="async">
-          <div class="hero-card"><b>4.9</b><span>nota dos clientes no Google</span></div>
+        <div class="hero-meta reveal">
+          <span><i aria-hidden="true"></i> Hora marcada</span>
+          <span><i aria-hidden="true"></i> Segunda a sábado</span>
+          <span><i aria-hidden="true"></i> Uma unidade</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <img src="assets/img/w/barb-hero-900.webp"
+           srcset="assets/img/w/barb-hero-480.webp 480w, assets/img/w/barb-hero-900.webp 900w, assets/img/w/barb-hero-1400.webp 1400w"
+           sizes="(max-width: 900px) 100vw, 46vw"
+           width="1400" height="1050" fetchpriority="high" decoding="async"
+           alt="Interior de barbearia com cadeiras pretas, bancada e iluminação pendente">
+      <div class="hero-sticker">
+        <b>Uma unidade</b>
+        <span>Centro · Jequié</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Corte</span><i>✦</i><span>Barba</span><i>✦</i><span>Sobrancelha</span><i>✦</i><span>Acabamento</span><i>✦</i><span>Hidratação</span><i>✦</i>
+      <span>Corte</span><i>✦</i><span>Barba</span><i>✦</i><span>Sobrancelha</span><i>✦</i><span>Acabamento</span><i>✦</i><span>Hidratação</span><i>✦</i>
+    </div>
+  </div>
+
+  <section class="section" id="precos" aria-labelledby="prices-title">
+    <div class="wrap">
+      <div class="price-layout">
+        <div class="price-head reveal">
+          <p class="eyebrow">Tabela de preços</p>
+          <h2 class="h2" id="prices-title">O que está na cadeira</h2>
+          <p class="lead">Preço fechado, sem taxa de agenda e sem surpresa no caixa. O valor é o mesmo para qualquer barbeiro da casa.</p>
+          <p class="note">Aceitamos Pix, dinheiro e cartão. Se o seu cabelo pedir um cuidado extra, o barbeiro avisa antes de começar.</p>
+          <a class="btn btn--primary" href="#agendar">Reservar meu horário</a>
+        </div>
+
+        <div class="price-list reveal reveal--d1">
+          <div class="price-row">
+            <div><h3>Corte máquina</h3><p>Máquina, acabamento na navalha e pezinho.</p></div>
+            <span class="val">R$ 35</span>
+          </div>
+          <div class="price-row">
+            <div><h3>Corte tesoura</h3><p>Tesoura, máquina e finalização com pomada.</p></div>
+            <span class="val">R$ 45</span>
+          </div>
+          <div class="price-row">
+            <div><h3>Barba</h3><p>Toalha quente, navalha e bálsamo.</p></div>
+            <span class="val">R$ 30</span>
+          </div>
+          <div class="price-row">
+            <div><h3>Corte + barba <span class="tag-combo">Combo</span></h3><p>O corte e a barba na mesma visita, com toalha quente.</p></div>
+            <span class="val">R$ 65</span>
+          </div>
+          <div class="price-row">
+            <div><h3>Sobrancelha</h3><p>Design com navalha ou pinça.</p></div>
+            <span class="val">R$ 15</span>
+          </div>
+          <div class="price-row">
+            <div><h3>Pezinho</h3><p>Acabamento entre um corte e outro.</p></div>
+            <span class="val">R$ 15</span>
+          </div>
+          <div class="price-row">
+            <div><h3>Hidratação</h3><p>Tratamento para cabelo e barba.</p></div>
+            <span class="val">R$ 30</span>
+          </div>
+          <div class="price-row">
+            <div><h3>Corte infantil</h3><p>Até 10 anos, com horário reservado para a criança.</p></div>
+            <span class="val">R$ 35</span>
+          </div>
+          <p class="price-foot">Valores de exemplo para este modelo. No site final, a tabela é atualizada pelo cliente e vale para a unidade do Centro.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="servicos">
+  <section class="section section--alt" id="barbearia" aria-labelledby="about-title">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Tabela de preços</p>
-        <h2 class="h2">Sem surpresa na hora de pagar</h2>
-        <p class="lead">Preço fechado, combinado antes. Se você quiser algo fora da tabela, é só perguntar.</p>
-      </div>
-
-      <div class="svcs">
-        <div class="svc">
-          <div><b>Corte clássico</b><span>Máquina, tesoura e finalização</span></div>
-          <div class="p">R$ 40</div>
-        </div>
-        <div class="svc">
-          <div><b>Corte + barba</b><span>O combo completo, com toalha quente</span></div>
-          <div class="p">R$ 65</div>
-        </div>
-        <div class="svc">
-          <div><b>Barba modelada</b><span>Navalha, toalha quente e balm</span></div>
-          <div class="p">R$ 35</div>
-        </div>
-        <div class="svc">
-          <div><b>Pézinho e acabamento</b><span>Para manter o corte entre as visitas</span></div>
-          <div class="p">R$ 20</div>
-        </div>
-        <div class="svc">
-          <div><b>Corte infantil</b><span>Até 10 anos, com paciência extra</span></div>
-          <div class="p">R$ 35</div>
-        </div>
-        <div class="svc">
-          <div><b>Platinado e descoloração</b><span>Avaliação no local, valor sob orçamento</span></div>
-          <div class="p">A combinar</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt" id="time">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">O time</p>
-        <h2 class="h2">Quem vai cuidar do seu visual</h2>
-      </div>
-      <div class="grid grid--3">
-        <article class="barber">
-          <div class="ph"><b>RC</b></div>
+      <div class="about-grid">
+        <div class="collage reveal">
+          <div class="a">
+            <img src="assets/img/w/barb-1-800.webp"
+                 srcset="assets/img/w/barb-1-480.webp 480w, assets/img/w/barb-1-800.webp 800w"
+                 sizes="(max-width: 960px) 92vw, 480px" width="900" height="900" loading="lazy" decoding="async"
+                 alt="Ferramentas de barbeiro sobre a bancada, com navalha e pincéis">
+          </div>
           <div class="b">
-            <h3>Rafael Costa</h3>
-            <div class="role">Barbeiro · 8 anos</div>
-            <p>Especialista em degradê e corte clássico. Atende na unidade do Centro.</p>
+            <img src="assets/img/w/barb-2-800.webp"
+                 srcset="assets/img/w/barb-2-480.webp 480w, assets/img/w/barb-2-800.webp 800w"
+                 sizes="(max-width: 960px) 44vw, 230px" width="900" height="900" loading="lazy" decoding="async"
+                 alt="Poste de barbearia com listras vermelhas, brancas e azuis">
           </div>
+          <div class="c">
+            <img src="assets/img/w/barb-3-800.webp"
+                 srcset="assets/img/w/barb-3-480.webp 480w, assets/img/w/barb-3-800.webp 800w"
+                 sizes="(max-width: 960px) 44vw, 230px" width="900" height="900" loading="lazy" decoding="async"
+                 alt="Balcão de café visto por um espelho redondo">
+          </div>
+        </div>
+        <div class="about-copy reveal reveal--d1">
+          <p class="eyebrow">A barbearia</p>
+          <h2 class="h2" id="about-title">Máquina, navalha e conversa</h2>
+          <p class="lead">A Navalha é uma barbearia de bairro no centro de Jequié. Três cadeiras, uma equipe fixa e uma agenda que funciona: você marca, chega e senta.</p>
+          <ul class="checks">
+            <li><span class="tick" aria-hidden="true">✓</span> Uma unidade só, na R. Sete de Setembro</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Atendimento com hora marcada e encaixes quando há vaga</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Toalha quente, navalha e produtos de acabamento</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Café na espera, sem pressa para terminar</li>
+          </ul>
+          <p class="sig">Jequié · Bahia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="equipe" aria-labelledby="team-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Quem corta</p>
+        <h2 class="h2" id="team-title">A mesma equipe, sempre</h2>
+        <p class="lead">Sem rodízio de profissional. Se você já corta com alguém, o horário é com essa pessoa — basta escolher no agendamento.</p>
+      </div>
+      <div class="barbers reveal reveal--d1">
+        <article class="barber">
+          <div class="mono" aria-hidden="true">D</div>
+          <h3>Diego</h3>
+          <p class="role">Cortes clássicos e barba</p>
+          <p>Tesoura, máquina e navalha. Atende de segunda a sábado, pela manhã e à tarde.</p>
         </article>
         <article class="barber">
-          <div class="ph"><b>LS</b></div>
-          <div class="b">
-            <h3>Lucas Santana</h3>
-            <div class="role">Barbeiro · 5 anos</div>
-            <p>Barba desenhada e navalha. Atende na unidade do São Judas.</p>
-          </div>
+          <div class="mono" aria-hidden="true">N</div>
+          <h3>Nara</h3>
+          <p class="role">Tesoura e corte infantil</p>
+          <p>Especialista em corte feminino curto e infantil. Paciência com criança e com cabelo difícil.</p>
         </article>
         <article class="barber">
-          <div class="ph"><b>DM</b></div>
-          <div class="b">
-            <h3>Diego Matos</h3>
-            <div class="role">Barbeiro · 6 anos</div>
-            <p>Cortes modernos, platinado e desenho. Atende na unidade do Jequiezinho.</p>
-          </div>
+          <div class="mono" aria-hidden="true">C</div>
+          <h3>Cleiton</h3>
+          <p class="role">Degradê e pigmentação</p>
+          <p>Máquina, degradê e acabamento desenhado. Atende até o fim da noite, de segunda a sexta.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="section" id="galeria">
+  <section class="section section--alt" id="agendar" aria-labelledby="book-title">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Galeria</p>
-        <h2 class="h2">Trabalhos da semana</h2>
+      <div class="book">
+        <div class="book-copy reveal">
+          <p class="eyebrow">Agendamento</p>
+          <h2 class="h2" id="book-title">Marque o seu horário</h2>
+          <p class="lead">Escolha o serviço, o barbeiro e o dia. A recepção confirma o horário exato pelo WhatsApp; o pedido sozinho não garante a vaga.</p>
+          <dl class="book-info">
+            <div class="row"><dt>Telefone</dt><dd><a href="tel:+5573988659878" data-tel data-phone-text>(73) 98865-9878</a></dd></div>
+            <div class="row"><dt>Horário</dt><dd>Seg a sex, 9h às 20h<br>Sábado, 8h às 18h</dd></div>
+            <div class="row"><dt>Unidade</dt><dd>Só no Centro de Jequié</dd></div>
+            <div class="row"><dt>Pagamento</dt><dd>Pix, dinheiro e cartão</dd></div>
+          </dl>
+          <ol class="steps-mini">
+            <li><span class="n">1</span><span>Envie o pedido com serviço, dia e período.</span></li>
+            <li><span class="n">2</span><span>A recepção responde com o horário disponível.</span></li>
+            <li><span class="n">3</span><span>Chegue cinco minutos antes. A cadeira é sua.</span></li>
+          </ol>
+        </div>
+
+        <form class="form reveal reveal--d1" id="agenda-form"
+              data-wa-form="Olá! Vim pelo site da Barbearia Navalha e quero agendar um horário."
+              action="https://wa.me/5573988659878" method="get" target="_blank" novalidate>
+          <div class="field">
+            <label for="nome">Seu nome <span class="req" aria-hidden="true">*</span></label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required minlength="2"
+                   placeholder="Como podemos chamar você?">
+            <span class="error" role="alert"></span>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="servico">Serviço <span class="req" aria-hidden="true">*</span></label>
+              <select id="servico" name="servico" required>
+                <option value="">Escolha</option>
+                <option>Corte máquina</option>
+                <option>Corte tesoura</option>
+                <option>Barba</option>
+                <option>Corte + barba</option>
+                <option>Sobrancelha</option>
+                <option>Pezinho</option>
+                <option>Hidratação</option>
+                <option>Corte infantil</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="barbeiro">Barbeiro <span class="req" aria-hidden="true">*</span></label>
+              <select id="barbeiro" name="barbeiro" required>
+                <option value="">Escolha</option>
+                <option>Diego</option>
+                <option>Nara</option>
+                <option>Cleiton</option>
+                <option>Sem preferência</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="data">Data <span class="req" aria-hidden="true">*</span></label>
+              <input id="data" name="data" type="date" required>
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="periodo">Período <span class="req" aria-hidden="true">*</span></label>
+              <select id="periodo" name="periodo" required>
+                <option value="">Escolha</option>
+                <option>Manhã (9h às 12h)</option>
+                <option>Tarde (12h às 17h)</option>
+                <option>Noite (17h às 20h)</option>
+                <option>Sábado (8h às 18h)</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="obs">Observação <span class="note">(opcional)</span></label>
+            <textarea id="obs" name="observacao" rows="3" data-label="Observação"
+                      placeholder="Ex.: quero manter o comprimento em cima e baixar dos lados."></textarea>
+          </div>
+          <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--primary btn--lg btn--block" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.8L3 21l1.8-5A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+            Pedir horário
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-foot">O envio abre o WhatsApp com os dados. A vaga só é confirmada depois da resposta da recepção. Nada é armazenado neste site.</p>
+          <noscript><p class="form-foot">O formulário precisa de JavaScript. Se preferir, ligue: <a href="tel:+5573988659878">(73) 98865-9878</a>.</p></noscript>
+        </form>
       </div>
-      <div class="gallery">
-        <div class="shot"><img src="assets/img/barb-1.jpg" alt="Bancada de barbearia com produtos e espelho" loading="lazy"></div><div class="shot"><img src="assets/img/barb-2.jpg" alt="Poste de barbeiro classico" loading="lazy"></div><div class="shot"><img src="assets/img/barb-3.jpg" alt="Espelho redondo refletindo o interior da barbearia" loading="lazy"></div>
+
+      <div class="map-card reveal">
+        <div class="map-art" aria-hidden="true"><span class="map-pin"></span></div>
+        <div class="map-copy">
+          <span class="lbl">Onde fica</span>
+          <address>R. Sete de Setembro, 000 — Centro<br>Jequié · Bahia · 45200-000</address>
+          <p class="note">Uma unidade só. Há estacionamento pago nas proximidades e vagas na rua.</p>
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=R.+Sete+de+Setembro,+Centro,+Jequi%C3%A9+-+BA"
+             target="_blank" rel="noopener">Abrir no Google Maps
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt" id="horario">
+  <section class="section" id="duvidas" aria-labelledby="faq-title">
     <div class="wrap">
-      <div class="split">
+      <div class="split faq-split">
         <div>
-          <p class="eyebrow">Funcionamento</p>
-          <h2 class="h2">Horário e unidades</h2>
-          <div class="hours">
-            <div><span>Segunda</span><span>Fechado</span></div>
-            <div><span>Terça a sexta</span><span>9h às 20h</span></div>
-            <div><span>Sábado</span><span>8h às 18h</span></div>
-            <div><span>Domingo</span><span>Fechado</span></div>
-          </div>
-          <p class="lead" style="margin-top:22px;font-size:14.5px">O agendamento é feito pelo WhatsApp, com horário marcado. Chegue com 5 minutos de antecedência.</p>
+          <p class="eyebrow reveal">Dúvidas</p>
+          <h2 class="h2 reveal" id="faq-title">Antes de sentar na cadeira</h2>
+          <p class="lead reveal mt-4">Se a sua dúvida não estiver aqui, chame a recepção no WhatsApp. Respondemos em horário de funcionamento.</p>
         </div>
-        <div>
-          <div class="info" style="margin-bottom:14px">
-            <div class="lbl">Unidade 1 · Centro</div>
-            <strong>R. Cel. Costa Brito, 000</strong>
-          </div>
-          <div class="info" style="margin-bottom:14px">
-            <div class="lbl">Unidade 2 · São Judas</div>
-            <strong>Av. Adhemar Ribeiro, 000</strong>
-          </div>
-          <div class="info">
-            <div class="lbl">Unidade 3 · Jequiezinho</div>
-            <strong>Av. Franz Gedeon, 000</strong>
-          </div>
-        </div>
-      </div>
-
-      <div style="margin-top:44px">
-        <div class="cta-band">
-          <div>
-            <h2>Agende seu horário</h2>
-            <p>Mande uma mensagem com o dia e o barbeiro que você prefere. Confirmamos na hora.</p>
-          </div>
-          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20um%20hor%C3%A1rio.">Chamar no WhatsApp</a>
+        <div class="faq reveal reveal--d1">
+          <details>
+            <summary>Precisa marcar horário?</summary>
+            <p>É o jeito mais seguro de não esperar. Encaixes acontecem quando há vaga na agenda do dia; chame no WhatsApp antes de sair de casa.</p>
+          </details>
+          <details>
+            <summary>Como funciona o pagamento?</summary>
+            <p>Pix, dinheiro ou cartão. O valor é o da tabela, sem taxa de agendamento. O barbeiro avisa antes se o seu caso pedir algum produto extra.</p>
+          </details>
+          <details>
+            <summary>Corta criança?</summary>
+            <p>Sim, até 10 anos, pelo valor de corte infantil. O horário é reservado para a criança não esperar na recepção.</p>
+          </details>
+          <details>
+            <summary>Tem estacionamento?</summary>
+            <p>Vagas na rua e estacionamentos pagos por perto. A recepção orienta o mais próximo quando você chega.</p>
+          </details>
+          <details>
+            <summary>Posso remarcar?</summary>
+            <p>Sim. Avise com antecedência pelo WhatsApp para a recepção liberar o horário e encaixar outra pessoa.</p>
+          </details>
         </div>
       </div>
     </div>
@@ -260,55 +623,47 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="barbearia.html" style="margin-bottom:14px">
-          <span class="mark">N</span>
-          <span>Navalha<small>Barbearia · Jequié</small></span>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="barbearia.html">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-text">Navalha<small>Barbearia · Jequié</small></span>
         </a>
-        <p style="max-width:34ch;font-size:13.5px">Corte, barba e cuidado masculino em três unidades de Jequié.</p>
+        <p>Corte, barba e acabamento com hora marcada. Uma unidade no centro de Jequié, com a mesma equipe em todos os horários.</p>
       </div>
       <div>
-        <h3>Serviços</h3>
-        <ul>
-          <li>Corte clássico</li>
-          <li>Corte + barba</li>
-          <li>Barba modelada</li>
-          <li>Pézinho</li>
+        <h3 class="footer-title">Navegação</h3>
+        <ul class="footer-links">
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#barbearia">A barbearia</a></li>
+          <li><a href="#equipe">Quem corta</a></li>
+          <li><a href="#agendar">Agendar</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contato</h3>
-        <ul>
-          <li>(73) 90000-0000</li>
-          <li>Ter a sáb</li>
-          <li>Agendamento por WhatsApp</li>
+        <h3 class="footer-title">Horário</h3>
+        <ul class="footer-links">
+          <li>Seg a sex, 9h às 20h</li>
+          <li>Sábado, 8h às 18h</li>
+          <li>Domingo fechado</li>
+          <li>Centro · Jequié · BA</li>
         </ul>
       </div>
     </div>
-    <div class="bottom">
-      <span>© 2026 Barbearia Navalha</span>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Barbearia Navalha</span>
       <span>Jequié · Bahia</span>
     </div>
-    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+    <p class="demo-note"><strong>Modelo demonstrativo.</strong> Nome, endereço, e-mail, equipe e preços são fictícios e servem apenas para apresentação comercial. Fotografias ilustrativas de banco de imagens — no site final entram fotos reais da barbearia. O WhatsApp deste link é do desenvolvedor do modelo. A publicação por um cliente exige conferir todos os dados e a tabela de preços.</p>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
-  WhatsApp
+<a class="wa" href="#agendar" data-wa="Olá! Vim pelo site da Barbearia Navalha e quero agendar um horário."
+   aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
 </a>
 
-<script>
-/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
-document.querySelectorAll(".nav a").forEach(function (a) {
-  a.addEventListener("click", function () {
-    var t = document.getElementById("navt");
-    if (t) t.checked = false;
-  });
-});
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
-
-  .barber .ph{aspect-ratio:1/1;background:#1a1a1f;display:grid;place-items:center}

@@ -3,198 +3,569 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#1e40af">
-<title>Clínica médica em Jequié | Clínica Vida Plena</title>
-<meta name="description" content="Consultas e exames em Jequié: cardiologia, neurologia, ginecologia, ortopedia e mais. Agende pelo WhatsApp.">
-<meta property="og:title" content="Clínica Vida Plena — Jequié">
-<meta property="og:description" content="Consultas e exames no mesmo lugar, com hora marcada.">
+<meta name="theme-color" content="#1e6572">
+<title>Clínica médica em Jequié | Vida Plena</title>
+<meta name="description" content="Consultas com hora marcada e exames no mesmo endereço, no centro de Jequié. Clínica médica, cardiologia, pediatria, ginecologia e outras especialidades. Agende pelo WhatsApp.">
+<link rel="canonical" href="https://evertonfagundes.github.io/kit-sites-jequie/clinica.html">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%231e40af'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'>V</text></svg>">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Clínica Vida Plena">
+<meta property="og:title" content="Vida Plena — Clínica médica em Jequié">
+<meta property="og:description" content="Consulta com tempo de escuta, agenda organizada e exames no mesmo endereço.">
+<meta property="og:url" content="https://evertonfagundes.github.io/kit-sites-jequie/clinica.html">
+<meta property="og:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/clinica.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clínica médica Vida Plena — Jequié, Bahia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vida Plena — Clínica médica em Jequié">
+<meta name="twitter:description" content="Consulta com tempo de escuta e exames no mesmo endereço.">
+<meta name="twitter:image" content="https://evertonfagundes.github.io/kit-sites-jequie/assets/og/clinica.jpg">
+<link rel="icon" href="assets/favicon-clinica.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-clinica.png">
+<link rel="preload" href="assets/fonts/lora-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/w/cli-hero-900.webp"
+      imagesrcset="assets/img/w/cli-hero-480.webp 480w, assets/img/w/cli-hero-900.webp 900w, assets/img/w/cli-hero-1400.webp 1400w"
+      imagesizes="(max-width: 760px) 92vw, 1040px">
 <link rel="stylesheet" href="assets/base.css">
+<script>document.documentElement.classList.add('js')</script>
 <style>
-  body{--accent:#1e40af;--accent-soft:#e8edfb;--soft:#f5f7fd}
-  .specialties{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .spec{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;
-    display:flex;align-items:center;gap:12px;font-size:14.5px;font-weight:600;
-    transition:border-color .18s,color .18s}
-  .spec:hover{border-color:var(--accent);color:var(--accent)}
-  .spec i{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
-  .exams{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
-  .exam{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);
-    font-size:14.5px}
-  .exam span:last-child{color:var(--muted);font-size:13px;text-align:right}
-  .doc{border:1px solid var(--line);border-radius:16px;padding:22px;background:#fff}
-  .doc .av{width:46px;height:46px;border-radius:50%;background:var(--accent-soft);color:var(--accent);
-    display:grid;place-items:center;font-weight:700;margin-bottom:14px}
-  .doc h3{font-size:16px;margin:0 0 2px}
-  .doc .crm{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:8px}
-  .doc p{font-size:13.5px;color:var(--muted);margin:0}
-  @media (max-width:900px){
-    .specialties{grid-template-columns:1fr 1fr}
-    .split{grid-template-columns:1fr;gap:30px}
-    .exams{grid-template-columns:1fr}
+  :root{
+    --bg:#fbfaf6;
+    --bg-2:#f2f4f0;
+    --surface:#ffffff;
+    --surface-2:#eef3f0;
+    --ink:#142225;
+    --ink-2:#293b3e;
+    --muted:#5b6b6c;
+    --line:#e0e5e0;
+    --line-2:#c7d1cc;
+    --accent:#1e6572;
+    --accent-ink:#17505b;
+    --accent-soft:#e2efee;
+    --accent-on:#ffffff;
+    --selection:#d8eae7;
+    --font-display:'Lora',Georgia,'Times New Roman',serif;
+    --font-text:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    --footer-bg:#102326;
   }
-  @media (max-width:520px){.specialties{grid-template-columns:1fr}}
-  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .site-header{background:rgba(251,250,246,.84)}
+  .site-header.is-scrolled{background:rgba(251,250,246,.96)}
+  .brand-mark{border-radius:50%;font-family:var(--font-display);font-size:19px}
+  .hero{
+    padding:clamp(44px,6.6vw,82px) 0 0;text-align:center;
+    background:radial-gradient(78% 62% at 50% 0%,#eef6f3 0%,rgba(238,246,243,0) 68%);
+  }
+  .hero .eyebrow{justify-content:center}
+  .hero h1{font-size:clamp(38px,5.8vw,68px);line-height:1.02;letter-spacing:-.03em;
+    max-width:16ch;margin-inline:auto}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--accent)}
+  .hero .lead{margin:20px auto 0;max-width:58ch;font-size:17.5px;color:var(--ink-2)}
+  .hero-actions{justify-content:center;margin-top:26px}
+  .hero-strip{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 28px;
+    margin-top:30px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .hero-strip span{display:inline-flex;align-items:center;gap:7px}
+  .hero-strip svg{width:14px;height:14px;stroke:var(--accent);fill:none;stroke-width:1.8;
+    stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .hero-band{margin-top:clamp(34px,5vw,52px)}
+  .hero-band .media{aspect-ratio:21/8;border-radius:var(--radius-lg);box-shadow:var(--shadow-3)}
+  .hero-band img{object-position:50% 48%}
+  .hero-band figcaption{display:flex;justify-content:space-between;gap:16px;margin-top:10px;
+    font-size:10.5px;line-height:1.5;color:var(--muted);text-align:left}
+
+  .spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    column-gap:clamp(24px,4vw,48px);border-top:1px solid var(--line)}
+  .spec{padding:21px 0 23px;border-bottom:1px solid var(--line)}
+  .spec h3{font-family:var(--font-display);font-size:20.5px;font-weight:600;letter-spacing:-.01em;
+    margin-bottom:4px}
+  .spec p{font-size:13.8px;line-height:1.55;color:var(--muted);margin:0;max-width:34ch}
+  .spec .mini{display:block;font-family:var(--font-text);font-size:9.5px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
+  .spec-note{display:flex;align-items:flex-start;gap:12px;margin-top:26px;max-width:760px}
+  .spec-note svg{width:17px;height:17px;flex:none;margin-top:3px;stroke:var(--accent);fill:none;
+    stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .spec-note p{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0}
+
+  .prep-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,66px);align-items:start}
+  .prep-grid .checks li{font-size:14.5px}
+  .prep-note{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);
+    font-size:12px;line-height:1.6;color:var(--muted);max-width:46ch}
+  .visit{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+    padding:clamp(22px,3.2vw,30px);box-shadow:var(--shadow-2)}
+  .visit .k{font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent-ink);margin-bottom:4px}
+  .visit h3{font-size:22px;margin-bottom:18px}
+  .v-step{display:grid;grid-template-columns:28px 1fr;gap:12px;padding:13px 0;
+    border-top:1px solid var(--line)}
+  .v-step .n{width:24px;height:24px;border-radius:50%;background:var(--accent-soft);
+    color:var(--accent-ink);display:grid;place-items:center;font-size:10.5px;font-weight:700;
+    margin-top:1px}
+  .v-step strong{display:block;font-size:14px;line-height:1.4}
+  .v-step span{display:block;font-size:12.5px;line-height:1.5;color:var(--muted);margin-top:1px}
+  .visit .note{margin-top:14px;font-size:11.5px;line-height:1.55}
+
+  .consult{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,5vw,64px);align-items:center}
+  .consult-media{border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow-3)}
+  .consult-media img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+  .consult .lead{max-width:48ch}
+  .consult .checks{margin-top:20px}
+
+  .team{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,30px)}
+  .person{border-top:1px solid var(--line);padding-top:18px}
+  .person .monogram{width:80px;height:80px;aspect-ratio:1;margin-bottom:15px;border-radius:50%;
+    font-size:25px;font-weight:500}
+  .person h3{font-family:var(--font-display);font-size:21px}
+  .person .role{font-family:var(--font-text);font-size:10px;letter-spacing:.14em;color:var(--accent-ink)}
+  .person p:last-child{font-size:13.5px;line-height:1.6}
+  .team-note{margin-top:28px;font-size:11.5px;line-height:1.6;color:var(--muted)}
+
+  .faq-split{grid-template-columns:.82fr 1.18fr;align-items:start}
+
+  .contact-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(32px,5vw,64px);align-items:start}
+  .contact-aside{display:grid;gap:16px;align-content:start}
+  .contact-item{border-top:1px solid var(--line);padding-top:13px}
+  .contact-item .lbl{font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:4px}
+  .contact-item strong{display:block;font-size:15px;line-height:1.55;font-weight:600}
+  .contact-item a{text-decoration:underline;text-decoration-thickness:1px;
+    text-underline-offset:3px;text-decoration-color:var(--line-2)}
+  .contact-item a:hover{text-decoration-color:var(--accent)}
+  .contact-aside .note{font-size:11.5px;line-height:1.6}
+  .map-card{margin-top:clamp(32px,5vw,48px)}
+
+  @media (max-width:960px){
+    .prep-grid,.consult,.contact-grid,.faq-split{grid-template-columns:1fr}
+    .prep-grid{gap:30px}
+    .visit{max-width:560px}
+    .consult-media{order:-1;aspect-ratio:16/10}
+    .spec-grid{grid-template-columns:1fr 1fr}
+    .team{grid-template-columns:1fr}
+    .person{display:grid;grid-template-columns:80px 1fr;gap:16px;align-items:start}
+    .person .monogram{width:64px;height:64px;margin:0}
+    .hero-band .media{aspect-ratio:16/7}
+  }
+  @media (max-width:620px){
+    .hero h1{font-size:clamp(34px,9.4vw,44px);max-width:14ch}
+    .hero .lead{font-size:16px}
+    .hero-actions{flex-direction:column}
+    .hero-actions .btn{width:100%}
+    .hero-strip{display:grid;grid-template-columns:1fr;gap:8px;text-align:left;
+      max-width:260px;margin-inline:auto}
+    .hero-band .media{aspect-ratio:4/3}
+    .hero-band figcaption{flex-direction:column;gap:2px}
+    .spec-grid{grid-template-columns:1fr}
+    .spec{padding:16px 0 18px}
+    .spec p{max-width:46ch}
+    .visit{padding:20px}
+    .contact-aside .note{max-width:46ch}
+  }
 </style>
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MedicalClinic","name":"Clínica Vida Plena",
-"description":"Clínica médica em Jequié com consultas e exames de diversas especialidades.",
-"telephone":"+55-73-90000-0000","medicalSpecialty":["Cardiovascular","Neurologic","Gynecologic"],
-"address":{"@type":"PostalAddress","streetAddress":"R. Nestor Ribeiro, 000, Centro","addressLocality":"Jequié","addressRegion":"BA","postalCode":"45203-230","addressCountry":"BR"}}
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "@id": "https://evertonfagundes.github.io/kit-sites-jequie/clinica.html#clinica",
+  "name": "Clínica Vida Plena",
+  "url": "https://evertonfagundes.github.io/kit-sites-jequie/clinica.html",
+  "image": "https://evertonfagundes.github.io/kit-sites-jequie/assets/og/clinica.jpg",
+  "description": "Clínica médica em Jequié com consultas agendadas e exames no mesmo endereço.",
+  "telephone": "+55-73-98865-9878",
+  "email": "recepcao@vidaplenajequie.com.br",
+  "priceRange": "Sob consulta",
+  "currenciesAccepted": "BRL",
+  "paymentAccepted": "Dinheiro, Pix, Cartão de crédito",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Rio Branco, 000, Centro",
+    "addressLocality": "Jequié",
+    "addressRegion": "BA",
+    "postalCode": "45200-000",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:00"}
+  ],
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Av.+Rio+Branco,+Centro,+Jequi%C3%A9+-+BA",
+  "isAcceptingNewPatients": true,
+  "medicalSpecialty": ["Clínica médica","Cardiologia","Dermatologia","Endocrinologia","Ginecologia e obstetrícia","Oftalmologia","Ortopedia","Pediatria","Psiquiatria"],
+  "employee": [
+    {"@type": "Physician", "name": "Dra. Renata Almeida", "medicalSpecialty": "Clínica médica"},
+    {"@type": "Physician", "name": "Dr. Bruno Tavares", "medicalSpecialty": "Ortopedia"},
+    {"@type": "Physician", "name": "Dra. Sofia Menezes", "medicalSpecialty": "Pediatria"}
+  ]
+}
 </script>
 </head>
 <body>
+
+<div class="demo-band"><span><i aria-hidden="true"></i> Modelo demonstrativo · dados fictícios</span></div>
 <a class="skip" href="#main">Ir para o conteúdo</a>
 
-<header class="site-header">
-  <div class="wrap">
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
     <a class="brand" href="clinica.html">
-      <span class="mark">V</span>
-      <span>Vida Plena<small>Clínica médica · Jequié</small></span>
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span class="brand-text">Vida Plena<small>Clínica médica · Jequié</small></span>
     </a>
-    <input type="checkbox" id="navt" class="nav-toggle">
-    <label class="nav-burger" for="navt"><span></span><span></span><span></span><span class="vh">Abrir menu</span></label>
-    <nav class="nav">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"
+            aria-label="Abrir menu" data-nav-toggle>
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Menu principal" data-nav>
       <a href="#especialidades">Especialidades</a>
-      <a href="#exames">Exames</a>
+      <a href="#preparo">Preparo</a>
+      <a href="#estrutura">A clínica</a>
       <a href="#equipe">Equipe</a>
+      <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn--primary header-cta" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta.">Agendar</a>
+    <a class="btn btn--primary btn--sm header-cta" href="#contato"
+       data-wa="Olá! Vim pelo site da Clínica Vida Plena e quero agendar uma consulta.">Agendar</a>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Consultas e exames em Jequié</p>
-          <h1 class="h1">Cuidar da saúde<br>sem <em>perder o dia</em></h1>
-          <p class="lead">Consultas e exames no mesmo lugar, com hora marcada de verdade. Você chega, é atendido e volta para a sua vida.</p>
-          <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta.">Agendar consulta</a>
-            <a class="btn btn--ghost btn--lg" href="#exames">Ver exames</a>
-          </div>
-          <div class="hero-note">
-            <span><i class="dot"></i> 18 especialidades</span>
-            <span><i class="dot"></i> Particular e reembolso</span>
-            <span><i class="dot"></i> Acesso para cadeira de rodas</span>
-          </div>
-        </div>
-        <div class="visual">
-          <img src="assets/img/cli-hero.jpg" alt="Estetoscopio e notebook sobre mesa clara em consultorio" loading="eager" decoding="async">
-          <div class="hero-card"><b>+30 mil</b><span>atendimentos realizados</span></div>
-        </div>
+      <p class="eyebrow reveal">Clínica médica · Jequié, Bahia</p>
+      <h1 id="hero-title" class="reveal">Consulta com <em>tempo de escuta</em>.</h1>
+      <p class="lead reveal">Agenda organizada, consultórios no centro de Jequié e exames no mesmo endereço. A recepção orienta o preparo e confirma o seu horário na véspera.</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn--primary btn--lg" href="#contato"
+           data-wa="Olá! Vim pelo site da Clínica Vida Plena e quero agendar uma consulta.">Agendar consulta</a>
+        <a class="btn btn--ghost btn--lg" href="#especialidades">Ver especialidades</a>
       </div>
+      <div class="hero-strip reveal">
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Hora marcada</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Exames no local</span>
+        <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>Acesso para cadeira de rodas</span>
+      </div>
+      <figure class="hero-band reveal reveal--d1">
+        <div class="media">
+          <img src="assets/img/w/cli-hero-900.webp"
+               srcset="assets/img/w/cli-hero-480.webp 480w, assets/img/w/cli-hero-900.webp 900w, assets/img/w/cli-hero-1400.webp 1400w"
+               sizes="(max-width: 760px) 92vw, 1040px"
+               width="1400" height="1050" fetchpriority="high" decoding="async"
+               alt="Estetoscópio azul sobre mesa clara ao lado de um notebook">
+        </div>
+        <figcaption>
+          <span>Consultórios no centro de Jequié.<br>Imagem ilustrativa.</span>
+          <span>Vida Plena · Jequié, Bahia</span>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
-  <section class="section section--alt" id="especialidades">
+  <section class="section" id="especialidades" aria-labelledby="spec-title">
     <div class="wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <p class="eyebrow">Especialidades</p>
-        <h2 class="h2">O médico certo, sem rodar a cidade</h2>
-        <p class="lead">Diversas especialidades no mesmo endereço. Se você não sabe por onde começar, a recepção orienta qual profissional procurar.</p>
+        <h2 class="h2" id="spec-title">Quem cuida de cada parte</h2>
+        <p class="lead">A clínica reúne atendimento geral e especialidades no mesmo endereço. Se você não souber qual procurar, a recepção ajuda a direcionar pelo relato e pela idade.</p>
       </div>
-      <div class="specialties">
-        <div class="spec"><i></i>Cardiologia</div>
-        <div class="spec"><i></i>Neurologia</div>
-        <div class="spec"><i></i>Ginecologia</div>
-        <div class="spec"><i></i>Ortopedia</div>
-        <div class="spec"><i></i>Endocrinologia</div>
-        <div class="spec"><i></i>Psiquiatria</div>
-        <div class="spec"><i></i>Pediatria</div>
-        <div class="spec"><i></i>Dermatologia</div>
-        <div class="spec"><i></i>Nutrição</div>
+
+      <div class="spec-grid reveal reveal--d1">
+        <article class="spec">
+          <span class="mini">Adulto</span>
+          <h3>Clínica médica</h3>
+          <p>Avaliação geral, pressão, diabetes e check-up. É a porta de entrada para as demais especialidades.</p>
+        </article>
+        <article class="spec">
+          <span class="mini">Coração</span>
+          <h3>Cardiologia</h3>
+          <p>Consulta, eletrocardiograma e acompanhamento de pressão alta e colesterol.</p>
+        </article>
+        <article class="spec">
+          <span class="mini">Pele</span>
+          <h3>Dermatologia</h3>
+          <p>Pele, cabelo e unhas. Avaliação de lesões, acne e dermatites.</p>
+        </article>
+        <article class="spec">
+          <span class="mini">Hormônios</span>
+          <h3>Endocrinologia</h3>
+          <p>Tireoide, diabetes, colesterol e reposição hormonal, com acompanhamento de exames.</p>
+        </article>
+        <article class="spec">
+          <span class="mini">Mulher</span>
+          <h3>Ginecologia e obstetrícia</h3>
+          <p>Rotina ginecológica, pré-natal e planejamento reprodutivo.</p>
+        </article>
+        <article class="spec">
+          <span class="mini">Visão</span>
+          <h3>Oftalmologia</h3>
+          <p>Avaliação da visão, pressão ocular e adaptação de lentes de correção.</p>
+        </article>
+        <article class="spec">
+          <span class="mini">Movimento</span>
+          <h3>Ortopedia</h3>
+          <p>Dores na coluna, joelho, ombro e lesões esportivas, com pedido de imagem quando necessário.</p>
+        </article>
+        <article class="spec">
+          <span class="mini">Infância</span>
+          <h3>Pediatria</h3>
+          <p>Acompanhamento do crescimento, vacinas e orientação para os primeiros anos.</p>
+        </article>
+        <article class="spec">
+          <span class="mini">Saúde mental</span>
+          <h3>Psiquiatria</h3>
+          <p>Ansiedade, humor e sono. Avaliação e acompanhamento medicamentoso quando indicado.</p>
+        </article>
+      </div>
+
+      <div class="spec-note reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+        <p>Algumas especialidades atendem em dias específicos. A recepção informa a agenda de cada profissional e o valor da consulta antes do agendamento.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="exames">
+  <section class="section section--alt" id="preparo" aria-labelledby="prep-title">
     <div class="wrap">
-      <div class="split">
-        <div>
-          <p class="eyebrow">Exames</p>
-          <h2 class="h2">Resultado rápido, com laudo assinado</h2>
-          <p class="lead">Os exames mais pedidos são feitos aqui. O prazo do laudo é informado antes de você agendar — sem surpresa.</p>
-          <div class="exams" style="margin-top:26px">
-            <div class="exam"><span>Eletrocardiograma</span><span>laudo em 24h</span></div>
-            <div class="exam"><span>Ecocardiograma</span><span>laudo em 24h</span></div>
-            <div class="exam"><span>Ultrassonografia</span><span>laudo em 24h</span></div>
-            <div class="exam"><span>Eletroencefalograma</span><span>laudo em 48h</span></div>
-            <div class="exam"><span>Holter 24h</span><span>laudo em 3 dias</span></div>
-            <div class="exam"><span>MAPA 24h</span><span>laudo em 3 dias</span></div>
+      <div class="prep-grid">
+        <div class="reveal">
+          <p class="eyebrow">Antes da consulta</p>
+          <h2 class="h2" id="prep-title">O que levar e como se preparar</h2>
+          <p class="lead">Chegar com as informações certas economiza tempo e evita exame repetido. Não é preciso reunir tudo para marcar.</p>
+          <ul class="checks mt-5">
+            <li><span class="tick" aria-hidden="true">✓</span> Documento com foto e cartão do convênio, se houver</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Exames recentes, em papel ou no celular</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Lista dos medicamentos em uso, com dose e horário</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Nome do médico que acompanha você, se já houver</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Chegar com 10 minutos de antecedência</li>
+          </ul>
+          <p class="prep-note">Jejum não é regra para consulta. Quando um exame exige preparo, a recepção avisa no agendamento e confirma as instruções por mensagem.</p>
+        </div>
+
+        <aside class="visit reveal reveal--d1" aria-labelledby="visit-title">
+          <p class="k">No dia</p>
+          <h3 id="visit-title">Como a visita funciona</h3>
+          <div class="v-step">
+            <span class="n">1</span>
+            <div><strong>Chegada</strong><span>Você se apresenta na recepção com documento e comprovante do agendamento.</span></div>
           </div>
-          <div class="hero-actions" style="margin-top:26px">
-            <a class="btn btn--primary" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20tenho%20um%20pedido%20de%20exame.">Tenho pedido de exame</a>
+          <div class="v-step">
+            <span class="n">2</span>
+            <div><strong>Cadastro</strong><span>A equipe confere os dados e os exames que você trouxe.</span></div>
+          </div>
+          <div class="v-step">
+            <span class="n">3</span>
+            <div><strong>Consulta</strong><span>O médico ouve o histórico, examina e explica o que encontrou.</span></div>
+          </div>
+          <div class="v-step">
+            <span class="n">4</span>
+            <div><strong>Saída</strong><span>Você recebe a receita ou o pedido de exame com as orientações por escrito.</span></div>
+          </div>
+          <p class="note">Se precisar de exame, a recepção já agenda a coleta e informa o prazo do resultado.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="estrutura" aria-labelledby="structure-title">
+    <div class="wrap">
+      <div class="consult">
+        <div class="consult-media reveal">
+          <img src="assets/img/w/cli-exames-900.webp"
+               srcset="assets/img/w/cli-exames-480.webp 480w, assets/img/w/cli-exames-900.webp 900w"
+               sizes="(max-width: 960px) 92vw, 500px"
+               width="900" height="675" loading="lazy" decoding="async"
+               alt="Médica de jaleco conversando com uma paciente durante a consulta">
+        </div>
+        <div class="reveal reveal--d1">
+          <p class="eyebrow">A clínica</p>
+          <h2 class="h2" id="structure-title">A consulta começa pela conversa</h2>
+          <p class="lead">O médico pergunta o histórico, examina e explica o que encontrou em linguagem simples. Se o caso precisar de outro especialista, a recepção já agenda o próximo passo.</p>
+          <ul class="checks">
+            <li><span class="tick" aria-hidden="true">✓</span> Consultórios e sala de coleta no mesmo endereço</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Receitas e pedidos de exame entregues por escrito</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Acesso para cadeira de rodas e banheiro adaptado</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#contato"
+               data-wa="Olá! Quero marcar uma consulta na Clínica Vida Plena.">Marcar consulta</a>
           </div>
         </div>
-        <div class="photo"><img src="assets/img/cli-exames.jpg" alt="Medica conversando com paciente durante consulta" loading="lazy"></div>
       </div>
     </div>
   </section>
 
-  <section class="section section--alt" id="equipe">
+  <section class="section section--alt" id="equipe" aria-labelledby="team-title">
     <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Corpo clínico</p>
-        <h2 class="h2">Quem atende</h2>
+      <div class="section-head reveal">
+        <p class="eyebrow">Equipe</p>
+        <h2 class="h2" id="team-title">Quem atende</h2>
+        <p class="lead">Cada profissional tem sua agenda e seu campo de atuação. Na primeira consulta, você já sabe quem vai acompanhar o caso.</p>
       </div>
-      <div class="grid grid--3">
-        <div class="doc">
-          <div class="av">C</div>
-          <h3>Dra. Camila Andrade</h3>
-          <div class="crm">CRM-BA 00.000</div>
-          <p>Cardiologia e medicina do sono. Ecocardiograma e teste ergométrico.</p>
-        </div>
-        <div class="doc">
-          <div class="av">A</div>
-          <h3>Dr. Anselmo Brito</h3>
-          <div class="crm">CRM-BA 00.000</div>
-          <p>Neurologia. Laudos de eletroencefalograma e avaliação de cefaleia.</p>
-        </div>
-        <div class="doc">
-          <div class="av">S</div>
-          <h3>Dra. Sheila Ferreira</h3>
-          <div class="crm">CRM-BA 00.000</div>
-          <p>Pediatria e neuropediatria. Desenvolvimento, fala e comportamento.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contato">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Agendamento</p>
-        <h2 class="h2">Como marcar</h2>
-        <p class="lead">O agendamento é feito pelo WhatsApp, com hora marcada. A recepção informa valores e datas na conversa — e confirma na véspera.</p>
-      </div>
-
-      <div class="info-grid" style="margin-bottom:34px">
-        <div class="info"><div class="lbl">Endereço</div><strong>R. Nestor Ribeiro, 000 — Centro<br>Jequié · BA</strong></div>
-        <div class="info"><div class="lbl">Horário</div><strong>Segunda a sexta, 8h às 18h<br>Com hora marcada</strong></div>
-        <div class="info"><div class="lbl">Contato</div><strong>(73) 90000-0000<br>contato@vidaplena.com.br</strong></div>
-      </div>
-
-      <div class="faq">
-        <details><summary>Atendem convênio?</summary><p>O atendimento é particular. Emitimos recibo e nota para solicitação de reembolso junto ao seu plano.</p></details>
-        <details><summary>Preciso de pedido médico para fazer exame?</summary><p>Alguns exames sim, outros não. Mande uma mensagem informando o exame e orientamos antes de agendar.</p></details>
-        <details><summary>Quanto tempo demora o laudo?</summary><p>Eletrocardiograma e ecocardiograma ficam prontos em 24 horas. Holter e MAPA em até 3 dias úteis. O prazo é confirmado no agendamento.</p></details>
-        <details><summary>Vocês atendem urgência?</summary><p>Não atendemos urgência e emergência. Em caso de dor no peito, falta de ar ou convulsão, procure o pronto-socorro.</p></details>
-      </div>
-
-      <div style="margin-top:44px">
-        <div class="cta-band">
+      <div class="team reveal reveal--d1">
+        <article class="person">
+          <div class="monogram" aria-hidden="true">RA</div>
           <div>
-            <h2>Agende pelo WhatsApp</h2>
-            <p>Informe a especialidade ou o exame. Respondemos em horário comercial com as datas disponíveis.</p>
+            <h3>Dra. Renata Almeida</h3>
+            <p class="role">Clínica médica · CRM-BA 00.000</p>
+            <p>Avaliação geral, pressão alta, diabetes e check-up. Diretora técnica da clínica.</p>
           </div>
-          <a class="btn btn--lg" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20quero%20agendar.">Chamar agora</a>
+        </article>
+        <article class="person">
+          <div class="monogram" aria-hidden="true">BT</div>
+          <div>
+            <h3>Dr. Bruno Tavares</h3>
+            <p class="role">Ortopedia · CRM-BA 00.000</p>
+            <p>Dores na coluna e nas articulações, lesões esportivas e recuperação após cirurgia.</p>
+          </div>
+        </article>
+        <article class="person">
+          <div class="monogram" aria-hidden="true">SM</div>
+          <div>
+            <h3>Dra. Sofia Menezes</h3>
+            <p class="role">Pediatria · CRM-BA 00.000</p>
+            <p>Acompanhamento infantil, vacinas e orientação para as famílias nos primeiros anos.</p>
+          </div>
+        </article>
+      </div>
+      <p class="team-note">Registros profissionais de exemplo. No site final, cada CRM é conferido com o responsável técnico antes da publicação.</p>
+    </div>
+  </section>
+
+  <section class="section" id="duvidas" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="split faq-split">
+        <div>
+          <p class="eyebrow reveal">Dúvidas</p>
+          <h2 class="h2 reveal" id="faq-title">Antes de marcar</h2>
+          <p class="lead reveal mt-4">A recepção responde pelo WhatsApp em horário comercial. Para emergência, procure o hospital mais próximo ou ligue 192.</p>
+        </div>
+        <div class="faq reveal reveal--d1">
+          <details>
+            <summary>Como faço para agendar?</summary>
+            <p>Pelo WhatsApp, pelo formulário desta página ou por telefone. Informe o nome, a especialidade desejada e o melhor período. A recepção confirma o dia e o valor antes de fechar o horário.</p>
+          </details>
+          <details>
+            <summary>A clínica atende convênio?</summary>
+            <p>A recepção informa quais convênios estão ativos e o que está coberto. No atendimento particular, a clínica emite recibo para você pedir reembolso ao plano.</p>
+          </details>
+          <details>
+            <summary>Preciso de pedido médico para marcar consulta?</summary>
+            <p>Para consulta, não. Alguns exames exigem pedido e preparo específico; nesses casos, a recepção avisa antes de agendar a coleta.</p>
+          </details>
+          <details>
+            <summary>Como funciona o retorno?</summary>
+            <p>O prazo e a cobrança do retorno dependem da especialidade e são informados no agendamento. O médico define na consulta quando o retorno é necessário.</p>
+          </details>
+          <details>
+            <summary>Posso levar acompanhante?</summary>
+            <p>Sim, um acompanhante. Em procedimentos e exames, a recepção orienta quantas pessoas podem entrar na sala.</p>
+          </details>
+          <details>
+            <summary>A clínica atende emergência?</summary>
+            <p>Não. A clínica trabalha com consultas agendadas e não é pronto-socorro. Em caso de dor no peito, falta de ar, desmaio ou acidente, procure o hospital mais próximo ou ligue 192.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="contato" aria-labelledby="contato-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Agendamento</p>
+        <h2 class="h2" id="contato-title">Solicite seu horário</h2>
+        <p class="lead">Preencha os campos e o WhatsApp abre com a mensagem pronta. A recepção responde em horário comercial e confirma a disponibilidade.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="form reveal" data-wa-form="Olá! Vim pelo site da Clínica Vida Plena e quero agendar uma consulta."
+              action="https://wa.me/5573988659878" method="get" target="_blank" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="nome">Seu nome <span class="req" aria-hidden="true">*</span></label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required minlength="2"
+                     placeholder="Como podemos chamar você?">
+              <span class="error" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="especialidade">Especialidade <span class="req" aria-hidden="true">*</span></label>
+              <select id="especialidade" name="especialidade" required>
+                <option value="">Escolha</option>
+                <option>Clínica médica</option>
+                <option>Cardiologia</option>
+                <option>Dermatologia</option>
+                <option>Endocrinologia</option>
+                <option>Ginecologia e obstetrícia</option>
+                <option>Oftalmologia</option>
+                <option>Ortopedia</option>
+                <option>Pediatria</option>
+                <option>Psiquiatria</option>
+                <option>Não sei — preciso de orientação</option>
+              </select>
+              <span class="error" role="alert"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="periodo">Melhor período <span class="req" aria-hidden="true">*</span></label>
+            <select id="periodo" name="periodo" required>
+              <option value="">Escolha</option>
+              <option>Manhã (7h30 às 12h)</option>
+              <option>Tarde (12h às 18h)</option>
+              <option>Sábado pela manhã</option>
+              <option>Tanto faz — me sugira o primeiro horário</option>
+            </select>
+            <span class="error" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="obs">Algo que devemos saber? <span class="note">(opcional)</span></label>
+            <textarea id="obs" name="observacao" rows="3" data-label="Observação"
+                      placeholder="Ex.: já tenho exames recentes e tomo medicação de uso contínuo."></textarea>
+          </div>
+          <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--primary btn--lg btn--block" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.8L3 21l1.8-5A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-foot">Ao enviar, o WhatsApp abre com a mensagem montada. Nada é armazenado neste site. Para emergência, ligue 192.</p>
+          <noscript><p class="form-foot">O formulário precisa de JavaScript. Se preferir, chame a recepção: <a href="tel:+5573988659878">(73) 98865-9878</a>.</p></noscript>
+        </form>
+
+        <div class="contact-aside reveal reveal--d1">
+          <div class="contact-item">
+            <div class="lbl">Telefone e WhatsApp</div>
+            <strong><a href="tel:+5573988659878" data-tel data-phone-text>(73) 98865-9878</a></strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">Horário</div>
+            <strong>Segunda a sexta, 7h30 às 18h<br>Sábado, 8h às 12h</strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">Endereço</div>
+            <strong>Av. Rio Branco, 000 — Centro<br>Jequié · BA · 45200-000</strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">E-mail</div>
+            <strong><a href="mailto:recepcao@vidaplenajequie.com.br">recepcao@vidaplenajequie.com.br</a></strong>
+          </div>
+          <div class="contact-item">
+            <div class="lbl">Responsável técnica</div>
+            <strong>Dra. Renata Almeida<br>CRM-BA 00.000</strong>
+          </div>
+          <p class="note">Atendimento por agendamento. A clínica não é pronto-socorro. Em emergência, ligue 192.</p>
+        </div>
+      </div>
+
+      <div class="map-card reveal">
+        <div class="map-art" aria-hidden="true"><span class="map-pin"></span></div>
+        <div class="map-copy">
+          <span class="lbl">Como chegar</span>
+          <address>Av. Rio Branco, 000 — Centro<br>Jequié · Bahia</address>
+          <p class="note">A duas quadras da praça central. Recepção no térreo, com acesso para cadeira de rodas.</p>
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Rio+Branco,+Centro,+Jequi%C3%A9+-+BA"
+             target="_blank" rel="noopener">Abrir no Google Maps
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
         </div>
       </div>
     </div>
@@ -204,55 +575,47 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <a class="brand" href="clinica.html" style="margin-bottom:14px">
-          <span class="mark">V</span>
-          <span>Vida Plena<small>Clínica médica · Jequié</small></span>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="clinica.html">
+          <span class="brand-mark" aria-hidden="true">V</span>
+          <span class="brand-text">Vida Plena<small>Clínica médica · Jequié</small></span>
         </a>
-        <p style="max-width:34ch;font-size:13.5px">Consultas e exames no centro de Jequié, com hora marcada.</p>
+        <p>Consultas agendadas e exames no mesmo endereço, no centro de Jequié. Atendimento particular e convênios informados pela recepção.</p>
       </div>
       <div>
-        <h3>Serviços</h3>
-        <ul>
-          <li>Consultas</li>
-          <li>Exames cardiológicos</li>
-          <li>Ultrassonografia</li>
-          <li>Check-up</li>
+        <h3 class="footer-title">Navegação</h3>
+        <ul class="footer-links">
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#preparo">Preparo da consulta</a></li>
+          <li><a href="#estrutura">A clínica</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contato">Agendamento</a></li>
         </ul>
       </div>
       <div>
-        <h3>Contato</h3>
-        <ul>
-          <li>(73) 90000-0000</li>
-          <li>R. Nestor Ribeiro, 000</li>
-          <li>Seg a sex, 8h às 18h</li>
+        <h3 class="footer-title">Informações</h3>
+        <ul class="footer-links">
+          <li>Responsável técnica: Dra. Renata Almeida</li>
+          <li>CRM-BA 00.000</li>
+          <li>Jequié · Bahia</li>
+          <li>Emergência: 192</li>
         </ul>
       </div>
     </div>
-    <div class="bottom">
-      <span>© 2026 Clínica Vida Plena</span>
-      <span>Responsável técnico: CRM-BA 00.000</span>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Clínica Vida Plena</span>
+      <span>Jequié · Bahia</span>
     </div>
-    <p class="demo-note">Modelo demonstrativo criado para apresentação comercial. Nome, endereço, telefone, preços e depoimentos são fictícios. Imagens ilustrativas de banco de imagens — no site final entram fotos reais da empresa.</p>
+    <p class="demo-note"><strong>Modelo demonstrativo.</strong> Nome, CNPJ, CRM, equipe, endereço, e-mail e horários são fictícios e servem apenas para apresentação comercial. Fotografia ilustrativa de banco de imagens — no site final entram imagens reais da clínica. O WhatsApp deste link é do desenvolvedor do modelo. A publicação por um cliente exige conferir os dados e o texto com o responsável técnico, conforme as normas de publicidade do CFM (Resolução 1.974/2011 e atualizações).</p>
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/5573900000000?text=Ol%C3%A1%2C%20vim%20pelo%20site.">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
-  WhatsApp
+<a class="wa" href="#contato" data-wa="Olá! Vim pelo site da Clínica Vida Plena e quero agendar uma consulta."
+   aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
 </a>
 
-<script>
-/* Mobile: fecha o menu ao tocar em um link (o checkbox ficaria marcado) */
-document.querySelectorAll(".nav a").forEach(function (a) {
-  a.addEventListener("click", function () {
-    var t = document.getElementById("navt");
-    if (t) t.checked = false;
-  });
-});
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
-
-  .photo{aspect-ratio:4/3;border-radius:20px;overflow:hidden;background:var(--soft);box-shadow:0 34px 60px -36px rgba(30,64,175,.45)}

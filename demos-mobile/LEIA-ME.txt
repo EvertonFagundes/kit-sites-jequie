@@ -1,0 +1,10 @@
+MODELOS PORTÁTEIS — Everton Fagundes
+
+Cada arquivo .html abre sozinho no navegador do celular ou do computador.
+CSS, fontes, ícones e imagens estão embutidos: não precisa de pasta, instalação ou internet.
+
+Para enviar um modelo a um cliente, envie somente o arquivo correspondente.
+O index.html é o hub do portfólio: para ele abrir os sete modelos, envie a pasta inteira.
+
+Os links de WhatsApp e de mapa abrem os aplicativos e precisam de internet.
+Nomes, endereços, registros e preços são fictícios — veja o rodapé de cada página.

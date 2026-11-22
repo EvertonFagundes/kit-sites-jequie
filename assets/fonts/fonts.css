@@ -1,0 +1,25 @@
+/* Fontes self-hosted — subconjunto latin (Google Fonts, OFL).
+   Para trocar o par de um nicho, edite as variaveis --font-display/--font-text
+   no <style> da pagina. Nao ha dependencia externa. */
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/fraunces-600.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/inter-400.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/inter-500.woff2') format('woff2');}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/inter-600.woff2') format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/bricolage-600.woff2') format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/bricolage-700.woff2') format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/newsreader-500.woff2') format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/newsreader-600.woff2') format('woff2');}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/source-sans-400.woff2') format('woff2');}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/source-sans-600.woff2') format('woff2');}
+@font-face{font-family:'Lora';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/lora-500.woff2') format('woff2');}
+@font-face{font-family:'Lora';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/lora-600.woff2') format('woff2');}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/space-grotesk-500.woff2') format('woff2');}
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/space-grotesk-700.woff2') format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/cormorant-500.woff2') format('woff2');}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/cormorant-600.woff2') format('woff2');}
+@font-face{font-family:'Karla';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/karla-400.woff2') format('woff2');}
+@font-face{font-family:'Karla';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/karla-600.woff2') format('woff2');}
+@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/archivo-black-400.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/archivo-400.woff2') format('woff2');}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/archivo-600.woff2') format('woff2');}
+@font-face{font-family:'Instrument Serif';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/instrument-serif-400.woff2') format('woff2');}
