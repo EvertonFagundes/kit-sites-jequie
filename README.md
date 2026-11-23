@@ -18,7 +18,8 @@ Tudo é HTML, CSS e JavaScript escritos à mão — sem framework, sem build e s
 | 06 | Serra Azul | Hotelaria | Hero imersivo, quartos e reserva com validação de datas | [hotel.html](hotel.html) |
 | 07 | Navalha | Barbearia | Tema escuro, tabela de preços, equipe e agendamento | [barbearia.html](barbearia.html) |
 
-O `index.html` é o portfólio público. Ele não mostra preço nem condições comerciais.
+O `index.html` é o portfólio público. Ele mostra os três pacotes de referência e as condições de
+domínio e hospedagem.
 
 ## O que é demonstrativo
 
@@ -27,8 +28,9 @@ O `index.html` é o portfólio público. Ele não mostra preço nem condições 
 - As fotografias são de banco de imagens (Pexels, licença comercial) e **não** retratam os
   estabelecimentos. No site de um cliente, entram fotos reais do negócio.
 - O telefone e o WhatsApp dos modelos levam ao desenvolvedor, não a um cliente.
-- A página de advocacia não tem WhatsApp nem formulário, e o texto evita captação de clientela,
-  promessa de resultado e divulgação de êxito, conforme o Provimento 205/2021 da OAB.
+- A página de advocacia é informativa, sem captação de clientela, promessa de resultado ou
+  divulgação de êxito, em linha com o Provimento 205/2021. O modelo optou por telefone e e-mail;
+  a norma permite canais de contato, desde que não haja chamada à contratação.
 - A clínica não se apresenta como pronto-socorro e orienta a procurar o 192 em emergência.
 - A contabilidade não publica honorários. O hotel não confirma reserva na hora.
 - A barbearia usa preços de exemplo, declarados no rodapé.
@@ -113,8 +115,10 @@ Google Fonts. O `base.css` declara todos os rostos; cada página usa apenas o se
 
 ## Qualidade medida
 
-Medição de novembro de 2026, no Lighthouse do Chrome, nas oito páginas:
+Medição local de novembro de 2026, no Lighthouse do Chrome em modo mobile (4G simulado), nas oito
+páginas:
 
+- **84–98** em performance (LCP entre 2,3 e 2,8 s)
 - **100** em acessibilidade
 - **100** em boas práticas
 - **100** em SEO
@@ -150,9 +154,9 @@ O script recria `demos-mobile/` com oito arquivos HTML independentes. Em cada um
 - apenas as fontes usadas pela página entram como `data:font/woff2`;
 - a menor imagem do `srcset` entra como `data:image/webp`;
 - favicon vira data URI; preloads e `apple-touch-icon` saem;
-- não sobra nenhuma referência a `assets/`.
+- não sobra nenhuma referência local a `assets/`.
 
-Tamanhos atuais: 305–568 KB por modelo; o `index.html` fica em 526 KB. Cada modelo abre sozinho,
+Tamanhos atuais: 305–570 KB por modelo; o `index.html` fica em 531 KB. Cada modelo abre sozinho,
 sem pasta e sem internet (os links de WhatsApp e mapa, claro, precisam de rede). Para enviar um
 modelo, envie só o arquivo correspondente. O `index.html` é o hub: para ele abrir os sete, envie
 a pasta inteira. O `LEIA-ME.txt` dentro da pasta repete essas instruções.
@@ -169,6 +173,6 @@ a pasta inteira. O `LEIA-ME.txt` dentro da pasta repete essas instruções.
 ## Autoria
 
 **Everton Fagundes** — estudante de Sistemas de Informação na UESB, Jequié/BA.
-WhatsApp: (73) 98865-9878 · GitHub: https://github.com/evertonfagundes
+WhatsApp: (73) 98865-9878 · GitHub: https://github.com/EvertonFagundes/kit-sites-jequie
 
 Fotografias: Pexels. Fontes: Google Fonts, licença OFL. Textos e código: Everton Fagundes.

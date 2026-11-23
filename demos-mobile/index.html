@@ -730,6 +730,20 @@ input,select,textarea{font:inherit;color:inherit}
   .about-link svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.7;
     stroke-linecap:round;stroke-linejoin:round}
 
+  .price-grid{align-items:stretch}
+  .price-card{display:flex;flex-direction:column}
+  .price-card .price{font-family:var(--font-display);font-size:clamp(36px,4.2vw,46px);line-height:1;
+    letter-spacing:-.025em;color:var(--accent-ink);margin:6px 0 10px}
+  .price-card .price small{display:block;font-family:var(--font-text);font-size:9.5px;font-weight:600;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  .price-card .desc{font-size:13.5px;line-height:1.55;color:var(--muted);margin:0}
+  .price-card ul{list-style:none;margin:16px 0 22px;padding:0;display:grid;gap:8px}
+  .price-card li{position:relative;padding-left:20px;font-size:13px;line-height:1.5;color:var(--ink-2)}
+  .price-card li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent-ink);font-weight:700}
+  .price-card .btn{width:100%;justify-content:center;margin-top:auto}
+  .price-note{margin-top:20px;font-size:11px;line-height:1.6;color:var(--muted);max-width:76ch}
+  .price-note b{font-weight:600;color:var(--ink-2)}
+
   .faq-split{display:grid;grid-template-columns:.76fr 1.24fr;gap:clamp(30px,5vw,66px);align-items:start}
   .faq-split .lead{margin-top:14px;max-width:34ch}
 
@@ -832,6 +846,7 @@ input,select,textarea{font:inherit;color:inherit}
       "url": "https://evertonfagundes.github.io/kit-sites-jequie/",
       "image": "https://evertonfagundes.github.io/kit-sites-jequie/assets/og/index.jpg",
       "telephone": "+55-73-98865-9878",
+      "sameAs": ["https://github.com/EvertonFagundes/kit-sites-jequie"],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Jequié",
@@ -878,12 +893,13 @@ input,select,textarea{font:inherit;color:inherit}
     <nav class="nav" id="site-nav" aria-label="Menu principal" data-nav>
       <a href="#modelos">Modelos</a>
       <a href="#processo">Processo</a>
+      <a href="#precos">Preços</a>
       <a href="#sobre">Sobre</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a class="btn btn--primary btn--sm header-cta" href="#contato"
-       data-wa="Olá, Everton! Vi o seu portfólio e quero falar sobre um site.">Falar no WhatsApp</a>
+    <a class="btn btn--primary btn--sm header-cta" href="https://wa.me/5573988659878?text=Ol%C3%A1%2C%20Everton%21%20Vi%20o%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20um%20site."
+       data-wa="Olá, Everton! Vi o seu portfólio e quero falar sobre um site." target="_blank" rel="noopener">Falar no WhatsApp</a>
   </div>
 </header>
 
@@ -898,15 +914,15 @@ input,select,textarea{font:inherit;color:inherit}
           <p class="lead reveal">Sites para o comércio de Jequié: rápidos, legíveis no celular e com o WhatsApp no caminho. Os sete modelos abaixo são páginas completas — abra e navegue como se fossem o seu negócio.</p>
           <div class="hero-actions reveal">
             <a class="btn btn--primary btn--lg" href="#modelos">Ver os modelos</a>
-            <a class="btn btn--ghost btn--lg" href="#contato"
-               data-wa="Olá, Everton! Vi o seu portfólio e quero falar sobre um site.">
+            <a class="btn btn--ghost btn--lg" href="https://wa.me/5573988659878?text=Ol%C3%A1%2C%20Everton%21%20Vi%20o%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20um%20site."
+               data-wa="Olá, Everton! Vi o seu portfólio e quero falar sobre um site." target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.8L3 21l1.8-5A8.4 8.4 0 1 1 21 11.5Z"/></svg>
               Falar no WhatsApp
             </a>
           </div>
           <div class="hero-meta reveal">
             <span><i aria-hidden="true"></i> 7 modelos completos</span>
-            <span><i aria-hidden="true"></i> Feito à mão, sem framework</span>
+            <span><i aria-hidden="true"></i> Sem plataforma no meio</span>
             <span><i aria-hidden="true"></i> Jequié · Bahia</span>
           </div>
         </div>
@@ -932,14 +948,14 @@ input,select,textarea{font:inherit;color:inherit}
 
   <section class="stats" aria-labelledby="stats-title">
     <div class="wrap">
-      <h2 class="sr-only" id="stats-title">Qualidade técnica dos modelos</h2>
+      <h2 class="sr-only" id="stats-title">O que está incluído</h2>
       <div class="stats-grid">
-        <div class="stat"><b>100</b><span>Acessibilidade</span><small>Leitores de tela e navegação por teclado.</small></div>
-        <div class="stat"><b>100</b><span>Boas práticas</span><small>Sem bibliotecas antigas ou erros de console.</small></div>
-        <div class="stat"><b>100</b><span>SEO</span><small>Título, descrição, canônico e dados estruturados.</small></div>
-        <div class="stat"><b>0</b><span>Requisições externas</span><small>Fontes, imagens e código no mesmo domínio.</small></div>
+        <div class="stat"><b>7</b><span>Modelos</span><small>Um para cada setor do comércio local.</small></div>
+        <div class="stat"><b>0</b><span>Instalações</span><small>Nada para instalar, atualizar ou licenciar.</small></div>
+        <div class="stat"><b>1</b><span>Link</span><small>O cliente abre e chama no WhatsApp, sem baixar nada.</small></div>
+        <div class="stat"><b>100%</b><span>Seu</span><small>Arquivos, domínio e conteúdo no seu nome.</small></div>
       </div>
-      <p class="stats-note"><b>Lighthouse do Chrome nas sete páginas.</b> Última medição: novembro de 2026. Nota não é promessa de venda — é o mínimo que um site de negócio deveria entregar.</p>
+      <p class="stats-note"><b>Feito para o celular.</b> Os sete modelos foram testados em telas de 360 a 430 px. Em teste com 4G simulado, o conteúdo principal abriu em menos de 3 segundos nas sete páginas (medição de novembro de 2026). Nenhum depende de painel, plugin ou plataforma.</p>
     </div>
   </section>
 
@@ -962,7 +978,7 @@ input,select,textarea{font:inherit;color:inherit}
             <span class="case-kicker">Odontologia</span>
             <h3>Sorriso Novo</h3>
             <p class="case-text">Tratamentos explicados sem susto, equipe com registro e agendamento que abre o WhatsApp com o nome e o horário escolhidos.</p>
-            <span class="case-tags"><span>Agendamento</span><span>FAQ</span><span>Mapa</span></span>
+            <span class="case-tags"><span>Agendamento</span><span>Dúvidas</span><span>Mapa</span></span>
             <span class="case-more">Abrir o site
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </span>
@@ -978,8 +994,8 @@ input,select,textarea{font:inherit;color:inherit}
           <div class="case-body">
             <span class="case-kicker">Imobiliária</span>
             <h3>Horizonte Imóveis</h3>
-            <p class="case-text">Busca por finalidade, tipo e bairro, com contador de resultados, estado vazio e botão para limpar o filtro.</p>
-            <span class="case-tags"><span>Filtro funcional</span><span>5 imóveis</span><span>Reset</span></span>
+            <p class="case-text">Busca por finalidade, tipo e bairro, com o número de imóveis encontrados e um botão para limpar a busca.</p>
+            <span class="case-tags"><span>Filtro de imóveis</span><span>5 imóveis</span><span>Limpar busca</span></span>
             <span class="case-more">Abrir o site
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </span>
@@ -995,8 +1011,8 @@ input,select,textarea{font:inherit;color:inherit}
           <div class="case-body">
             <span class="case-kicker">Advocacia</span>
             <h3>Martins &amp; Prado</h3>
-            <p class="case-text">Leitura editorial, orientações em acordeão e contato por telefone e e-mail. Sem WhatsApp e sem formulário, como pede o Provimento 205/2021.</p>
-            <span class="case-tags"><span>Sem captação</span><span>Artigos</span><span>OAB</span></span>
+            <p class="case-text">Leitura calma, perguntas que abrem e fecham e contato por telefone e e-mail. Conteúdo informativo, sem promessa de resultado nem apelo à contratação, em linha com o Provimento 205/2021.</p>
+            <span class="case-tags"><span>Informativo</span><span>Artigos</span><span>OAB</span></span>
             <span class="case-more">Abrir o site
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </span>
@@ -1029,8 +1045,8 @@ input,select,textarea{font:inherit;color:inherit}
           <div class="case-body">
             <span class="case-kicker">Contabilidade</span>
             <h3>Nova Contabilidade</h3>
-            <p class="case-text">Quatro perfis em abas — MEI, microempresa, empresa e pessoa física — com calendário do ano e checklist de documentos.</p>
-            <span class="case-tags"><span>Abas</span><span>Calendário</span><span>Checklist</span></span>
+            <p class="case-text">Quatro perfis — MEI, microempresa, empresa e pessoa física — com calendário do ano e checklist de documentos.</p>
+            <span class="case-tags"><span>Por perfil</span><span>Calendário</span><span>Checklist</span></span>
             <span class="case-more">Abrir o site
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </span>
@@ -1046,7 +1062,7 @@ input,select,textarea{font:inherit;color:inherit}
           <div class="case-body">
             <span class="case-kicker">Hotelaria</span>
             <h3>Serra Azul</h3>
-            <p class="case-text">Hero imersivo, três quartos e pedido de reserva com validação de datas. O quarto escolhido já chega preenchido no formulário.</p>
+            <p class="case-text">Abertura com foto do hotel, três quartos e pedido de reserva com validação de datas. O quarto escolhido já chega preenchido no formulário.</p>
             <span class="case-tags"><span>Reserva</span><span>Datas</span><span>Quartos</span></span>
             <span class="case-more">Abrir o site
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -1064,7 +1080,7 @@ input,select,textarea{font:inherit;color:inherit}
             <span class="case-kicker">Barbearia</span>
             <h3>Navalha</h3>
             <p class="case-text">Tema escuro, tabela de preços, equipe fixa e agendamento por serviço, barbeiro e período. Os valores são de exemplo, declarados no rodapé.</p>
-            <span class="case-tags"><span>Preços</span><span>Agenda</span><span>Mobile</span></span>
+            <span class="case-tags"><span>Preços</span><span>Agenda</span><span>Celular</span></span>
             <span class="case-more">Abrir o site
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </span>
@@ -1112,14 +1128,67 @@ input,select,textarea{font:inherit;color:inherit}
         <article class="proc">
           <span class="n">04</span>
           <h3>Publicação</h3>
-          <p>Testo no celular, no 4G e com leitor de tela. Depois publico no domínio e configuro o WhatsApp e os metadados para o Google.</p>
+          <p>Testo no celular, no 4G, com o texto e as fotos finais. Depois publico no domínio e deixo o WhatsApp e as informações de busca prontos.</p>
         </article>
       </div>
 
       <div class="process-note reveal">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5 9 17 20 6"/></svg>
-        <p>O site é entregue em arquivos HTML, CSS e imagens. Não fica preso a um painel, a um plugin ou a uma mensalidade de plataforma.</p>
+        <p>O site é seu: os arquivos, o domínio e o conteúdo ficam no seu nome. Não fica preso a um painel, a um plugin ou a uma mensalidade de plataforma.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="precos" aria-labelledby="precos-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Preços</p>
+        <h2 class="h2" id="precos-title">Três pontos de partida</h2>
+        <p class="lead">Valores de referência para Jequié. O orçamento final é por escrito e muda conforme o número de seções, o texto e as fotos que o negócio já tem.</p>
+      </div>
+
+      <div class="grid grid--3 price-grid reveal reveal--d1">
+        <article class="card price-card">
+          <span class="case-kicker">Página única</span>
+          <p class="price"><small>a partir de</small>R$ 900</p>
+          <p class="desc">Para quem precisa existir no Google e receber contato sem complicação.</p>
+          <ul>
+            <li>Uma página com até 5 seções</li>
+            <li>Texto organizado e fotos ajustadas</li>
+            <li>WhatsApp, mapa e perguntas frequentes</li>
+            <li>Publicação e teste no celular</li>
+          </ul>
+          <a class="btn btn--ghost" href="#contato">Falar sobre este pacote</a>
+        </article>
+
+        <article class="card price-card">
+          <span class="case-kicker">Site completo</span>
+          <p class="price"><small>a partir de</small>R$ 1.500</p>
+          <p class="desc">Para apresentar serviços, equipe e estrutura em uma página completa.</p>
+          <ul>
+            <li>Até 8 seções e menu de navegação</li>
+            <li>Catálogo de serviços ou produtos</li>
+            <li>Galeria de fotos e perguntas frequentes</li>
+            <li>WhatsApp e informações de busca configurados</li>
+          </ul>
+          <a class="btn btn--primary" href="#contato">Falar sobre este pacote</a>
+        </article>
+
+        <article class="card price-card">
+          <span class="case-kicker">Com agendamento</span>
+          <p class="price"><small>a partir de</small>R$ 2.000</p>
+          <p class="desc">Para receber pedidos de horário, reserva ou orçamento já organizados.</p>
+          <ul>
+            <li>Formulário que monta a mensagem no WhatsApp</li>
+            <li>Agenda, filtros ou pedido de reserva</li>
+            <li>Validação de campos e retorno claro</li>
+            <li>Teste no 4G e publicação no domínio</li>
+          </ul>
+          <a class="btn btn--ghost" href="#contato">Falar sobre este pacote</a>
+        </article>
+      </div>
+
+      <p class="price-note"><b>Domínio e hospedagem ficam no seu nome.</b> O domínio no Registro.br custa cerca de R$ 40 por ano. A hospedagem pode ser gratuita (GitHub Pages ou Cloudflare Pages) ou paga, se você preferir um serviço com suporte. Você recebe todos os acessos.</p>
     </div>
   </section>
 
@@ -1137,14 +1206,14 @@ input,select,textarea{font:inherit;color:inherit}
           <p class="role">Sistemas de Informação · UESB · Jequié</p>
           <p>Sou estudante de Sistemas de Informação na UESB e faço sites para o comércio da cidade — do desenho ao código, sem framework e sem plataforma no meio. Aprendi fazendo estes sete modelos, cada um para um setor do comércio daqui.</p>
           <p>O site de um cliente não é o modelo com o nome trocado. É uma edição a partir dele, com o texto, as fotos e as prioridades do negócio. O que se mantém é o cuidado com celular, velocidade e acessibilidade.</p>
-          <p>Trabalho com HTML, CSS e JavaScript. O que você recebe são arquivos que rodam em qualquer hospedagem estática e continuam sendo seus.</p>
+          <p>Trabalho com HTML, CSS e JavaScript. Testo cada página no celular, no teclado e com leitor de tela. O que você recebe são arquivos que rodam em qualquer hospedagem estática e continuam sendo seus.</p>
           <div class="about-facts">
             <span>HTML · CSS · JS</span>
             <span>Sem framework</span>
             <span>Celular primeiro</span>
             <span>Jequié · BA</span>
           </div>
-          <a class="about-link" href="https://github.com/evertonfagundes" target="_blank" rel="noopener">
+          <a class="about-link" href="https://github.com/EvertonFagundes/kit-sites-jequie" target="_blank" rel="noopener">
             Ver os arquivos no GitHub
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
           </a>
@@ -1164,7 +1233,15 @@ input,select,textarea{font:inherit;color:inherit}
         <div class="faq reveal reveal--d1">
           <details>
             <summary>O site é meu ou fica preso a uma plataforma?</summary>
-            <p>Seu. A entrega são os arquivos HTML, CSS e imagens, sem painel obrigatório e sem plataforma no meio. Você pode hospedar onde quiser e pedir alterações a qualquer profissional.</p>
+            <p>Seu. A entrega são os arquivos do site, sem painel obrigatório e sem plataforma no meio. O domínio fica no seu nome e você pode hospedar onde quiser. Também pode pedir alterações a qualquer profissional.</p>
+          </details>
+          <details>
+            <summary>O domínio e a hospedagem ficam no meu nome?</summary>
+            <p>Sim. O domínio é registrado no seu nome, no Registro.br, e custa cerca de R$ 40 por ano. A hospedagem pode ser gratuita em serviços como GitHub Pages ou Cloudflare Pages, ou paga, se você preferir um serviço com suporte. Você recebe todos os acessos.</p>
+          </details>
+          <details>
+            <summary>Posso mudar o site depois?</summary>
+            <p>Pode. Os arquivos são seus e qualquer profissional consegue editar. Alterações simples eu faço por combinado; mudanças maiores recebem um orçamento antes.</p>
           </details>
           <details>
             <summary>Você usa um modelo pronto?</summary>
@@ -1172,7 +1249,7 @@ input,select,textarea{font:inherit;color:inherit}
           </details>
           <details>
             <summary>Quanto custa?</summary>
-            <p>Depende do escopo: número de páginas, texto, fotos e funcionalidades. Depois da conversa, você recebe uma proposta por escrito com o que está incluído e o valor, antes de qualquer trabalho.</p>
+            <p>Os pacotes começam em R$ 900 para uma página única, R$ 1.500 para um site completo e R$ 2.000 para um site com agendamento, filtros ou reservas. O valor final depende do escopo e vem por escrito, com o que está incluído, antes de qualquer trabalho.</p>
           </details>
           <details>
             <summary>Quanto tempo leva?</summary>
@@ -1210,13 +1287,13 @@ input,select,textarea{font:inherit;color:inherit}
             </div>
             <div class="contact-item">
               <span class="lbl">GitHub</span>
-              <span><a href="https://github.com/evertonfagundes" target="_blank" rel="noopener">github.com/evertonfagundes</a></span>
+              <span><a href="https://github.com/EvertonFagundes/kit-sites-jequie" target="_blank" rel="noopener">Repositório do portfólio</a></span>
             </div>
           </div>
 
           <div class="contact-cta">
-            <a class="btn btn--primary" href="#contato"
-               data-wa="Olá, Everton! Vi o seu portfólio e quero falar sobre um site.">
+            <a class="btn btn--primary" href="https://wa.me/5573988659878?text=Ol%C3%A1%2C%20Everton%21%20Vi%20o%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20um%20site."
+               data-wa="Olá, Everton! Vi o seu portfólio e quero falar sobre um site." target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.6-.8L3 21l1.8-5A8.4 8.4 0 1 1 21 11.5Z"/></svg>
               Abrir o WhatsApp
             </a>
@@ -1271,7 +1348,7 @@ input,select,textarea{font:inherit;color:inherit}
           </button>
           <p class="form-status" role="status" aria-live="polite"></p>
           <p class="form-foot">O envio abre o WhatsApp com a mensagem montada. Nada é armazenado neste site.</p>
-          <noscript><p class="form-foot">O formulário precisa de JavaScript. Se preferir, chame no WhatsApp: <a href="https://wa.me/5573988659878">(73) 98865-9878</a>.</p></noscript>
+          <noscript><p class="form-foot">O formulário precisa de JavaScript. Se preferir, chame no WhatsApp: <a href="https://wa.me/5573988659878" target="_blank" rel="noopener">(73) 98865-9878</a>.</p></noscript>
         </form>
       </div>
     </div>
@@ -1310,10 +1387,11 @@ input,select,textarea{font:inherit;color:inherit}
         <ul class="footer-links">
           <li><a href="#modelos">Os sete modelos</a></li>
           <li><a href="#processo">Como funciona</a></li>
+          <li><a href="#precos">Preços</a></li>
           <li><a href="#sobre">Quem faz</a></li>
           <li><a href="#duvidas">Dúvidas</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a href="https://github.com/evertonfagundes" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://github.com/EvertonFagundes/kit-sites-jequie" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </div>
     </div>
@@ -1325,8 +1403,8 @@ input,select,textarea{font:inherit;color:inherit}
   </div>
 </footer>
 
-<a class="wa" href="#contato" data-wa="Olá, Everton! Vi o seu portfólio e quero falar sobre um site."
-   aria-label="Falar no WhatsApp">
+<a class="wa" href="https://wa.me/5573988659878?text=Ol%C3%A1%2C%20Everton%21%20Vi%20o%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20um%20site." data-wa="Olá, Everton! Vi o seu portfólio e quero falar sobre um site."
+   aria-label="Falar no WhatsApp" target="_blank" rel="noopener">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.9-.1 1.4Z"/></svg>
 </a>
 
